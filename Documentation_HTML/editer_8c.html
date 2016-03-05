@@ -1,0 +1,847 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Projet - Jeu de l&#39;Oie Revisité | Documentation: Référence du fichier src/editer.c</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="de_3d.jpg"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Projet - Jeu de l&#39;Oie Revisité | Documentation
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Réalisation de Programmes - Semestre 2 2012/2013</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('editer_8c.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier src/editer.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fichier principal de la partie édition.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="bibliotheque_8h_source.html">../headers/bibliotheque.h</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de editer.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="editer_8c__incl.png" border="0" usemap="#src_2editer_8c" alt=""/></div>
+<map name="src_2editer_8c" id="src_2editer_8c">
+<area shape="rect" id="node3" href="bibliotheque_8h.html" title="Bibliothèque contenant les déclarations des structure et des variables globales ainsi que les bibliot..." alt="" coords="536,83,699,112"/><area shape="rect" id="node23" href="editer_8h.html" title="Header du fichier editer.c." alt="" coords="989,160,1053,189"/><area shape="rect" id="node25" href="info_8h.html" title="Header du fichier info.c." alt="" coords="1077,160,1131,189"/><area shape="rect" id="node27" href="jouer_8h.html" title="Header du fichier jouer.c." alt="" coords="1155,160,1216,189"/><area shape="rect" id="node29" href="menu_8h.html" title="Header du fichier menu.c." alt="" coords="1240,160,1304,189"/></map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="editer_8c__dep__incl.png" border="0" usemap="#src_2editer_8cdep" alt=""/></div>
+<map name="src_2editer_8cdep" id="src_2editer_8cdep">
+<area shape="rect" id="node3" href="main_8c.html" title="Le main du projet." alt="" coords="7,83,89,112"/></map>
+</div>
+</div>
+<p><a href="editer_8c_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editer_8c.html#a699a0a0a39420110df2bdb31b061c2e8">suiv_Parcours</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet de trouver le premier nom disponible pour une carte à partir de zéro.  <a href="#a699a0a0a39420110df2bdb31b061c2e8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editer_8c.html#a87dcd6666b04020860920ae591431617">nb_Parcours</a> (int ieme)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet de trouver le nom d'une ième carte.  <a href="#a87dcd6666b04020860920ae591431617"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editer_8c.html#a112a927958ce30039b532c51aabbe3ee">creation</a> (SDL_Surface *ecran, int *nb)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet de créer une carte de jeu.  <a href="#a112a927958ce30039b532c51aabbe3ee"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editer_8c.html#a03e89673608cec8f46e56922f1962ba0">aff_Cadre_Editer</a> (SDL_Surface *ecran, SDL_Surface *carre)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui affiche le quadrillage de l'édition d'une carte.  <a href="#a03e89673608cec8f46e56922f1962ba0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editer_8c.html#abfde2704e500ad4676087253fa255371">aff_Fantome</a> (SDL_Surface *ecran, SDL_Surface *carre, SDL_Rect pos)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui affiche la case qui se deplace dans le quadrillage. (On l'a appelée fantome)  <a href="#abfde2704e500ad4676087253fa255371"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editer_8c.html#a35bb5bd587fe9536b2d805d2717c49c1">selec_Aff_Case_Dispo</a> (SDL_Surface *ecran, SDL_Surface *carre, int nbcase, SDL_Rect pos_ij, SDL_Rect position_chemin[64], SDL_Rect position_chemin_dans_image[64])</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui sert a faire le choix de la case qu'on veut ajouter à telle ou telle endroit.  <a href="#a35bb5bd587fe9536b2d805d2717c49c1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editer_8c.html#a898f5d68680648048410843d2fe9d12b">aff_Parcous</a> (SDL_Surface *ecran, SDL_Surface *carre, SDL_Rect position_chemin[64], SDL_Rect position_chemin_dans_image[64])</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui sert à afficher un parcours.  <a href="#a898f5d68680648048410843d2fe9d12b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editer_8c.html#a3603f97a2911e72c5c03635a1018a8fb">possiblite_Case_Ij</a> (SDL_Rect pos_ij, SDL_Rect chemin[64])</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui vérifie si la case dans laquelle on veut placer un évènement est libre.  <a href="#a3603f97a2911e72c5c03635a1018a8fb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editer_8c.html#a3c6ab0104f0e6d3a2c07f33c82272a5b">sauvegarde_Edition</a> (SDL_Rect pos_sur_ecran[64], SDL_Rect pos_sur_image[64], int iemeparcours)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui sauvegarde une carte créée dans un fichier.  <a href="#a3c6ab0104f0e6d3a2c07f33c82272a5b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editer_8c.html#a12e3f2b5d895508b850491b5e3b9b1aa">charge_Sauvegarde_Edition</a> (SDL_Rect pos_sur_ecran[64], SDL_Rect pos_sur_image[64], int iemeparcours)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui charge une carte créée à partir d'un fichier.  <a href="#a12e3f2b5d895508b850491b5e3b9b1aa"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editer_8c.html#a02b0acfa3cd346f08cd80cd219412e57">transforme_Pos_Image_En_Val</a> (SDL_Rect pos)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui transforme une positon d'un carré dans une image en valeur qui sera utilisée pour la génération d'évènements.  <a href="#a02b0acfa3cd346f08cd80cd219412e57"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editer_8c.html#ac71fc9a0da695f49ae8c84eece1552e1">menu_Editer</a> (SDL_Surface *ecran)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui sert de Menu principal de la partie édition.  <a href="#ac71fc9a0da695f49ae8c84eece1552e1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="editer_8c.html#a4d69f9ad62bda9e02b83f9bd5a980d3f">visualisation_Suppression</a> (SDL_Surface *ecran, int *nb)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui sert à afficher les cartes disponibles avec la possibilité de supprimer une/des carte(s).  <a href="#a4d69f9ad62bda9e02b83f9bd5a980d3f"></a><br/></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p>Fichier principal de la partie édition. </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Fofana Ibrahim </dd></dl>
+<dl class="date"><dt><b>Date:</b></dt><dd>11 mars 2013 </dd></dl>
+
+<p>Définition dans le fichier <a class="el" href="editer_8c_source.html">editer.c</a>.</p>
+</div><hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="a03e89673608cec8f46e56922f1962ba0"></a><!-- doxytag: member="editer.c::aff_Cadre_Editer" ref="a03e89673608cec8f46e56922f1962ba0" args="(SDL_Surface *ecran, SDL_Surface *carre)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="editer_8c.html#a03e89673608cec8f46e56922f1962ba0">aff_Cadre_Editer</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>carre</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui affiche le quadrillage de l'édition d'une carte. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">carre</td><td>Le carré avec lequel on va initialiser l'écran principal. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="editer_8c_source.html#l00282">282</a> du fichier <a class="el" href="editer_8c_source.html">editer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="editer_8c_a03e89673608cec8f46e56922f1962ba0_icgraph.png" border="0" usemap="#editer_8c_a03e89673608cec8f46e56922f1962ba0_icgraph" alt=""/></div>
+<map name="editer_8c_a03e89673608cec8f46e56922f1962ba0_icgraph" id="editer_8c_a03e89673608cec8f46e56922f1962ba0_icgraph">
+<area shape="rect" id="node3" href="editer_8c.html#a112a927958ce30039b532c51aabbe3ee" title="Fonction qui permet de créer une carte de jeu." alt="" coords="175,5,241,35"/><area shape="rect" id="node5" href="editer_8c.html#ac71fc9a0da695f49ae8c84eece1552e1" title="Fonction qui sert de Menu principal de la partie édition." alt="" coords="292,5,385,35"/><area shape="rect" id="node7" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="435,5,485,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abfde2704e500ad4676087253fa255371"></a><!-- doxytag: member="editer.c::aff_Fantome" ref="abfde2704e500ad4676087253fa255371" args="(SDL_Surface *ecran, SDL_Surface *carre, SDL_Rect pos)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="editer_8c.html#abfde2704e500ad4676087253fa255371">aff_Fantome</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>carre</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui affiche la case qui se deplace dans le quadrillage. (On l'a appelée fantome) </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">carre</td><td>Variable qui contient l'image du fantôme. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>Nouvelle position du fantôme sur l'écran principale. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="editer_8c_source.html#l00300">300</a> du fichier <a class="el" href="editer_8c_source.html">editer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="editer_8c_abfde2704e500ad4676087253fa255371_icgraph.png" border="0" usemap="#editer_8c_abfde2704e500ad4676087253fa255371_icgraph" alt=""/></div>
+<map name="editer_8c_abfde2704e500ad4676087253fa255371_icgraph" id="editer_8c_abfde2704e500ad4676087253fa255371_icgraph">
+<area shape="rect" id="node3" href="editer_8c.html#a112a927958ce30039b532c51aabbe3ee" title="Fonction qui permet de créer une carte de jeu." alt="" coords="151,5,217,35"/><area shape="rect" id="node5" href="editer_8c.html#ac71fc9a0da695f49ae8c84eece1552e1" title="Fonction qui sert de Menu principal de la partie édition." alt="" coords="268,5,361,35"/><area shape="rect" id="node7" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="411,5,461,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a898f5d68680648048410843d2fe9d12b"></a><!-- doxytag: member="editer.c::aff_Parcous" ref="a898f5d68680648048410843d2fe9d12b" args="(SDL_Surface *ecran, SDL_Surface *carre, SDL_Rect position_chemin[64], SDL_Rect position_chemin_dans_image[64])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="editer_8c.html#a898f5d68680648048410843d2fe9d12b">aff_Parcous</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>carre</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>position_chemin</em>[64], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>position_chemin_dans_image</em>[64]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui sert à afficher un parcours. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">carre</td><td>Variable qui contient l'image à partir de laquelle on va blitter différentes parties. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">position_chemin[64]</td><td>Position dans l'image d'origine. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">position_chemin_dans_image[64]</td><td>Position sur l'écran du jeu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="editer_8c_source.html#l00432">432</a> du fichier <a class="el" href="editer_8c_source.html">editer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="editer_8c_a898f5d68680648048410843d2fe9d12b_icgraph.png" border="0" usemap="#editer_8c_a898f5d68680648048410843d2fe9d12b_icgraph" alt=""/></div>
+<map name="editer_8c_a898f5d68680648048410843d2fe9d12b_icgraph" id="editer_8c_a898f5d68680648048410843d2fe9d12b_icgraph">
+<area shape="rect" id="node3" href="editer_8c.html#a112a927958ce30039b532c51aabbe3ee" title="Fonction qui permet de créer une carte de jeu." alt="" coords="200,5,267,35"/><area shape="rect" id="node9" href="editer_8c.html#a4d69f9ad62bda9e02b83f9bd5a980d3f" title="Fonction qui sert à afficher les cartes disponibles avec la possibilité de supprimer une/des carte(s)..." alt="" coords="147,59,320,88"/><area shape="rect" id="node12" href="jouer_8c.html#afbd3037fd74559e67d22a90710e3f878" title="Fonction qui permet de visualiser les cartes disponibles et d&#39;en choisir une pour commencer une parti..." alt="" coords="187,112,280,141"/><area shape="rect" id="node14" href="jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="391,125,441,155"/><area shape="rect" id="node5" href="editer_8c.html#ac71fc9a0da695f49ae8c84eece1552e1" title="Fonction qui sert de Menu principal de la partie édition." alt="" coords="369,35,463,64"/><area shape="rect" id="node7" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="667,85,717,115"/><area shape="rect" id="node17" href="menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="512,137,619,167"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a12e3f2b5d895508b850491b5e3b9b1aa"></a><!-- doxytag: member="editer.c::charge_Sauvegarde_Edition" ref="a12e3f2b5d895508b850491b5e3b9b1aa" args="(SDL_Rect pos_sur_ecran[64], SDL_Rect pos_sur_image[64], int iemeparcours)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="editer_8c.html#a12e3f2b5d895508b850491b5e3b9b1aa">charge_Sauvegarde_Edition</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>pos_sur_ecran</em>[64], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>pos_sur_image</em>[64], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iemeparcours</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui charge une carte créée à partir d'un fichier. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos_sur_ecran[64]</td><td>Les positions des différentes cases (De l'image d'origine) dans l'écran principal du jeu. </td></tr>
+    <tr><td class="paramname">pos_sur_image[64]</td><td>Les positions des différentes cases dans leur image d'origine. </td></tr>
+    <tr><td class="paramname">iemeparcours</td><td>Numéro de la carte. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="editer_8c_source.html#l00470">470</a> du fichier <a class="el" href="editer_8c_source.html">editer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="editer_8c_a12e3f2b5d895508b850491b5e3b9b1aa_icgraph.png" border="0" usemap="#editer_8c_a12e3f2b5d895508b850491b5e3b9b1aa_icgraph" alt=""/></div>
+<map name="editer_8c_a12e3f2b5d895508b850491b5e3b9b1aa_icgraph" id="editer_8c_a12e3f2b5d895508b850491b5e3b9b1aa_icgraph">
+<area shape="rect" id="node3" href="editer_8c.html#a4d69f9ad62bda9e02b83f9bd5a980d3f" title="Fonction qui sert à afficher les cartes disponibles avec la possibilité de supprimer une/des carte(s)..." alt="" coords="237,5,411,35"/><area shape="rect" id="node9" href="jouer_8c.html#afbd3037fd74559e67d22a90710e3f878" title="Fonction qui permet de visualiser les cartes disponibles et d&#39;en choisir une pour commencer une parti..." alt="" coords="277,59,371,88"/><area shape="rect" id="node11" href="jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="459,84,509,113"/><area shape="rect" id="node5" href="editer_8c.html#ac71fc9a0da695f49ae8c84eece1552e1" title="Fonction qui sert de Menu principal de la partie édition." alt="" coords="564,5,657,35"/><area shape="rect" id="node7" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="712,57,763,87"/><area shape="rect" id="node14" href="menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="557,109,664,139"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a112a927958ce30039b532c51aabbe3ee"></a><!-- doxytag: member="editer.c::creation" ref="a112a927958ce30039b532c51aabbe3ee" args="(SDL_Surface *ecran, int *nb)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="editer_8c.html#a112a927958ce30039b532c51aabbe3ee">creation</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>nb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui permet de créer une carte de jeu. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nb</td><td>Entier qui désigne le nombre de parcours/cartes créés. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Cette fonction ne retourne rien, elle affecte une valeur à la variable <em>nb</em> à l'aide d'un passage par pointeurs. </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="editer_8c_source.html#l00063">63</a> du fichier <a class="el" href="editer_8c_source.html">editer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="editer_8c_a112a927958ce30039b532c51aabbe3ee_cgraph.png" border="0" usemap="#editer_8c_a112a927958ce30039b532c51aabbe3ee_cgraph" alt=""/></div>
+<map name="editer_8c_a112a927958ce30039b532c51aabbe3ee_cgraph" id="editer_8c_a112a927958ce30039b532c51aabbe3ee_cgraph">
+<area shape="rect" id="node3" href="editer_8h.html#a699a0a0a39420110df2bdb31b061c2e8" title="Fonction qui permet de trouver le premier nom disponible pour une carte à partir de zéro..." alt="" coords="149,5,253,35"/><area shape="rect" id="node5" href="editer_8h.html#a03e89673608cec8f46e56922f1962ba0" title="Fonction qui affiche le quadrillage de l&#39;édition d&#39;une carte." alt="" coords="141,59,261,88"/><area shape="rect" id="node7" href="editer_8h.html#a898f5d68680648048410843d2fe9d12b" title="Fonction qui sert à afficher un parcours." alt="" coords="156,112,247,141"/><area shape="rect" id="node9" href="editer_8h.html#a3c6ab0104f0e6d3a2c07f33c82272a5b" title="Fonction qui sauvegarde une carte créée dans un fichier." alt="" coords="133,165,269,195"/><area shape="rect" id="node11" href="editer_8h.html#a3603f97a2911e72c5c03635a1018a8fb" title="Fonction qui vérifie si la case dans laquelle on veut placer un évènement est libre." alt="" coords="137,219,265,248"/><area shape="rect" id="node13" href="editer_8h.html#a35bb5bd587fe9536b2d805d2717c49c1" title="Fonction qui sert a faire le choix de la case qu&#39;on veut ajouter à telle ou telle endroit..." alt="" coords="124,272,279,301"/><area shape="rect" id="node15" href="editer_8h.html#abfde2704e500ad4676087253fa255371" title="Fonction qui affiche la case qui se deplace dans le quadrillage. (On l&#39;a appelée fantome)" alt="" coords="155,325,248,355"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="editer_8c_a112a927958ce30039b532c51aabbe3ee_icgraph.png" border="0" usemap="#editer_8c_a112a927958ce30039b532c51aabbe3ee_icgraph" alt=""/></div>
+<map name="editer_8c_a112a927958ce30039b532c51aabbe3ee_icgraph" id="editer_8c_a112a927958ce30039b532c51aabbe3ee_icgraph">
+<area shape="rect" id="node3" href="editer_8c.html#ac71fc9a0da695f49ae8c84eece1552e1" title="Fonction qui sert de Menu principal de la partie édition." alt="" coords="124,5,217,35"/><area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="267,5,317,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac71fc9a0da695f49ae8c84eece1552e1"></a><!-- doxytag: member="editer.c::menu_Editer" ref="ac71fc9a0da695f49ae8c84eece1552e1" args="(SDL_Surface *ecran)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="editer_8c.html#ac71fc9a0da695f49ae8c84eece1552e1">menu_Editer</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui sert de Menu principal de la partie édition. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="editer_8c_source.html#l00506">506</a> du fichier <a class="el" href="editer_8c_source.html">editer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="editer_8c_ac71fc9a0da695f49ae8c84eece1552e1_cgraph.png" border="0" usemap="#editer_8c_ac71fc9a0da695f49ae8c84eece1552e1_cgraph" alt=""/></div>
+<map name="editer_8c_ac71fc9a0da695f49ae8c84eece1552e1_cgraph" id="editer_8c_ac71fc9a0da695f49ae8c84eece1552e1_cgraph">
+<area shape="rect" id="node3" href="editer_8h.html#a112a927958ce30039b532c51aabbe3ee" title="Fonction qui permet de créer une carte de jeu." alt="" coords="203,192,269,221"/><area shape="rect" id="node19" href="editer_8h.html#a4d69f9ad62bda9e02b83f9bd5a980d3f" title="Fonction qui sert à afficher les cartes disponibles avec la possibilité de supprimer une/des carte(s)..." alt="" coords="149,352,323,381"/><area shape="rect" id="node5" href="editer_8h.html#a699a0a0a39420110df2bdb31b061c2e8" title="Fonction qui permet de trouver le premier nom disponible pour une carte à partir de zéro..." alt="" coords="411,5,515,35"/><area shape="rect" id="node7" href="editer_8h.html#a03e89673608cec8f46e56922f1962ba0" title="Fonction qui affiche le quadrillage de l&#39;édition d&#39;une carte." alt="" coords="403,59,523,88"/><area shape="rect" id="node9" href="editer_8h.html#a898f5d68680648048410843d2fe9d12b" title="Fonction qui sert à afficher un parcours." alt="" coords="417,325,508,355"/><area shape="rect" id="node11" href="editer_8h.html#a3c6ab0104f0e6d3a2c07f33c82272a5b" title="Fonction qui sauvegarde une carte créée dans un fichier." alt="" coords="395,112,531,141"/><area shape="rect" id="node13" href="editer_8h.html#a3603f97a2911e72c5c03635a1018a8fb" title="Fonction qui vérifie si la case dans laquelle on veut placer un évènement est libre." alt="" coords="399,165,527,195"/><area shape="rect" id="node15" href="editer_8h.html#a35bb5bd587fe9536b2d805d2717c49c1" title="Fonction qui sert a faire le choix de la case qu&#39;on veut ajouter à telle ou telle endroit..." alt="" coords="385,219,540,248"/><area shape="rect" id="node17" href="editer_8h.html#abfde2704e500ad4676087253fa255371" title="Fonction qui affiche la case qui se deplace dans le quadrillage. (On l&#39;a appelée fantome)" alt="" coords="416,272,509,301"/><area shape="rect" id="node21" href="editer_8h.html#a87dcd6666b04020860920ae591431617" title="Fonction qui permet de trouver le nom d&#39;une ième carte." alt="" coords="416,379,509,408"/><area shape="rect" id="node23" href="editer_8h.html#a12e3f2b5d895508b850491b5e3b9b1aa" title="Fonction qui charge une carte créée à partir d&#39;un fichier." alt="" coords="371,432,555,461"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="editer_8c_ac71fc9a0da695f49ae8c84eece1552e1_icgraph.png" border="0" usemap="#editer_8c_ac71fc9a0da695f49ae8c84eece1552e1_icgraph" alt=""/></div>
+<map name="editer_8c_ac71fc9a0da695f49ae8c84eece1552e1_icgraph" id="editer_8c_ac71fc9a0da695f49ae8c84eece1552e1_icgraph">
+<area shape="rect" id="node3" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="149,5,200,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a87dcd6666b04020860920ae591431617"></a><!-- doxytag: member="editer.c::nb_Parcours" ref="a87dcd6666b04020860920ae591431617" args="(int ieme)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="editer_8c.html#a87dcd6666b04020860920ae591431617">nb_Parcours</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ieme</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui permet de trouver le nom d'une ième carte. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ieme</td><td>Un entier qui désigne le numéro d'une carte. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Elle retourne un entier qui désigne le nombre de cartes disponibles. </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="editer_8c_source.html#l00039">39</a> du fichier <a class="el" href="editer_8c_source.html">editer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="editer_8c_a87dcd6666b04020860920ae591431617_icgraph.png" border="0" usemap="#editer_8c_a87dcd6666b04020860920ae591431617_icgraph" alt=""/></div>
+<map name="editer_8c_a87dcd6666b04020860920ae591431617_icgraph" id="editer_8c_a87dcd6666b04020860920ae591431617_icgraph">
+<area shape="rect" id="node3" href="editer_8c.html#a4d69f9ad62bda9e02b83f9bd5a980d3f" title="Fonction qui sert à afficher les cartes disponibles avec la possibilité de supprimer une/des carte(s)..." alt="" coords="149,5,323,35"/><area shape="rect" id="node9" href="jouer_8c.html#afbd3037fd74559e67d22a90710e3f878" title="Fonction qui permet de visualiser les cartes disponibles et d&#39;en choisir une pour commencer une parti..." alt="" coords="189,59,283,88"/><area shape="rect" id="node5" href="editer_8c.html#ac71fc9a0da695f49ae8c84eece1552e1" title="Fonction qui sert de Menu principal de la partie édition." alt="" coords="476,5,569,35"/><area shape="rect" id="node7" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="624,57,675,87"/><area shape="rect" id="node11" href="jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="371,59,421,88"/><area shape="rect" id="node14" href="menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="469,109,576,139"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3603f97a2911e72c5c03635a1018a8fb"></a><!-- doxytag: member="editer.c::possiblite_Case_Ij" ref="a3603f97a2911e72c5c03635a1018a8fb" args="(SDL_Rect pos_ij, SDL_Rect chemin[64])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="editer_8c.html#a3603f97a2911e72c5c03635a1018a8fb">possiblite_Case_Ij</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>pos_ij</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>chemin</em>[64]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui vérifie si la case dans laquelle on veut placer un évènement est libre. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos_ij</td><td>En attendant l'explication d'Ibrahim </td></tr>
+    <tr><td class="paramname">chemin[64]</td><td>En attendant l'explication d'Ibrahim. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>En attendant l'explication d'Ibrahim. </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="editer_8c_source.html#l00444">444</a> du fichier <a class="el" href="editer_8c_source.html">editer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="editer_8c_a3603f97a2911e72c5c03635a1018a8fb_icgraph.png" border="0" usemap="#editer_8c_a3603f97a2911e72c5c03635a1018a8fb_icgraph" alt=""/></div>
+<map name="editer_8c_a3603f97a2911e72c5c03635a1018a8fb_icgraph" id="editer_8c_a3603f97a2911e72c5c03635a1018a8fb_icgraph">
+<area shape="rect" id="node3" href="editer_8c.html#a112a927958ce30039b532c51aabbe3ee" title="Fonction qui permet de créer une carte de jeu." alt="" coords="185,5,252,35"/><area shape="rect" id="node5" href="editer_8c.html#ac71fc9a0da695f49ae8c84eece1552e1" title="Fonction qui sert de Menu principal de la partie édition." alt="" coords="303,5,396,35"/><area shape="rect" id="node7" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="445,5,496,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3c6ab0104f0e6d3a2c07f33c82272a5b"></a><!-- doxytag: member="editer.c::sauvegarde_Edition" ref="a3c6ab0104f0e6d3a2c07f33c82272a5b" args="(SDL_Rect pos_sur_ecran[64], SDL_Rect pos_sur_image[64], int iemeparcours)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="editer_8c.html#a3c6ab0104f0e6d3a2c07f33c82272a5b">sauvegarde_Edition</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>pos_sur_ecran</em>[64], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>pos_sur_image</em>[64], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iemeparcours</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui sauvegarde une carte créée dans un fichier. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos_sur_ecran[64]</td><td>Les positions des différentes cases (De l'image d'origine) dans l'écran principal du jeu. </td></tr>
+    <tr><td class="paramname">pos_sur_image[64]</td><td>Les positions des différentes cases dans leur image d'origine. </td></tr>
+    <tr><td class="paramname">iemeparcours</td><td>Numéro de la carte. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="editer_8c_source.html#l00453">453</a> du fichier <a class="el" href="editer_8c_source.html">editer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="editer_8c_a3c6ab0104f0e6d3a2c07f33c82272a5b_icgraph.png" border="0" usemap="#editer_8c_a3c6ab0104f0e6d3a2c07f33c82272a5b_icgraph" alt=""/></div>
+<map name="editer_8c_a3c6ab0104f0e6d3a2c07f33c82272a5b_icgraph" id="editer_8c_a3c6ab0104f0e6d3a2c07f33c82272a5b_icgraph">
+<area shape="rect" id="node3" href="editer_8c.html#a112a927958ce30039b532c51aabbe3ee" title="Fonction qui permet de créer une carte de jeu." alt="" coords="191,5,257,35"/><area shape="rect" id="node5" href="editer_8c.html#ac71fc9a0da695f49ae8c84eece1552e1" title="Fonction qui sert de Menu principal de la partie édition." alt="" coords="308,5,401,35"/><area shape="rect" id="node7" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="451,5,501,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a35bb5bd587fe9536b2d805d2717c49c1"></a><!-- doxytag: member="editer.c::selec_Aff_Case_Dispo" ref="a35bb5bd587fe9536b2d805d2717c49c1" args="(SDL_Surface *ecran, SDL_Surface *carre, int nbcase, SDL_Rect pos_ij, SDL_Rect position_chemin[64], SDL_Rect position_chemin_dans_image[64])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="editer_8c.html#a35bb5bd587fe9536b2d805d2717c49c1">selec_Aff_Case_Dispo</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>carre</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbcase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>pos_ij</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>position_chemin</em>[64], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>position_chemin_dans_image</em>[64]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui sert a faire le choix de la case qu'on veut ajouter à telle ou telle endroit. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">carre</td><td>En attendant L'explication d'Ibrahim. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">nbcase</td><td>En attendant L'explication d'Ibrahim. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">pos_ij</td><td>En attendant L'explication d'Ibrahim. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">position_chemin[64]</td><td>En attendant L'explication d'Ibrahim. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">position_chemin_dans_image[64]</td><td>En attendant L'explication d'Ibrahim. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Elle retourne en entier (En attendant L'explication d'Ibrahim.) </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="editer_8c_source.html#l00313">313</a> du fichier <a class="el" href="editer_8c_source.html">editer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="editer_8c_a35bb5bd587fe9536b2d805d2717c49c1_icgraph.png" border="0" usemap="#editer_8c_a35bb5bd587fe9536b2d805d2717c49c1_icgraph" alt=""/></div>
+<map name="editer_8c_a35bb5bd587fe9536b2d805d2717c49c1_icgraph" id="editer_8c_a35bb5bd587fe9536b2d805d2717c49c1_icgraph">
+<area shape="rect" id="node3" href="editer_8c.html#a112a927958ce30039b532c51aabbe3ee" title="Fonction qui permet de créer une carte de jeu." alt="" coords="212,5,279,35"/><area shape="rect" id="node5" href="editer_8c.html#ac71fc9a0da695f49ae8c84eece1552e1" title="Fonction qui sert de Menu principal de la partie édition." alt="" coords="329,5,423,35"/><area shape="rect" id="node7" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="472,5,523,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a699a0a0a39420110df2bdb31b061c2e8"></a><!-- doxytag: member="editer.c::suiv_Parcours" ref="a699a0a0a39420110df2bdb31b061c2e8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="editer_8c.html#a699a0a0a39420110df2bdb31b061c2e8">suiv_Parcours</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui permet de trouver le premier nom disponible pour une carte à partir de zéro. </p>
+<p>Astuce : Le nom d'une carte est "unnombre".txt donc on a juste besion d'avoir le nombre et on aura le nom complet. </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Elle retourne un entier qui désigne le premier nombre(nom) disponible pour une carte. </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="editer_8c_source.html#l00015">15</a> du fichier <a class="el" href="editer_8c_source.html">editer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="editer_8c_a699a0a0a39420110df2bdb31b061c2e8_icgraph.png" border="0" usemap="#editer_8c_a699a0a0a39420110df2bdb31b061c2e8_icgraph" alt=""/></div>
+<map name="editer_8c_a699a0a0a39420110df2bdb31b061c2e8_icgraph" id="editer_8c_a699a0a0a39420110df2bdb31b061c2e8_icgraph">
+<area shape="rect" id="node3" href="editer_8c.html#a112a927958ce30039b532c51aabbe3ee" title="Fonction qui permet de créer une carte de jeu." alt="" coords="161,5,228,35"/><area shape="rect" id="node5" href="editer_8c.html#ac71fc9a0da695f49ae8c84eece1552e1" title="Fonction qui sert de Menu principal de la partie édition." alt="" coords="279,5,372,35"/><area shape="rect" id="node7" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="421,5,472,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a02b0acfa3cd346f08cd80cd219412e57"></a><!-- doxytag: member="editer.c::transforme_Pos_Image_En_Val" ref="a02b0acfa3cd346f08cd80cd219412e57" args="(SDL_Rect pos)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="editer_8c.html#a02b0acfa3cd346f08cd80cd219412e57">transforme_Pos_Image_En_Val</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui transforme une positon d'un carré dans une image en valeur qui sera utilisée pour la génération d'évènements. </p>
+<p>Cette fonction est appelée 64 fois avant le début d'une partie afin de stocker les valeurs des évènements dans un tableau qui servira d'indice d'évènements au lieu d'exécuter la fonction à chaque tour.</p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>Position de la case dont on veut connaître la valeur de l'évènement. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Elle retourne une valeur entière qui désigne un évènement.  : Bonus.  : Malus.  : Prison.  : Rejouer.  : Pour les autres cases.) </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="editer_8c_source.html#l00492">492</a> du fichier <a class="el" href="editer_8c_source.html">editer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="editer_8c_a02b0acfa3cd346f08cd80cd219412e57_icgraph.png" border="0" usemap="#editer_8c_a02b0acfa3cd346f08cd80cd219412e57_icgraph" alt=""/></div>
+<map name="editer_8c_a02b0acfa3cd346f08cd80cd219412e57_icgraph" id="editer_8c_a02b0acfa3cd346f08cd80cd219412e57_icgraph">
+<area shape="rect" id="node3" href="jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="261,5,312,35"/><area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="515,5,565,35"/><area shape="rect" id="node7" href="menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="360,31,467,60"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d69f9ad62bda9e02b83f9bd5a980d3f"></a><!-- doxytag: member="editer.c::visualisation_Suppression" ref="a4d69f9ad62bda9e02b83f9bd5a980d3f" args="(SDL_Surface *ecran, int *nb)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="editer_8c.html#a4d69f9ad62bda9e02b83f9bd5a980d3f">visualisation_Suppression</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>nb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui sert à afficher les cartes disponibles avec la possibilité de supprimer une/des carte(s). </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nb</td><td>Nombre de cartes disponibles. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="editer_8c_source.html#l00627">627</a> du fichier <a class="el" href="editer_8c_source.html">editer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="editer_8c_a4d69f9ad62bda9e02b83f9bd5a980d3f_cgraph.png" border="0" usemap="#editer_8c_a4d69f9ad62bda9e02b83f9bd5a980d3f_cgraph" alt=""/></div>
+<map name="editer_8c_a4d69f9ad62bda9e02b83f9bd5a980d3f_cgraph" id="editer_8c_a4d69f9ad62bda9e02b83f9bd5a980d3f_cgraph">
+<area shape="rect" id="node3" href="editer_8h.html#a87dcd6666b04020860920ae591431617" title="Fonction qui permet de trouver le nom d&#39;une ième carte." alt="" coords="272,5,365,35"/><area shape="rect" id="node5" href="editer_8h.html#a12e3f2b5d895508b850491b5e3b9b1aa" title="Fonction qui charge une carte créée à partir d&#39;un fichier." alt="" coords="227,59,411,88"/><area shape="rect" id="node7" href="editer_8h.html#a898f5d68680648048410843d2fe9d12b" title="Fonction qui sert à afficher un parcours." alt="" coords="273,112,364,141"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="editer_8c_a4d69f9ad62bda9e02b83f9bd5a980d3f_icgraph.png" border="0" usemap="#editer_8c_a4d69f9ad62bda9e02b83f9bd5a980d3f_icgraph" alt=""/></div>
+<map name="editer_8c_a4d69f9ad62bda9e02b83f9bd5a980d3f_icgraph" id="editer_8c_a4d69f9ad62bda9e02b83f9bd5a980d3f_icgraph">
+<area shape="rect" id="node3" href="editer_8c.html#ac71fc9a0da695f49ae8c84eece1552e1" title="Fonction qui sert de Menu principal de la partie édition." alt="" coords="228,5,321,35"/><area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="371,5,421,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="editer_8c.html">editer.c</a>      </li>
+
+    <li class="footer">Généré le Dimanche Avril 14 2013 17:53:05 pour Projet - Jeu de l'Oie Revisité | Documentation par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

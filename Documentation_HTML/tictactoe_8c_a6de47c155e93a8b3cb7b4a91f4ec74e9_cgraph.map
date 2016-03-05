@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$tictactoe_8h.html#affadda43e181bda971da170595d32ec3" title="Fonction qui parcourt la matrice Mat(qui est une variable globale de taille 3x3) et qui initialise to..." alt="" coords="187,5,253,35"/>
+<area shape="rect" id="node5" href="$tictactoe_8h.html#aa9e801467f1140056e432b45d7f8c136" title="Fonction qui permet de se repérer dans l&#39;écran principal du jeu, elle retourne &#45;1 si on survole pas l..." alt="" coords="177,59,263,88"/>
+<area shape="rect" id="node7" href="$tictactoe_8h.html#a69f23557f56aa056d99996779db2758b" title="Fonction qui sert à affecter la valeur d&#39;un coup à la case correspondante de la matrice Mat..." alt="" coords="175,112,265,141"/>
+<area shape="rect" id="node9" href="$tictactoe_8h.html#a3d11bca6c9b0f0cc5bd6dcee4125c593" title="Fonction de vérification de l&#39;existence d&#39;un gagnant." alt="" coords="169,165,271,195"/>
+</map>

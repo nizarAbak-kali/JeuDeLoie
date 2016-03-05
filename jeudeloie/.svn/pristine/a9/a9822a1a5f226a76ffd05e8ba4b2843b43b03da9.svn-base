@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Projet - Jeu de l&#39;Oie Revisité: Référence du fichier headers/tictactoe.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="de_3d.jpg"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Projet - Jeu de l&#39;Oie Revisité
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Documentation non définitive - Réalisation de Programmes S2 2012/2013</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('tictactoe_8h.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier headers/tictactoe.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Header du Jeu de TicTacToé en SDL.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="tictactoe_8h__dep__incl.png" border="0" usemap="#headers_2tictactoe_8hdep" alt=""/></div>
+<map name="headers_2tictactoe_8hdep" id="headers_2tictactoe_8hdep">
+<area shape="rect" id="node3" href="bibliotheque__mini__jeux_8h.html" title="Header contenant les headers des différents mini&#45;jeux ainsi que les bibliothèques qu&#39;ils utilisent..." alt="" coords="5,83,219,112"/></map>
+</div>
+</div>
+<p><a href="tictactoe_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_coordonnees.html">Coordonnees</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Une structure qui contient deux entiers qui nous serviront de coordonnées dans une matrice.  <a href="struct_coordonnees.html#details">Plus de détails...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tictactoe_8h.html#ad9bf0a0f46897544baf9089a0656fb0e">ROND</a>&#160;&#160;&#160;1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tictactoe_8h.html#a74b6b271da9936d92ea06ee78cd776ae">CROIX</a>&#160;&#160;&#160;2</td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="affadda43e181bda971da170595d32ec3"></a><!-- doxytag: member="tictactoe.h::init_Mat" ref="affadda43e181bda971da170595d32ec3" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tictactoe_8h.html#affadda43e181bda971da170595d32ec3">init_Mat</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui parcoure la matrice Mat(qui est une variable globale de taille 3x3) et qui initialise toutes ses cases à -1. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tictactoe_8h.html#aa9e801467f1140056e432b45d7f8c136">verif_Case</a> (SDL_Rect *pos)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet de se repérer dans l'écran principal du jeu, elle retourne <em>-1</em> si on survole pas la matrice, sinon elle retourne le <em>n°</em> de la case.  <a href="#aa9e801467f1140056e432b45d7f8c136"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tictactoe_8h.html#a69f23557f56aa056d99996779db2758b">update_Mat</a> (int position, int coup)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui sert à affecter la valeur d'un coup à la case correspondante de la matrice Mat.  <a href="#a69f23557f56aa056d99996779db2758b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tictactoe_8h.html#a3d11bca6c9b0f0cc5bd6dcee4125c593">verif_Gagnant</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction de vérification de l'existence d'un gagnant.  <a href="#a3d11bca6c9b0f0cc5bd6dcee4125c593"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tictactoe_8h.html#a6de47c155e93a8b3cb7b4a91f4ec74e9">Jouer_Tictactoe</a> (SDL_Surface *ecran, char *j1, char *j2)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction principale du jeu, elle sert à alterner les tours entre 2 joueurs et affecter les coups joués à la matrice après vérification de leur validité.  <a href="#a6de47c155e93a8b3cb7b4a91f4ec74e9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tictactoe_8h.html#a9804e1a960a9690b119f0ccc5a8f970a">Accueil_TicTacToe</a> (SDL_Surface *ecran, char *j1, char *j2)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui sert d'un accueil du jeu, histoire de ne pas lancer une partie "vulgairement", le joueur doit appuyer sur "Entrée" pour jouer.  <a href="#a9804e1a960a9690b119f0ccc5a8f970a"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tictactoe_8h.html#a46d1e430111a3d8cb29be0f4b539500e">Matrice</a> [3][3]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_coordonnees.html">Coordonnees</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tictactoe_8h.html#a87593fc18cdbb1037513cd1b3e71f904">Coor_Mat</a> [9] = {{175,180},{271,182},{361,177},{181,272},{271,272},{361,272},{181,362},{271,362},{361,362}}</td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p>Header du Jeu de TicTacToé en SDL. </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Nouira Chafik 11291558 </dd></dl>
+<dl class="version"><dt><b>Version:</b></dt><dd>0.1 </dd></dl>
+<dl class="date"><dt><b>Date:</b></dt><dd>11 mars 2013</dd></dl>
+<p>Un mini-jeu pour le projet "Jeu de l'Oie Revisité" - Réalisation de programmes - Semestre 2 2012/2013 </p>
+</div><hr/><h2>Documentation des macros</h2>
+<a class="anchor" id="a74b6b271da9936d92ea06ee78cd776ae"></a><!-- doxytag: member="tictactoe.h::CROIX" ref="a74b6b271da9936d92ea06ee78cd776ae" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="tictactoe_8h.html#a74b6b271da9936d92ea06ee78cd776ae">CROIX</a>&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Valeur jouée par le joueur 2 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad9bf0a0f46897544baf9089a0656fb0e"></a><!-- doxytag: member="tictactoe.h::ROND" ref="ad9bf0a0f46897544baf9089a0656fb0e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="tictactoe_8h.html#ad9bf0a0f46897544baf9089a0656fb0e">ROND</a>&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Valeur jouée par le joueur 1. </p>
+
+</div>
+</div>
+<hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="a9804e1a960a9690b119f0ccc5a8f970a"></a><!-- doxytag: member="tictactoe.h::Accueil_TicTacToe" ref="a9804e1a960a9690b119f0ccc5a8f970a" args="(SDL_Surface *ecran, char *j1, char *j2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="tictactoe_8h.html#a9804e1a960a9690b119f0ccc5a8f970a">Accueil_TicTacToe</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>j1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>j2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui sert d'un accueil du jeu, histoire de ne pas lancer une partie "vulgairement", le joueur doit appuyer sur "Entrée" pour jouer. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>l'écran principal sur lequel on va blitter les différentes images correpondantes à l'évolution d'une partie. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*j1</td><td>nom du premier joueur. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*j2</td><td>nom du deuxième joueur. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Elle fait appel à la fonction Jouer_Tictactoe une fois l'utilisateur appuie sur "Entrée", elle récupère le n° du gagnant à la fin et le retourne. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6de47c155e93a8b3cb7b4a91f4ec74e9"></a><!-- doxytag: member="tictactoe.h::Jouer_Tictactoe" ref="a6de47c155e93a8b3cb7b4a91f4ec74e9" args="(SDL_Surface *ecran, char *j1, char *j2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="tictactoe_8h.html#a6de47c155e93a8b3cb7b4a91f4ec74e9">Jouer_Tictactoe</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>j1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>j2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction principale du jeu, elle sert à alterner les tours entre 2 joueurs et affecter les coups joués à la matrice après vérification de leur validité. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>l'écran principal sur lequel on va blitter les différentes images correpondantes à l'évolution d'une partie. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*j1</td><td>nom du premier joueur. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*j2</td><td>nom du deuxième joueur. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Elle fait appel à la fonction verif_Gagnant et retourne sa valeur, ROND si le joueur 1 gagne, 2 si c'est le 2ème et 0 pour un match nul, dans le dernier cas, une nouvelle partie est lancée, en gros faut qu'il y ait un gagnant pour pouvoir sortir "propremenet" de la fonction. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a69f23557f56aa056d99996779db2758b"></a><!-- doxytag: member="tictactoe.h::update_Mat" ref="a69f23557f56aa056d99996779db2758b" args="(int position, int coup)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="tictactoe_8h.html#a69f23557f56aa056d99996779db2758b">update_Mat</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coup</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui sert à affecter la valeur d'un coup à la case correspondante de la matrice Mat. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>c'est la case dans la quelle on veut affecter le coup. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">coup</td><td>c'est la valeur du coup(ROND ou CROIX). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Elle retourne 1 si le coup est bel et bien affecté, 0 sinon. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa9e801467f1140056e432b45d7f8c136"></a><!-- doxytag: member="tictactoe.h::verif_Case" ref="aa9e801467f1140056e432b45d7f8c136" args="(SDL_Rect *pos)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="tictactoe_8h.html#aa9e801467f1140056e432b45d7f8c136">verif_Case</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Rect *&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui permet de se repérer dans l'écran principal du jeu, elle retourne <em>-1</em> si on survole pas la matrice, sinon elle retourne le <em>n°</em> de la case. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>c'est la position du pointeur(de la souris) sur l'écran. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Elle retourne l'indice de la case sur laquelle on a cliqué sur la matrice, si on clique en dehors de la matrice la fonction retourne -1. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3d11bca6c9b0f0cc5bd6dcee4125c593"></a><!-- doxytag: member="tictactoe.h::verif_Gagnant" ref="a3d11bca6c9b0f0cc5bd6dcee4125c593" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="tictactoe_8h.html#a3d11bca6c9b0f0cc5bd6dcee4125c593">verif_Gagnant</a> </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction de vérification de l'existence d'un gagnant. </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Elle retourne ROND si c'est le joueur 1 qui a gagné, CROIX si c'est le joueur 2 et 0 pour un match nul. </dd></dl>
+
+</div>
+</div>
+<hr/><h2>Documentation des variables</h2>
+<a class="anchor" id="a87593fc18cdbb1037513cd1b3e71f904"></a><!-- doxytag: member="tictactoe.h::Coor_Mat" ref="a87593fc18cdbb1037513cd1b3e71f904" args="[9]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_coordonnees.html">Coordonnees</a> <a class="el" href="tictactoe_8h.html#a87593fc18cdbb1037513cd1b3e71f904">Coor_Mat</a>[9] = {{175,180},{271,182},{361,177},{181,272},{271,272},{361,272},{181,362},{271,362},{361,362}}</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Tableau de coordonnées de blittage </p>
+
+</div>
+</div>
+<a class="anchor" id="a46d1e430111a3d8cb29be0f4b539500e"></a><!-- doxytag: member="tictactoe.h::Matrice" ref="a46d1e430111a3d8cb29be0f4b539500e" args="[3][3]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="tictactoe_8h.html#a46d1e430111a3d8cb29be0f4b539500e">Matrice</a>[3][3]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Matrice Globale pour le TicTacToe </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="tictactoe_8h.html">tictactoe.h</a>      </li>
+
+    <li class="footer">Généré le Lundi Avril 1 2013 18:36:53 pour Projet - Jeu de l'Oie Revisité par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

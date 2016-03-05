@@ -1,0 +1,1124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Projet - Jeu de l&#39;Oie Revisité | Documentation: Référence du fichier headers/jouer.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="de_3d.jpg"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Projet - Jeu de l&#39;Oie Revisité | Documentation
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Réalisation de Programmes - Semestre 2 2012/2013</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('jouer_8h.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier headers/jouer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Header du fichier <a class="el" href="jouer_8c.html" title="Fichier principal du jeu.">jouer.c</a>.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h__dep__incl.png" border="0" usemap="#headers_2jouer_8hdep" alt=""/></div>
+<map name="headers_2jouer_8hdep" id="headers_2jouer_8hdep">
+<area shape="rect" id="node3" href="bibliotheque_8h.html" title="Bibliothèque contenant les déclarations des structure et des variables globales ainsi que les bibliot..." alt="" coords="127,83,279,112"/><area shape="rect" id="node5" href="editer_8c.html" title="Fichier principal de la partie édition." alt="" coords="5,160,91,189"/><area shape="rect" id="node7" href="main_8c.html" title="Le main du projet." alt="" coords="161,237,244,267"/><area shape="rect" id="node9" href="info_8c.html" title="Fichier de la partie infos." alt="" coords="165,160,240,189"/><area shape="rect" id="node12" href="jouer_8c.html" title="Fichier principal du jeu." alt="" coords="264,160,347,189"/><area shape="rect" id="node16" href="menu_8c.html" title="Fichier principal des menus." alt="" coords="371,160,456,189"/></map>
+</div>
+</div>
+<p><a href="jouer_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_joueur.html">Joueur</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Une structure contenant 4 champs qui correspondent aux données d'un joueur (Position, Nom, Valeur de Prison, Score)  <a href="struct_joueur.html#details">Plus de détails...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jouer_8h.html#ae995f53d13bc78a0363ca094cc32850e">nom_Fichier</a> (SDL_Surface *ecran, char nom[])</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet d'écrire une chaine de caractère (Nom d'un fichier) tout en affichant ce que l'utilisateur tape sur l'écran.  <a href="#ae995f53d13bc78a0363ca094cc32850e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jouer_8h.html#a663a3c5f2d846d00c6a9ab944be9db7e">sauvegarder_Partie</a> (SDL_Surface *ecran, char nom_fichier[], <a class="el" href="struct_joueur.html">Joueur</a> joueurs[], int num_carte, int nb_joueurs)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet de sauvegarder une partie dans un fichier txt. (Elle sauvegarde 5 parties au maximum)  <a href="#a663a3c5f2d846d00c6a9ab944be9db7e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jouer_8h.html#acf744daeca3f1560be8ef5c558d567c7">menu_Exit</a> (SDL_Surface *ecran, <a class="el" href="struct_joueur.html">Joueur</a> joueurs[], int num_carte, int nb_joueurs)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui sert de Menu de suspension/arrêt d'une partie.  <a href="#acf744daeca3f1560be8ef5c558d567c7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jouer_8h.html#a496f18380d84146a65b104d416ca758c">menu_Chargement</a> (SDL_Surface *ecran, int *num_cartechoisie, <a class="el" href="struct_joueur.html">Joueur</a> joueur[], int *nbre_joueur)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui sert de Menu de Chargement d'une partie sauvegardée.  <a href="#a496f18380d84146a65b104d416ca758c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jouer_8h.html#a4ef71a0cce77c87e5876618b6cbf20b3">choix_Nb_Joueur</a> (SDL_Surface *ecran, TTF_Font *font1, TTF_Font *font2, int bool)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet de choisir le nombre de joueurs pour une partie.  <a href="#a4ef71a0cce77c87e5876618b6cbf20b3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jouer_8h.html#a90d1bbda4cd41418197df3e1155c1a58">saisie_Nom</a> (SDL_Surface *ecran, int num_joueur, char *nom, TTF_Font *font1)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet de saisir un nom/pseudo pour chaque joueur.  <a href="#a90d1bbda4cd41418197df3e1155c1a58"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jouer_8h.html#a202b972beeaac45f943fba75c85224c6">aff_j</a> (SDL_Rect pos, SDL_Surface *ecran, SDL_Surface *pion, int i)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui affiche un pion donnée sur la carte du jeu.  <a href="#a202b972beeaac45f943fba75c85224c6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jouer_8h.html#afbd3037fd74559e67d22a90710e3f878">visualisation</a> (SDL_Surface *ecran, SDL_Surface *carre, int *nb)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet de visualiser les cartes disponibles et d'en choisir une pour commencer une partie.  <a href="#afbd3037fd74559e67d22a90710e3f878"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jouer_8h.html#adcc66afe1a52fb857b50aca4a3a5ff9b">affNombreCase</a> (SDL_Surface *ecran, SDL_Rect case_dans_ecran[64])</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction de numérotation des cases une fois la partie est lancé.  <a href="#adcc66afe1a52fb857b50aca4a3a5ff9b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jouer_8h.html#abd95e1c857b78a7233de9013f35ee26c">lancement_De</a> (SDL_Surface *ecran, char j[])</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction de lancement du dé.  <a href="#abd95e1c857b78a7233de9013f35ee26c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jouer_8h.html#a35f469bf3c9c7bfe208ea4b6da29c78e">gestion_Bonus</a> (SDL_Surface *ecran, TTF_Font *font1, char *nom_joueur)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction de gestion des Bonus.  <a href="#a35f469bf3c9c7bfe208ea4b6da29c78e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jouer_8h.html#aecb19d1003b9d32325550893e05d3f05">gestion_Malus</a> (SDL_Surface *ecran, TTF_Font *font1, char *nom_joueur)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction de gestion des Malus.  <a href="#aecb19d1003b9d32325550893e05d3f05"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jouer_8h.html#a4ff3c34abcd50ae218aceaba8ade58f7">gestion_Prison</a> (SDL_Surface *ecran, TTF_Font *font1, char *nom_joueur, int nb_joueur)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction de gestion de la Prison.  <a href="#a4ff3c34abcd50ae218aceaba8ade58f7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jouer_8h.html#a1acd4f2bc5dc52014c764c1f2d102f89">gestion_Mini_Jeux</a> (SDL_Surface *ecran, TTF_Font *font1, <a class="el" href="struct_joueur.html">Joueur</a> *tabjoueur, int nb_joueur)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction de gestion des Mini-jeux (5 mini-jeux avec chacun son propre fichier .c | Les .c des mini-jeux sont inclus dans <a class="el" href="jouer_8c.html" title="Fichier principal du jeu.">jouer.c</a>).  <a href="#a1acd4f2bc5dc52014c764c1f2d102f89"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jouer_8h.html#af835325dda3d966127634965cd4e2155">jouer</a> (SDL_Surface *ecran, TTF_Font *font1, TTF_Font *font2, int charger)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction principale du jeu.  <a href="#af835325dda3d966127634965cd4e2155"></a><br/></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p>Header du fichier <a class="el" href="jouer_8c.html" title="Fichier principal du jeu.">jouer.c</a>. </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Matsima Claude, Nouira Chafik, Fofana Ibrahim, Abak-kali Nizar </dd></dl>
+<dl class="date"><dt><b>Date:</b></dt><dd>11 mars 2013</dd></dl>
+<p>Header du fichier <a class="el" href="jouer_8c.html" title="Fichier principal du jeu.">jouer.c</a> pour le projet "Jeu de l'Oie Revisité" - Réalisation de programmes - Semestre 2 2012/2013 </p>
+
+<p>Définition dans le fichier <a class="el" href="jouer_8h_source.html">jouer.h</a>.</p>
+</div><hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="a202b972beeaac45f943fba75c85224c6"></a><!-- doxytag: member="jouer.h::aff_j" ref="a202b972beeaac45f943fba75c85224c6" args="(SDL_Rect pos, SDL_Surface *ecran, SDL_Surface *pion, int i)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="jouer_8c.html#a202b972beeaac45f943fba75c85224c6">aff_j</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>pion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui affiche un pion donnée sur la carte du jeu. </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Fofana Ibrahim </dd></dl>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>Position du pion sur la carte. (Coordonnées de la case sur laquelle on va blitter le pion) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pion</td><td>Le pion qu'on va placer sur l'écran. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>Numéro du joueur correspondant au pion. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="jouer_8c_source.html#l00585">585</a> du fichier <a class="el" href="jouer_8c_source.html">jouer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h_a202b972beeaac45f943fba75c85224c6_icgraph.png" border="0" usemap="#jouer_8h_a202b972beeaac45f943fba75c85224c6_icgraph" alt=""/></div>
+<map name="jouer_8h_a202b972beeaac45f943fba75c85224c6_icgraph" id="jouer_8h_a202b972beeaac45f943fba75c85224c6_icgraph">
+<area shape="rect" id="node3" href="jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="101,5,152,35"/><area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="355,5,405,35"/><area shape="rect" id="node7" href="menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="200,31,307,60"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adcc66afe1a52fb857b50aca4a3a5ff9b"></a><!-- doxytag: member="jouer.h::affNombreCase" ref="adcc66afe1a52fb857b50aca4a3a5ff9b" args="(SDL_Surface *ecran, SDL_Rect case_dans_ecran[64])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="jouer_8c.html#adcc66afe1a52fb857b50aca4a3a5ff9b">affNombreCase</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>case_dans_ecran</em>[64]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction de numérotation des cases une fois la partie est lancé. </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Fofana Ibrahim </dd></dl>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">case_dans_ecran[64]</td><td>Tableau des positions des 64 cases sur l'écran principal. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>En attendant l'explication d'Ibrahim. </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="jouer_8c_source.html#l00726">726</a> du fichier <a class="el" href="jouer_8c_source.html">jouer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h_adcc66afe1a52fb857b50aca4a3a5ff9b_icgraph.png" border="0" usemap="#jouer_8h_adcc66afe1a52fb857b50aca4a3a5ff9b_icgraph" alt=""/></div>
+<map name="jouer_8h_adcc66afe1a52fb857b50aca4a3a5ff9b_icgraph" id="jouer_8h_adcc66afe1a52fb857b50aca4a3a5ff9b_icgraph">
+<area shape="rect" id="node3" href="jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="168,5,219,35"/><area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="421,5,472,35"/><area shape="rect" id="node7" href="menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="267,31,373,60"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4ef71a0cce77c87e5876618b6cbf20b3"></a><!-- doxytag: member="jouer.h::choix_Nb_Joueur" ref="a4ef71a0cce77c87e5876618b6cbf20b3" args="(SDL_Surface *ecran, TTF_Font *font1, TTF_Font *font2, int bool)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="jouer_8c.html#a4ef71a0cce77c87e5876618b6cbf20b3">choix_Nb_Joueur</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TTF_Font *&#160;</td>
+          <td class="paramname"><em>font1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TTF_Font *&#160;</td>
+          <td class="paramname"><em>font2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bool</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui permet de choisir le nombre de joueurs pour une partie. </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Matsima Claude </dd></dl>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">font1</td><td>Un pointeur vers la première police (Font) utilisée. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">font2</td><td>Un pointeur vers la deuxième police (Font) utilisée. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bool</td><td>Numéro du choix sélectionné (Qui n'est pas encore validé bien sûr) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="jouer_8c_source.html#l00415">415</a> du fichier <a class="el" href="jouer_8c_source.html">jouer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h_a4ef71a0cce77c87e5876618b6cbf20b3_icgraph.png" border="0" usemap="#jouer_8h_a4ef71a0cce77c87e5876618b6cbf20b3_icgraph" alt=""/></div>
+<map name="jouer_8h_a4ef71a0cce77c87e5876618b6cbf20b3_icgraph" id="jouer_8h_a4ef71a0cce77c87e5876618b6cbf20b3_icgraph">
+<area shape="rect" id="node3" href="jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="176,5,227,35"/><area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="429,5,480,35"/><area shape="rect" id="node7" href="menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="275,31,381,60"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a35f469bf3c9c7bfe208ea4b6da29c78e"></a><!-- doxytag: member="jouer.h::gestion_Bonus" ref="a35f469bf3c9c7bfe208ea4b6da29c78e" args="(SDL_Surface *ecran, TTF_Font *font1, char *nom_joueur)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="jouer_8c.html#a35f469bf3c9c7bfe208ea4b6da29c78e">gestion_Bonus</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TTF_Font *&#160;</td>
+          <td class="paramname"><em>font1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nom_joueur</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction de gestion des Bonus. </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Abak-kali Nizar </dd></dl>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">font1</td><td>Un pointeur vers la police (Font) utilisée pour cette fonction. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nom_joueur</td><td>Nom du joueur actuel. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Elle retourne la valeur du bonus obtenue. (Entre 1 et 3) </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="jouer_8c_source.html#l00843">843</a> du fichier <a class="el" href="jouer_8c_source.html">jouer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h_a35f469bf3c9c7bfe208ea4b6da29c78e_icgraph.png" border="0" usemap="#jouer_8h_a35f469bf3c9c7bfe208ea4b6da29c78e_icgraph" alt=""/></div>
+<map name="jouer_8h_a35f469bf3c9c7bfe208ea4b6da29c78e_icgraph" id="jouer_8h_a35f469bf3c9c7bfe208ea4b6da29c78e_icgraph">
+<area shape="rect" id="node3" href="jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="163,5,213,35"/><area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="416,5,467,35"/><area shape="rect" id="node7" href="menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="261,31,368,60"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aecb19d1003b9d32325550893e05d3f05"></a><!-- doxytag: member="jouer.h::gestion_Malus" ref="aecb19d1003b9d32325550893e05d3f05" args="(SDL_Surface *ecran, TTF_Font *font1, char *nom_joueur)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="jouer_8c.html#a30fbf4fa2ae76b2cc53e1fec93743901">gestion_Malus</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TTF_Font *&#160;</td>
+          <td class="paramname"><em>font1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nom_joueur</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction de gestion des Malus. </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Abak-kali Nizar </dd></dl>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">font1</td><td>Un pointeur vers la police (Font) utilisée pour cette fonction. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nom_joueur</td><td>Nom du joueur actuel. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Elle retourne la valeur du malus obtenue. (Entre -1 et -3) </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="jouer_8c_source.html#l00879">879</a> du fichier <a class="el" href="jouer_8c_source.html">jouer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h_aecb19d1003b9d32325550893e05d3f05_icgraph.png" border="0" usemap="#jouer_8h_aecb19d1003b9d32325550893e05d3f05_icgraph" alt=""/></div>
+<map name="jouer_8h_aecb19d1003b9d32325550893e05d3f05_icgraph" id="jouer_8h_aecb19d1003b9d32325550893e05d3f05_icgraph">
+<area shape="rect" id="node3" href="jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="160,5,211,35"/><area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="413,5,464,35"/><area shape="rect" id="node7" href="menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="259,31,365,60"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1acd4f2bc5dc52014c764c1f2d102f89"></a><!-- doxytag: member="jouer.h::gestion_Mini_Jeux" ref="a1acd4f2bc5dc52014c764c1f2d102f89" args="(SDL_Surface *ecran, TTF_Font *font1, Joueur *tabjoueur, int nb_joueur)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="jouer_8c.html#a1acd4f2bc5dc52014c764c1f2d102f89">gestion_Mini_Jeux</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TTF_Font *&#160;</td>
+          <td class="paramname"><em>font1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_joueur.html">Joueur</a> *&#160;</td>
+          <td class="paramname"><em>tabjoueur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_joueur</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction de gestion des Mini-jeux (5 mini-jeux avec chacun son propre fichier .c | Les .c des mini-jeux sont inclus dans <a class="el" href="jouer_8c.html" title="Fichier principal du jeu.">jouer.c</a>). </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Abak-kali Nizar </dd></dl>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">font1</td><td>Un pointeur vers la police (Font) utilisée pour cette fonction. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tabjoueur</td><td>Tableau des joueurs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nb_joueur</td><td>Le nombre des joueurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Cette fonction ne retourne rien, elle lance un mini-jeu au hasard dans lequel 2 joueurs choisis aussi au hasard vont s'affronter (Sauf s'il n'y a que 2 joueurs). à la fin de la partie du mini-jeux les résultats sont directement affectés dans le tableau des joueurs, le gagnant avance de 3 cases, et le perdant recule de 3 cases. </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="jouer_8c_source.html#l00958">958</a> du fichier <a class="el" href="jouer_8c_source.html">jouer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h_a1acd4f2bc5dc52014c764c1f2d102f89_cgraph.png" border="0" usemap="#jouer_8h_a1acd4f2bc5dc52014c764c1f2d102f89_cgraph" alt=""/></div>
+<map name="jouer_8h_a1acd4f2bc5dc52014c764c1f2d102f89_cgraph" id="jouer_8h_a1acd4f2bc5dc52014c764c1f2d102f89_cgraph">
+<area shape="rect" id="node3" href="pendu_8h.html#a7e71f9a13f0c491ad47ddfea8d40f702" title="Fonction qui sert d&#39;un accueil du jeu, histoire de ne pas lancer une partie &quot;vulgairement&quot;, le joueur doit appuyer sur &quot;Entrée&quot; pour jouer." alt="" coords="209,192,319,221"/><area shape="rect" id="node15" href="nb__mysterieux_8h.html#a15e2b9362b2152dd1b662fa99ef1ec26" title="Fonction qui sert d&#39;un accueil du jeu, histoire de ne pas lancer une partie &quot;vulgairement&quot;, le joueur doit appuyer sur &quot;Entrée&quot; pour jouer." alt="" coords="184,325,344,355"/><area shape="rect" id="node19" href="puissance__4_8h.html#a5e7ac1d16c8983d6ef1c007fee62dd99" title="Fonction qui sert d&#39;un accueil du jeu, histoire de ne pas lancer une partie &quot;vulgairement&quot;, le joueur doit appuyer sur &quot;Entrée&quot; pour jouer." alt="" coords="191,379,337,408"/><area shape="rect" id="node39" href="tictactoe_8h.html#a9804e1a960a9690b119f0ccc5a8f970a" title="Fonction qui sert d&#39;un accueil du jeu, histoire de ne pas lancer une partie &quot;vulgairement&quot;, le joueur doit appuyer sur &quot;Entrée&quot; pour jouer." alt="" coords="197,432,331,461"/><area shape="rect" id="node51" href="pong_8h.html#acd74535101473ab00a204253bff80b13" title="Fonction principale du jeu, elle sert a lancer un duel de pong entre 2 joueurs et gerer toutes les ta..." alt="" coords="221,485,307,515"/><area shape="rect" id="node5" href="pendu_8h.html#a00d4a85b3c77b56e8736bb3ede0dfde3" title="Fonction principale du jeu, elle sert à alterner les tours entre 2 joueurs (Un mot chacun)..." alt="" coords="420,112,513,141"/><area shape="rect" id="node7" href="pendu_8h.html#a3ef541c3dab43fc1f9c0cd67926d0529" title="Fonction qui permet de charger un mot au hasard à partir d&#39;un fichier texte qui contient n mots..." alt="" coords="593,5,711,35"/><area shape="rect" id="node9" href="pendu_8h.html#adee70ac4d74393c4cd78243f3f548be3" title="Fonction qui permet de calculer la longueur n du mot caché (le mot chargé à partir du fichier) et rem..." alt="" coords="616,59,688,88"/><area shape="rect" id="node11" href="pendu_8h.html#a9455f4961db462c6665b7402d064fbc3" title="Fonction qui calcule le nombre d&#39;occurences d&#39;un caractère dans une chaine." alt="" coords="624,112,680,141"/><area shape="rect" id="node13" href="pendu_8h.html#a3c0d37a2835268db4e0a419f2bfab5d8" title="Fonction qui prend l&#39;écran et le nombre de coups ratés en paramètre et blitte l&#39;image du pendu corres..." alt="" coords="609,165,695,195"/><area shape="rect" id="node17" href="nb__mysterieux_8h.html#a3e29e99c1f6ad2b1f4c929ec3a9ba97c" title="Fonction principale du jeu, elle sert à alterner les tours entre 2 joueurs (Chacun un nombre mystérie..." alt="" coords="392,325,541,355"/><area shape="rect" id="node21" href="puissance__4_8h.html#a2b37964b38fc2ab267cbcc38f6f713bf" title="Fonction principale du jeu, elle sert à alterner les tours entre 2 joueurs et affecter les coups joué..." alt="" coords="399,379,535,408"/><area shape="rect" id="node23" href="puissance__4_8h.html#a46122e2ab5deef87a097ea7e6d4e8739" title="Fonction d&#39;initialisation de la matrice Mat[NB_LIGNES][NB_COLONNES] et du tableau Colonne[NB_COLONNES..." alt="" coords="591,219,713,248"/><area shape="rect" id="node25" href="puissance__4_8h.html#ac0841a370703f620f50eaf1908d14c31" title="Fonction qui prend la position du pointeur sur l&#39;écran et le transforme en indice de colonne..." alt="" coords="601,272,703,301"/><area shape="rect" id="node27" href="puissance__4_8h.html#a8689c73ed34517e6a13695b03a43da98" title="Fonction qui détermine si un coup est jouable ou pas, elle effectuera la vérification dans le tableau..." alt="" coords="619,325,685,355"/><area shape="rect" id="node29" href="puissance__4_8h.html#aea81a1577f43bb9b4b9ef2031ed5b9a2" title="Fonction qui affecte un coup à la matrice du jeu." alt="" coords="608,379,696,408"/><area shape="rect" id="node31" href="puissance__4_8h.html#a2520146e81017d4acdc34ea0dc8a21f2" title="Fonction qui met à jour l&#39;affichage en parcourant la matrice Mat[NB_LIGNES][NB_COLONNES] et en faisan..." alt="" coords="597,432,707,461"/><area shape="rect" id="node33" href="puissance__4_8h.html#a873c52d089be44bca9bda2f81704217c" title="Fonction qui parcourt la matrice et fait appel à la fonction Puis_4 pour chaque case afin de vérifier..." alt="" coords="591,485,713,515"/><area shape="rect" id="node37" href="puissance__4_8h.html#ae75590d38f924ec5c7528ce5a44f9173" title="Fonction qui vérifie si la matrice du jeu est remplie ou pas, elle effectuera la vérification dans le..." alt="" coords="617,539,687,568"/><area shape="rect" id="node35" href="puissance__4_8h.html#af0855e710272e82890db903f4f8e235f" title="Fonction qui vérifie l&#39;existence de 4 jetons de même couleur et alignés à partir de la case qui a a e..." alt="" coords="764,485,825,515"/><area shape="rect" id="node41" href="tictactoe_8h.html#a6de47c155e93a8b3cb7b4a91f4ec74e9" title="Fonction principale du jeu, elle sert à alterner les tours entre 2 joueurs et affecter les coups joué..." alt="" coords="409,645,524,675"/><area shape="rect" id="node43" href="tictactoe_8h.html#affadda43e181bda971da170595d32ec3" title="Fonction qui parcourt la matrice Mat(qui est une variable globale de taille 3x3) et qui initialise to..." alt="" coords="619,592,685,621"/><area shape="rect" id="node45" href="tictactoe_8h.html#aa9e801467f1140056e432b45d7f8c136" title="Fonction qui permet de se repérer dans l&#39;écran principal du jeu, elle retourne &#45;1 si on survole pas l..." alt="" coords="609,645,695,675"/><area shape="rect" id="node47" href="tictactoe_8h.html#a69f23557f56aa056d99996779db2758b" title="Fonction qui sert à affecter la valeur d&#39;un coup à la case correspondante de la matrice Mat..." alt="" coords="607,699,697,728"/><area shape="rect" id="node49" href="tictactoe_8h.html#a3d11bca6c9b0f0cc5bd6dcee4125c593" title="Fonction de vérification de l&#39;existence d&#39;un gagnant." alt="" coords="601,752,703,781"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h_a1acd4f2bc5dc52014c764c1f2d102f89_icgraph.png" border="0" usemap="#jouer_8h_a1acd4f2bc5dc52014c764c1f2d102f89_icgraph" alt=""/></div>
+<map name="jouer_8h_a1acd4f2bc5dc52014c764c1f2d102f89_icgraph" id="jouer_8h_a1acd4f2bc5dc52014c764c1f2d102f89_icgraph">
+<area shape="rect" id="node3" href="jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="184,5,235,35"/><area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="437,5,488,35"/><area shape="rect" id="node7" href="menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="283,31,389,60"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4ff3c34abcd50ae218aceaba8ade58f7"></a><!-- doxytag: member="jouer.h::gestion_Prison" ref="a4ff3c34abcd50ae218aceaba8ade58f7" args="(SDL_Surface *ecran, TTF_Font *font1, char *nom_joueur, int nb_joueur)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="jouer_8c.html#a4ff3c34abcd50ae218aceaba8ade58f7">gestion_Prison</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TTF_Font *&#160;</td>
+          <td class="paramname"><em>font1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nom_joueur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_joueur</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction de gestion de la Prison. </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Abak-kali Nizar </dd></dl>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">font1</td><td>Un pointeur vers la police (Font) utilisée pour cette fonction. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nom_joueur</td><td>Nom du joueur actuel. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nb_joueur</td><td>Le nombre des joueurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Elle retourne la valeur de prison obtenue. (Entre 2 et 6) </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="jouer_8c_source.html#l00921">921</a> du fichier <a class="el" href="jouer_8c_source.html">jouer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h_a4ff3c34abcd50ae218aceaba8ade58f7_icgraph.png" border="0" usemap="#jouer_8h_a4ff3c34abcd50ae218aceaba8ade58f7_icgraph" alt=""/></div>
+<map name="jouer_8h_a4ff3c34abcd50ae218aceaba8ade58f7_icgraph" id="jouer_8h_a4ff3c34abcd50ae218aceaba8ade58f7_icgraph">
+<area shape="rect" id="node3" href="jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="163,5,213,35"/><area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="416,5,467,35"/><area shape="rect" id="node7" href="menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="261,31,368,60"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af835325dda3d966127634965cd4e2155"></a><!-- doxytag: member="jouer.h::jouer" ref="af835325dda3d966127634965cd4e2155" args="(SDL_Surface *ecran, TTF_Font *font1, TTF_Font *font2, int charger)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="jouer_8c.html#af835325dda3d966127634965cd4e2155">jouer</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TTF_Font *&#160;</td>
+          <td class="paramname"><em>font1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TTF_Font *&#160;</td>
+          <td class="paramname"><em>font2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction principale du jeu. </p>
+<p>Cette fonction fait appel aux différentes fonctions du fichier <a class="el" href="jouer_8c.html" title="Fichier principal du jeu.">jouer.c</a> pour exécuter les différentes tâches nécessaires pour le bon déroulement d'une partie. </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Matsima Claude, Nouira Chafik, Abak-kali Nizar, Fofana Ibrahim</dd></dl>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">font1</td><td>Un pointeur vers la premièrs police (Font) utilisée pour cette fonction. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">font1</td><td>Un pointeur vers la deuxième police (Font) utilisée pour cette fonction. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">charger</td><td>Une valeur entière pour indiquer si l'utilisateur à charger une partie déjà existante (Valeur 1) ou s'il a lancé une nouvelle partie (Valeur 0). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Cette fonction ne retourne rien, pour en sortir faut que la partie soit terminée ou suspendue. </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="jouer_8c_source.html#l01205">1205</a> du fichier <a class="el" href="jouer_8c_source.html">jouer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h_af835325dda3d966127634965cd4e2155_cgraph.png" border="0" usemap="#jouer_8h_af835325dda3d966127634965cd4e2155_cgraph" alt=""/></div>
+<map name="jouer_8h_af835325dda3d966127634965cd4e2155_cgraph" id="jouer_8h_af835325dda3d966127634965cd4e2155_cgraph">
+<area shape="rect" id="node3" href="jouer_8h.html#a496f18380d84146a65b104d416ca758c" title="Fonction qui sert de Menu de Chargement d&#39;une partie sauvegardée." alt="" coords="143,5,273,35"/><area shape="rect" id="node5" href="jouer_8h.html#a4ef71a0cce77c87e5876618b6cbf20b3" title="Fonction qui permet de choisir le nombre de joueurs pour une partie." alt="" coords="147,59,269,88"/><area shape="rect" id="node7" href="jouer_8h.html#a90d1bbda4cd41418197df3e1155c1a58" title="Fonction qui permet de saisir un nom/pseudo pour chaque joueur." alt="" coords="163,112,253,141"/><area shape="rect" id="node9" href="jouer_8h.html#afbd3037fd74559e67d22a90710e3f878" title="Fonction qui permet de visualiser les cartes disponibles et d&#39;en choisir une pour commencer une parti..." alt="" coords="161,216,255,245"/><area shape="rect" id="node13" href="editer_8h.html#a12e3f2b5d895508b850491b5e3b9b1aa" title="Fonction qui charge une carte créée à partir d&#39;un fichier." alt="" coords="360,163,544,192"/><area shape="rect" id="node15" href="editer_8h.html#a898f5d68680648048410843d2fe9d12b" title="Fonction qui sert à afficher un parcours." alt="" coords="407,269,497,299"/><area shape="rect" id="node18" href="editer_8h.html#a02b0acfa3cd346f08cd80cd219412e57" title="Fonction qui transforme une positon d&#39;un carré dans une image en valeur qui sera utilisée pour la gén..." alt="" coords="105,320,311,349"/><area shape="rect" id="node21" href="jouer_8h.html#adcc66afe1a52fb857b50aca4a3a5ff9b" title="Fonction de numérotation des cases une fois la partie est lancé." alt="" coords="151,373,265,403"/><area shape="rect" id="node23" href="jouer_8h.html#a202b972beeaac45f943fba75c85224c6" title="Fonction qui affiche un pion donnée sur la carte du jeu." alt="" coords="185,427,231,456"/><area shape="rect" id="node25" href="jouer_8h.html#acf744daeca3f1560be8ef5c558d567c7" title="Fonction qui sert de Menu de suspension/arrêt d&#39;une partie." alt="" coords="167,480,249,509"/><area shape="rect" id="node31" href="jouer_8h.html#a1acd4f2bc5dc52014c764c1f2d102f89" title="Fonction de gestion des Mini&#45;jeux (5 mini&#45;jeux avec chacun son propre fichier .c | Les ..." alt="" coords="143,533,273,563"/><area shape="rect" id="node83" href="jouer_8h.html#abd95e1c857b78a7233de9013f35ee26c" title="Fonction de lancement du dé." alt="" coords="155,587,261,616"/><area shape="rect" id="node85" href="jouer_8h.html#a35f469bf3c9c7bfe208ea4b6da29c78e" title="Fonction de gestion des Bonus." alt="" coords="155,640,261,669"/><area shape="rect" id="node87" href="jouer_8h.html#aecb19d1003b9d32325550893e05d3f05" title="Fonction de gestion des Malus." alt="" coords="155,693,261,723"/><area shape="rect" id="node89" href="jouer_8h.html#a4ff3c34abcd50ae218aceaba8ade58f7" title="Fonction de gestion de la Prison." alt="" coords="155,747,261,776"/><area shape="rect" id="node11" href="editer_8h.html#a87dcd6666b04020860920ae591431617" title="Fonction qui permet de trouver le nom d&#39;une ième carte." alt="" coords="405,216,499,245"/><area shape="rect" id="node27" href="jouer_8h.html#a663a3c5f2d846d00c6a9ab944be9db7e" title="Fonction qui permet de sauvegarder une partie dans un fichier txt. (Elle sauvegarde 5 parties au maxi..." alt="" coords="385,400,519,429"/><area shape="rect" id="node29" href="jouer_8h.html#ae995f53d13bc78a0363ca094cc32850e" title="Fonction qui permet d&#39;écrire une chaine de caractère (Nom d&#39;un fichier) tout en affichant ce que l&#39;ut..." alt="" coords="620,400,713,429"/><area shape="rect" id="node33" href="pendu_8h.html#a7e71f9a13f0c491ad47ddfea8d40f702" title="Fonction qui sert d&#39;un accueil du jeu, histoire de ne pas lancer une partie &quot;vulgairement&quot;, le joueur doit appuyer sur &quot;Entrée&quot; pour jouer." alt="" coords="397,800,507,829"/><area shape="rect" id="node45" href="nb__mysterieux_8h.html#a15e2b9362b2152dd1b662fa99ef1ec26" title="Fonction qui sert d&#39;un accueil du jeu, histoire de ne pas lancer une partie &quot;vulgairement&quot;, le joueur doit appuyer sur &quot;Entrée&quot; pour jouer." alt="" coords="372,453,532,483"/><area shape="rect" id="node49" href="puissance__4_8h.html#a5e7ac1d16c8983d6ef1c007fee62dd99" title="Fonction qui sert d&#39;un accueil du jeu, histoire de ne pas lancer une partie &quot;vulgairement&quot;, le joueur doit appuyer sur &quot;Entrée&quot; pour jouer." alt="" coords="379,507,525,536"/><area shape="rect" id="node69" href="tictactoe_8h.html#a9804e1a960a9690b119f0ccc5a8f970a" title="Fonction qui sert d&#39;un accueil du jeu, histoire de ne pas lancer une partie &quot;vulgairement&quot;, le joueur doit appuyer sur &quot;Entrée&quot; pour jouer." alt="" coords="385,560,519,589"/><area shape="rect" id="node81" href="pong_8h.html#acd74535101473ab00a204253bff80b13" title="Fonction principale du jeu, elle sert a lancer un duel de pong entre 2 joueurs et gerer toutes les ta..." alt="" coords="409,613,495,643"/><area shape="rect" id="node35" href="pendu_8h.html#a00d4a85b3c77b56e8736bb3ede0dfde3" title="Fonction principale du jeu, elle sert à alterner les tours entre 2 joueurs (Un mot chacun)..." alt="" coords="620,933,713,963"/><area shape="rect" id="node37" href="pendu_8h.html#a3ef541c3dab43fc1f9c0cd67926d0529" title="Fonction qui permet de charger un mot au hasard à partir d&#39;un fichier texte qui contient n mots..." alt="" coords="793,880,911,909"/><area shape="rect" id="node39" href="pendu_8h.html#adee70ac4d74393c4cd78243f3f548be3" title="Fonction qui permet de calculer la longueur n du mot caché (le mot chargé à partir du fichier) et rem..." alt="" coords="816,933,888,963"/><area shape="rect" id="node41" href="pendu_8h.html#a9455f4961db462c6665b7402d064fbc3" title="Fonction qui calcule le nombre d&#39;occurences d&#39;un caractère dans une chaine." alt="" coords="824,987,880,1016"/><area shape="rect" id="node43" href="pendu_8h.html#a3c0d37a2835268db4e0a419f2bfab5d8" title="Fonction qui prend l&#39;écran et le nombre de coups ratés en paramètre et blitte l&#39;image du pendu corres..." alt="" coords="809,1040,895,1069"/><area shape="rect" id="node47" href="nb__mysterieux_8h.html#a3e29e99c1f6ad2b1f4c929ec3a9ba97c" title="Fonction principale du jeu, elle sert à alterner les tours entre 2 joueurs (Chacun un nombre mystérie..." alt="" coords="592,453,741,483"/><area shape="rect" id="node51" href="puissance__4_8h.html#a2b37964b38fc2ab267cbcc38f6f713bf" title="Fonction principale du jeu, elle sert à alterner les tours entre 2 joueurs et affecter les coups joué..." alt="" coords="599,507,735,536"/><area shape="rect" id="node53" href="puissance__4_8h.html#a46122e2ab5deef87a097ea7e6d4e8739" title="Fonction d&#39;initialisation de la matrice Mat[NB_LIGNES][NB_COLONNES] et du tableau Colonne[NB_COLONNES..." alt="" coords="791,347,913,376"/><area shape="rect" id="node55" href="puissance__4_8h.html#ac0841a370703f620f50eaf1908d14c31" title="Fonction qui prend la position du pointeur sur l&#39;écran et le transforme en indice de colonne..." alt="" coords="801,400,903,429"/><area shape="rect" id="node57" href="puissance__4_8h.html#a8689c73ed34517e6a13695b03a43da98" title="Fonction qui détermine si un coup est jouable ou pas, elle effectuera la vérification dans le tableau..." alt="" coords="819,453,885,483"/><area shape="rect" id="node59" href="puissance__4_8h.html#aea81a1577f43bb9b4b9ef2031ed5b9a2" title="Fonction qui affecte un coup à la matrice du jeu." alt="" coords="808,507,896,536"/><area shape="rect" id="node61" href="puissance__4_8h.html#a2520146e81017d4acdc34ea0dc8a21f2" title="Fonction qui met à jour l&#39;affichage en parcourant la matrice Mat[NB_LIGNES][NB_COLONNES] et en faisan..." alt="" coords="797,560,907,589"/><area shape="rect" id="node63" href="puissance__4_8h.html#a873c52d089be44bca9bda2f81704217c" title="Fonction qui parcourt la matrice et fait appel à la fonction Puis_4 pour chaque case afin de vérifier..." alt="" coords="791,613,913,643"/><area shape="rect" id="node67" href="puissance__4_8h.html#ae75590d38f924ec5c7528ce5a44f9173" title="Fonction qui vérifie si la matrice du jeu est remplie ou pas, elle effectuera la vérification dans le..." alt="" coords="817,293,887,323"/><area shape="rect" id="node65" href="puissance__4_8h.html#af0855e710272e82890db903f4f8e235f" title="Fonction qui vérifie l&#39;existence de 4 jetons de même couleur et alignés à partir de la case qui a a e..." alt="" coords="964,613,1025,643"/><area shape="rect" id="node71" href="tictactoe_8h.html#a6de47c155e93a8b3cb7b4a91f4ec74e9" title="Fonction principale du jeu, elle sert à alterner les tours entre 2 joueurs et affecter les coups joué..." alt="" coords="609,720,724,749"/><area shape="rect" id="node73" href="tictactoe_8h.html#affadda43e181bda971da170595d32ec3" title="Fonction qui parcourt la matrice Mat(qui est une variable globale de taille 3x3) et qui initialise to..." alt="" coords="819,827,885,856"/><area shape="rect" id="node75" href="tictactoe_8h.html#aa9e801467f1140056e432b45d7f8c136" title="Fonction qui permet de se repérer dans l&#39;écran principal du jeu, elle retourne &#45;1 si on survole pas l..." alt="" coords="809,667,895,696"/><area shape="rect" id="node77" href="tictactoe_8h.html#a69f23557f56aa056d99996779db2758b" title="Fonction qui sert à affecter la valeur d&#39;un coup à la case correspondante de la matrice Mat..." alt="" coords="807,720,897,749"/><area shape="rect" id="node79" href="tictactoe_8h.html#a3d11bca6c9b0f0cc5bd6dcee4125c593" title="Fonction de vérification de l&#39;existence d&#39;un gagnant." alt="" coords="801,773,903,803"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h_af835325dda3d966127634965cd4e2155_icgraph.png" border="0" usemap="#jouer_8h_af835325dda3d966127634965cd4e2155_icgraph" alt=""/></div>
+<map name="jouer_8h_af835325dda3d966127634965cd4e2155_icgraph" id="jouer_8h_af835325dda3d966127634965cd4e2155_icgraph">
+<area shape="rect" id="node3" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="259,5,309,35"/><area shape="rect" id="node5" href="menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="104,31,211,60"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abd95e1c857b78a7233de9013f35ee26c"></a><!-- doxytag: member="jouer.h::lancement_De" ref="abd95e1c857b78a7233de9013f35ee26c" args="(SDL_Surface *ecran, char j[])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="jouer_8c.html#abd95e1c857b78a7233de9013f35ee26c">lancement_De</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>j</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction de lancement du dé. </p>
+<p>Cette fonction affiche un dé et lance un son de tambour et attend que le joueur appuie sur 'Espace' pour lui retourner un n° aléatoire entre 1 et 6 toute en affichant la face du dé correspondante. </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Nouira Chafik</dd></dl>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">j</td><td>Nom du joueur qui va lancer le dé. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Elle retourne un nombre aléatoire entre 1 et 6. </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="jouer_8c_source.html#l00749">749</a> du fichier <a class="el" href="jouer_8c_source.html">jouer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h_abd95e1c857b78a7233de9013f35ee26c_icgraph.png" border="0" usemap="#jouer_8h_abd95e1c857b78a7233de9013f35ee26c_icgraph" alt=""/></div>
+<map name="jouer_8h_abd95e1c857b78a7233de9013f35ee26c_icgraph" id="jouer_8h_abd95e1c857b78a7233de9013f35ee26c_icgraph">
+<area shape="rect" id="node3" href="jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="160,5,211,35"/><area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="413,5,464,35"/><area shape="rect" id="node7" href="menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="259,31,365,60"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a496f18380d84146a65b104d416ca758c"></a><!-- doxytag: member="jouer.h::menu_Chargement" ref="a496f18380d84146a65b104d416ca758c" args="(SDL_Surface *ecran, int *num_cartechoisie, Joueur joueur[], int *nbre_joueur)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="jouer_8c.html#a496f18380d84146a65b104d416ca758c">menu_Chargement</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>num_cartechoisie</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_joueur.html">Joueur</a>&#160;</td>
+          <td class="paramname"><em>joueur</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>nbre_joueur</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui sert de Menu de Chargement d'une partie sauvegardée. </p>
+<p>Elle affiche la liste des parties sauvegardés (Les noms des fichiers) et permet à l'utilisateur de sélectionner la partie qu'il veut charger. </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Nouira Chafik</dd></dl>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">num_cartechoisie</td><td>N° de la carte du jeu. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">joueur[]</td><td>Tableau qui contiendra les données des joueurs (Noms, scores, positions, et la valeur de prision de chacun) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbre_joueur</td><td>Nombre de joueurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Elle retourne 1 si une partie est chargée avec succès, 0 sinon(En générale elle retourne 0 quand il n'y a aucune partie sauvegardée) </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="jouer_8c_source.html#l00262">262</a> du fichier <a class="el" href="jouer_8c_source.html">jouer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h_a496f18380d84146a65b104d416ca758c_icgraph.png" border="0" usemap="#jouer_8h_a496f18380d84146a65b104d416ca758c_icgraph" alt=""/></div>
+<map name="jouer_8h_a496f18380d84146a65b104d416ca758c_icgraph" id="jouer_8h_a496f18380d84146a65b104d416ca758c_icgraph">
+<area shape="rect" id="node3" href="jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="187,5,237,35"/><area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="440,5,491,35"/><area shape="rect" id="node7" href="menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="285,31,392,60"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acf744daeca3f1560be8ef5c558d567c7"></a><!-- doxytag: member="jouer.h::menu_Exit" ref="acf744daeca3f1560be8ef5c558d567c7" args="(SDL_Surface *ecran, Joueur joueurs[], int num_carte, int nb_joueurs)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="jouer_8c.html#acf744daeca3f1560be8ef5c558d567c7">menu_Exit</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_joueur.html">Joueur</a>&#160;</td>
+          <td class="paramname"><em>joueurs</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_carte</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_joueurs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui sert de Menu de suspension/arrêt d'une partie. </p>
+<p>On peut choisir sois de Sauvegarder la partie et quitter, sois de Quitter sans faire la sauvegarde. </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Nouira Chafik</dd></dl>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">joueurs[]</td><td>Tableau contenant les données des joueurs (Noms, scores, positions, et la valeur de prision de chacun) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_carte</td><td>Le numéro de la carte/parcours du jeu. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nb_joueurs</td><td>Nombre de joueurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="jouer_8c_source.html#l00179">179</a> du fichier <a class="el" href="jouer_8c_source.html">jouer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h_acf744daeca3f1560be8ef5c558d567c7_cgraph.png" border="0" usemap="#jouer_8h_acf744daeca3f1560be8ef5c558d567c7_cgraph" alt=""/></div>
+<map name="jouer_8h_acf744daeca3f1560be8ef5c558d567c7_cgraph" id="jouer_8h_acf744daeca3f1560be8ef5c558d567c7_cgraph">
+<area shape="rect" id="node3" href="jouer_8h.html#a663a3c5f2d846d00c6a9ab944be9db7e" title="Fonction qui permet de sauvegarder une partie dans un fichier txt. (Elle sauvegarde 5 parties au maxi..." alt="" coords="140,5,273,35"/><area shape="rect" id="node5" href="jouer_8h.html#ae995f53d13bc78a0363ca094cc32850e" title="Fonction qui permet d&#39;écrire une chaine de caractère (Nom d&#39;un fichier) tout en affichant ce que l&#39;ut..." alt="" coords="323,5,416,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h_acf744daeca3f1560be8ef5c558d567c7_icgraph.png" border="0" usemap="#jouer_8h_acf744daeca3f1560be8ef5c558d567c7_icgraph" alt=""/></div>
+<map name="jouer_8h_acf744daeca3f1560be8ef5c558d567c7_icgraph" id="jouer_8h_acf744daeca3f1560be8ef5c558d567c7_icgraph">
+<area shape="rect" id="node3" href="jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="139,5,189,35"/><area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="392,5,443,35"/><area shape="rect" id="node7" href="menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="237,31,344,60"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae995f53d13bc78a0363ca094cc32850e"></a><!-- doxytag: member="jouer.h::nom_Fichier" ref="ae995f53d13bc78a0363ca094cc32850e" args="(SDL_Surface *ecran, char nom[])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="jouer_8c.html#ae995f53d13bc78a0363ca094cc32850e">nom_Fichier</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>nom</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui permet d'écrire une chaine de caractère (Nom d'un fichier) tout en affichant ce que l'utilisateur tape sur l'écran. </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Nouira Chafik </dd></dl>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nom</td><td>Chaine de caractère dans laquelle sera stocké le nom du fichier saisi par l'utilisateur </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="jouer_8c_source.html#l00020">20</a> du fichier <a class="el" href="jouer_8c_source.html">jouer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h_ae995f53d13bc78a0363ca094cc32850e_icgraph.png" border="0" usemap="#jouer_8h_ae995f53d13bc78a0363ca094cc32850e_icgraph" alt=""/></div>
+<map name="jouer_8h_ae995f53d13bc78a0363ca094cc32850e_icgraph" id="jouer_8h_ae995f53d13bc78a0363ca094cc32850e_icgraph">
+<area shape="rect" id="node3" href="jouer_8c.html#a663a3c5f2d846d00c6a9ab944be9db7e" title="Fonction qui permet de sauvegarder une partie dans un fichier txt. (Elle sauvegarde 5 parties au maxi..." alt="" coords="148,5,281,35"/><area shape="rect" id="node5" href="jouer_8c.html#acf744daeca3f1560be8ef5c558d567c7" title="Fonction qui sert de Menu de suspension/arrêt d&#39;une partie." alt="" coords="332,5,415,35"/><area shape="rect" id="node7" href="jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="464,5,515,35"/><area shape="rect" id="node9" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="717,5,768,35"/><area shape="rect" id="node11" href="menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="563,31,669,60"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a90d1bbda4cd41418197df3e1155c1a58"></a><!-- doxytag: member="jouer.h::saisie_Nom" ref="a90d1bbda4cd41418197df3e1155c1a58" args="(SDL_Surface *ecran, int num_joueur, char *nom, TTF_Font *font1)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="jouer_8c.html#a90d1bbda4cd41418197df3e1155c1a58">saisie_Nom</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_joueur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TTF_Font *&#160;</td>
+          <td class="paramname"><em>font1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui permet de saisir un nom/pseudo pour chaque joueur. </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Matsima Claude </dd></dl>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_joueur</td><td>Le numéro du joueur pour lequel on va attribuer un nom/pseudo. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">nom</td><td>Chaine de caractère qui contiendra le nom d'un joueur saisi au clavier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">font1</td><td>Un pointeur vers la police (Font) utilisée pour cette fonction. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Cette fonction ne retourne rien, elle stocke le résultat directement dans une chaine de caractère (Ce qui est un passage par pointeurs). </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="jouer_8c_source.html#l00480">480</a> du fichier <a class="el" href="jouer_8c_source.html">jouer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h_a90d1bbda4cd41418197df3e1155c1a58_icgraph.png" border="0" usemap="#jouer_8h_a90d1bbda4cd41418197df3e1155c1a58_icgraph" alt=""/></div>
+<map name="jouer_8h_a90d1bbda4cd41418197df3e1155c1a58_icgraph" id="jouer_8h_a90d1bbda4cd41418197df3e1155c1a58_icgraph">
+<area shape="rect" id="node3" href="jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="144,5,195,35"/><area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="397,5,448,35"/><area shape="rect" id="node7" href="menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="243,31,349,60"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a663a3c5f2d846d00c6a9ab944be9db7e"></a><!-- doxytag: member="jouer.h::sauvegarder_Partie" ref="a663a3c5f2d846d00c6a9ab944be9db7e" args="(SDL_Surface *ecran, char nom_fichier[], Joueur joueurs[], int num_carte, int nb_joueurs)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="jouer_8c.html#a663a3c5f2d846d00c6a9ab944be9db7e">sauvegarder_Partie</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>nom_fichier</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_joueur.html">Joueur</a>&#160;</td>
+          <td class="paramname"><em>joueurs</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_carte</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_joueurs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui permet de sauvegarder une partie dans un fichier txt. (Elle sauvegarde 5 parties au maximum) </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Nouira Chafik </dd></dl>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nom_fichier</td><td>Nom du fichier dans lequel on veut sauvegarder la partie (Le fichier sera créé par la fonction) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">joueurs[]</td><td>Tableau contenant les données des joueurs (Noms, scores, positions, et la valeur de prision de chacun) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_carte</td><td>Le numéro de la carte/parcours du jeu. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nb_joueurs</td><td>Nombre de joueurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Elle retourne 1 si la partie est sauvegardée avec succès, 0 sinon. (Elle retourne 0 s'il y a déjà 5 parties sauvegardées) </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="jouer_8c_source.html#l00109">109</a> du fichier <a class="el" href="jouer_8c_source.html">jouer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h_a663a3c5f2d846d00c6a9ab944be9db7e_cgraph.png" border="0" usemap="#jouer_8h_a663a3c5f2d846d00c6a9ab944be9db7e_cgraph" alt=""/></div>
+<map name="jouer_8h_a663a3c5f2d846d00c6a9ab944be9db7e_cgraph" id="jouer_8h_a663a3c5f2d846d00c6a9ab944be9db7e_cgraph">
+<area shape="rect" id="node3" href="jouer_8h.html#ae995f53d13bc78a0363ca094cc32850e" title="Fonction qui permet d&#39;écrire une chaine de caractère (Nom d&#39;un fichier) tout en affichant ce que l&#39;ut..." alt="" coords="189,5,283,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h_a663a3c5f2d846d00c6a9ab944be9db7e_icgraph.png" border="0" usemap="#jouer_8h_a663a3c5f2d846d00c6a9ab944be9db7e_icgraph" alt=""/></div>
+<map name="jouer_8h_a663a3c5f2d846d00c6a9ab944be9db7e_icgraph" id="jouer_8h_a663a3c5f2d846d00c6a9ab944be9db7e_icgraph">
+<area shape="rect" id="node3" href="jouer_8c.html#acf744daeca3f1560be8ef5c558d567c7" title="Fonction qui sert de Menu de suspension/arrêt d&#39;une partie." alt="" coords="191,5,273,35"/><area shape="rect" id="node5" href="jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="323,5,373,35"/><area shape="rect" id="node7" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="576,5,627,35"/><area shape="rect" id="node9" href="menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="421,31,528,60"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afbd3037fd74559e67d22a90710e3f878"></a><!-- doxytag: member="jouer.h::visualisation" ref="afbd3037fd74559e67d22a90710e3f878" args="(SDL_Surface *ecran, SDL_Surface *carre, int *nb)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="jouer_8c.html#afbd3037fd74559e67d22a90710e3f878">visualisation</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>carre</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>nb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui permet de visualiser les cartes disponibles et d'en choisir une pour commencer une partie. </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Fofana Ibrahim </dd></dl>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>Ecran principal sur lequel on va blitter les différentes images qui correspondent aux tâches qui sont en train d'être exécutées. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">carre</td><td>En attendant l'explication d'Ibrahim. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">nb</td><td>En attendant l'explication d'Ibrahim. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="jouer_8c_source.html#l00604">604</a> du fichier <a class="el" href="jouer_8c_source.html">jouer.c</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h_afbd3037fd74559e67d22a90710e3f878_cgraph.png" border="0" usemap="#jouer_8h_afbd3037fd74559e67d22a90710e3f878_cgraph" alt=""/></div>
+<map name="jouer_8h_afbd3037fd74559e67d22a90710e3f878_cgraph" id="jouer_8h_afbd3037fd74559e67d22a90710e3f878_cgraph">
+<area shape="rect" id="node3" href="editer_8h.html#a87dcd6666b04020860920ae591431617" title="Fonction qui permet de trouver le nom d&#39;une ième carte." alt="" coords="195,5,288,35"/><area shape="rect" id="node5" href="editer_8h.html#a12e3f2b5d895508b850491b5e3b9b1aa" title="Fonction qui charge une carte créée à partir d&#39;un fichier." alt="" coords="149,59,333,88"/><area shape="rect" id="node7" href="editer_8h.html#a898f5d68680648048410843d2fe9d12b" title="Fonction qui sert à afficher un parcours." alt="" coords="196,112,287,141"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="jouer_8h_afbd3037fd74559e67d22a90710e3f878_icgraph.png" border="0" usemap="#jouer_8h_afbd3037fd74559e67d22a90710e3f878_icgraph" alt=""/></div>
+<map name="jouer_8h_afbd3037fd74559e67d22a90710e3f878_icgraph" id="jouer_8h_afbd3037fd74559e67d22a90710e3f878_icgraph">
+<area shape="rect" id="node3" href="jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="149,5,200,35"/><area shape="rect" id="node5" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="403,5,453,35"/><area shape="rect" id="node7" href="menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="248,31,355,60"/></map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="jouer_8h.html">jouer.h</a>      </li>
+
+    <li class="footer">Généré le Dimanche Avril 14 2013 17:53:05 pour Projet - Jeu de l'Oie Revisité | Documentation par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

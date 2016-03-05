@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$jouer_8c.html#a663a3c5f2d846d00c6a9ab944be9db7e" title="Fonction qui permet de sauvegarder une partie dans un fichier txt. (Elle sauvegarde 5 parties au maxi..." alt="" coords="148,5,281,35"/>
+<area shape="rect" id="node5" href="$jouer_8c.html#acf744daeca3f1560be8ef5c558d567c7" title="Fonction qui sert de Menu de suspension/arrêt d&#39;une partie." alt="" coords="332,5,415,35"/>
+<area shape="rect" id="node7" href="$jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="464,5,515,35"/>
+<area shape="rect" id="node9" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="717,5,768,35"/>
+<area shape="rect" id="node11" href="$menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="563,31,669,60"/>
+</map>

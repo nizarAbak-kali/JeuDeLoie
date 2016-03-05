@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Projet - Jeu de l&#39;Oie Revisité | Documentation:  Fichier source de src/pendu.c</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="de_3d.jpg"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Projet - Jeu de l&#39;Oie Revisité | Documentation
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Réalisation de Programmes - Semestre 2 2012/2013</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('pendu_8c.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">src/pendu.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="pendu_8c.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00008"></a>00008 <span class="comment">/*</span>
+<a name="l00009"></a>00009 <span class="comment">pendu.c</span>
+<a name="l00010"></a>00010 <span class="comment">----------</span>
+<a name="l00011"></a>00011 <span class="comment"></span>
+<a name="l00012"></a>00012 <span class="comment">Par Nouira Chafik 11291558, pour le projet &quot;Jeu de l&#39;oie Revisité&quot; - Réalisation de programmes Semestre 2 2012/2013</span>
+<a name="l00013"></a>00013 <span class="comment"></span>
+<a name="l00014"></a>00014 <span class="comment">Rôle : Jeu du &quot;Pendu&quot; en SDL</span>
+<a name="l00015"></a>00015 <span class="comment">*/</span>
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <span class="preprocessor">#include &quot;../headers/bibliotheque_mini_jeux.h&quot;</span>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 <span class="comment">//Fonction qui affiche l&#39;image du pendu qui correspond au nombre de coups ratés</span>
+<a name="l00020"></a><a class="code" href="pendu_8c.html#a3c0d37a2835268db4e0a419f2bfab5d8">00020</a> <span class="keywordtype">void</span> <a class="code" href="pendu_8h.html#a3c0d37a2835268db4e0a419f2bfab5d8" title="Fonction qui prend l&#39;écran et le nombre de coups ratés en paramètre et blitte l&#39;image du pendu corres...">bonhomme</a>(SDL_Surface* ecran, <span class="keywordtype">int</span> n) {
+<a name="l00021"></a>00021   SDL_Surface *pendu = NULL;
+<a name="l00022"></a>00022   SDL_Rect positionpendu = {175,10,0,0};
+<a name="l00023"></a>00023   <span class="comment">//Chargement de l&#39;image qui correspond à n (Nombre de coups ratés)</span>
+<a name="l00024"></a>00024   <span class="keywordflow">switch</span> (n) {
+<a name="l00025"></a>00025     <span class="keywordflow">case</span> 1: pendu = IMG_Load(<span class="stringliteral">&quot;../images/Mini-jeux/Pendu1.png&quot;</span>); <span class="keywordflow">break</span>;
+<a name="l00026"></a>00026     <span class="keywordflow">case</span> 2: pendu = IMG_Load(<span class="stringliteral">&quot;../images/Mini-jeux/Pendu2.png&quot;</span>); <span class="keywordflow">break</span>;
+<a name="l00027"></a>00027     <span class="keywordflow">case</span> 3: pendu = IMG_Load(<span class="stringliteral">&quot;../images/Mini-jeux/Pendu3.png&quot;</span>); <span class="keywordflow">break</span>;
+<a name="l00028"></a>00028     <span class="keywordflow">case</span> 4: pendu = IMG_Load(<span class="stringliteral">&quot;../images/Mini-jeux/Pendu4.png&quot;</span>); <span class="keywordflow">break</span>;
+<a name="l00029"></a>00029     <span class="keywordflow">case</span> 5: pendu = IMG_Load(<span class="stringliteral">&quot;../images/Mini-jeux/Pendu5.png&quot;</span>); <span class="keywordflow">break</span>;
+<a name="l00030"></a>00030     <span class="keywordflow">case</span> 6: pendu = IMG_Load(<span class="stringliteral">&quot;../images/Mini-jeux/Pendu6.png&quot;</span>); <span class="keywordflow">break</span>;
+<a name="l00031"></a>00031     <span class="keywordflow">case</span> 7: pendu = IMG_Load(<span class="stringliteral">&quot;../images/Mini-jeux/Pendu7.png&quot;</span>); <span class="keywordflow">break</span>;
+<a name="l00032"></a>00032     <span class="keywordflow">case</span> 8: pendu = IMG_Load(<span class="stringliteral">&quot;../images/Mini-jeux/Pendu8.png&quot;</span>); <span class="keywordflow">break</span>;
+<a name="l00033"></a>00033     <span class="keywordflow">case</span> 9: pendu = IMG_Load(<span class="stringliteral">&quot;../images/Mini-jeux/Pendu9.png&quot;</span>); <span class="keywordflow">break</span>;
+<a name="l00034"></a>00034     <span class="keywordflow">case</span> 10: pendu = IMG_Load(<span class="stringliteral">&quot;../images/Mini-jeux/Pendu10.png&quot;</span>); <span class="keywordflow">break</span>;
+<a name="l00035"></a>00035     <span class="keywordflow">default</span>: <span class="keywordflow">break</span>;
+<a name="l00036"></a>00036   }
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038   <span class="comment">//Blit de l&#39;image chargée</span>
+<a name="l00039"></a>00039   SDL_BlitSurface(pendu, NULL, ecran, &amp;positionpendu);
+<a name="l00040"></a>00040 }
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043 <span class="comment">/*Cette fonction sert à charger un mot à partir d&#39;un fichier texte et le stocker dans une chaine (Dans le mot à découvrir)*/</span>
+<a name="l00044"></a>00044 <span class="comment">//La variable n est entier généré au hasard dans la fonction jouer_Pendu. (Entre 1 et 100)</span>
+<a name="l00045"></a><a class="code" href="pendu_8c.html#a3ef541c3dab43fc1f9c0cd67926d0529">00045</a> <span class="keywordtype">void</span> <a class="code" href="pendu_8h.html#a3ef541c3dab43fc1f9c0cd67926d0529" title="Fonction qui permet de charger un mot au hasard à partir d&#39;un fichier texte qui contient n mots...">chargement_Mot</a>(<span class="keywordtype">char</span> mot[], <span class="keywordtype">int</span> n) {
+<a name="l00046"></a>00046   <span class="keywordtype">int</span> i=0;
+<a name="l00047"></a>00047   <span class="keywordtype">char</span> ch[10];
+<a name="l00048"></a>00048   FILE *fichier = NULL;
+<a name="l00049"></a>00049   fichier = fopen(<span class="stringliteral">&quot;../Sauvegarde/mots.txt&quot;</span>,<span class="stringliteral">&quot;r+&quot;</span>);
+<a name="l00050"></a>00050   <span class="keywordflow">do</span> {
+<a name="l00051"></a>00051     i++;
+<a name="l00052"></a>00052     strcpy(ch,<span class="stringliteral">&quot;&quot;</span>);
+<a name="l00053"></a>00053     fscanf(fichier,<span class="stringliteral">&quot;%s&quot;</span>,ch);
+<a name="l00054"></a>00054   } <span class="keywordflow">while</span> (i &lt; n);
+<a name="l00055"></a>00055   strcpy(mot,ch);
+<a name="l00056"></a>00056   fclose(fichier);
+<a name="l00057"></a>00057 }
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059 
+<a name="l00060"></a>00060 <span class="comment">/*La fonction initialiser sert à copier une chaine ch1 dans une autre ch2 puis remplacer </span>
+<a name="l00061"></a>00061 <span class="comment">les caractères de ch2 par des tirets pour que les caractères soient cachés*/</span>
+<a name="l00062"></a><a class="code" href="pendu_8c.html#adee70ac4d74393c4cd78243f3f548be3">00062</a> <span class="keywordtype">void</span> <a class="code" href="pendu_8h.html#adee70ac4d74393c4cd78243f3f548be3" title="Fonction qui permet de calculer la longueur n du mot caché (le mot chargé à partir du fichier) et rem...">initialiser</a>(<span class="keywordtype">char</span> mot_cache[], <span class="keywordtype">char</span> mot_decouvert[]) {
+<a name="l00063"></a>00063   <span class="keywordtype">int</span> i;
+<a name="l00064"></a>00064   <span class="keywordflow">for</span> (i = 0; mot_cache[i] != <span class="charliteral">&#39;\0&#39;</span>; i++) {
+<a name="l00065"></a>00065     mot_decouvert[i] = <span class="charliteral">&#39;-&#39;</span>;
+<a name="l00066"></a>00066   }
+<a name="l00067"></a>00067   mot_decouvert[i] = <span class="charliteral">&#39;\0&#39;</span>;
+<a name="l00068"></a>00068 }
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071 <span class="comment">/*La fonction existe renvoi le nombre d&#39;occurences d&#39;un caractère dans une liste, 0 s&#39;il n&#39;existe pas.*/</span>
+<a name="l00072"></a><a class="code" href="pendu_8c.html#a9455f4961db462c6665b7402d064fbc3">00072</a> <span class="keywordtype">int</span> <a class="code" href="pendu_8h.html#a9455f4961db462c6665b7402d064fbc3" title="Fonction qui calcule le nombre d&#39;occurences d&#39;un caractère dans une chaine.">existe</a>(<span class="keywordtype">char</span> ch[], <span class="keywordtype">char</span> c) {
+<a name="l00073"></a>00073   <span class="keywordtype">int</span> i, n = 0;
+<a name="l00074"></a>00074   <span class="keywordflow">for</span> (i = 0; ch[i] != <span class="charliteral">&#39;\0&#39;</span>; i++) {
+<a name="l00075"></a>00075     <span class="keywordflow">if</span> (c == ch[i]) 
+<a name="l00076"></a>00076       n++; 
+<a name="l00077"></a>00077   }
+<a name="l00078"></a>00078   <span class="keywordflow">return</span> n;
+<a name="l00079"></a>00079 }
+<a name="l00080"></a>00080 
+<a name="l00081"></a>00081 
+<a name="l00082"></a>00082 <span class="comment">//Fonction principale du jeu du Pendu, elle gérera l&#39;affichage des différentes étapes d&#39;une partie</span>
+<a name="l00083"></a><a class="code" href="pendu_8c.html#a00d4a85b3c77b56e8736bb3ede0dfde3">00083</a> <span class="keywordtype">int</span> <a class="code" href="pendu_8h.html#a00d4a85b3c77b56e8736bb3ede0dfde3" title="Fonction principale du jeu, elle sert à alterner les tours entre 2 joueurs (Un mot chacun)...">jouer_Pendu</a>(SDL_Surface *ecran, <span class="keywordtype">char</span> j1[], <span class="keywordtype">char</span> j2[]) {
+<a name="l00084"></a>00084   <span class="comment">//Déclaration des variables locales nécassaires pour la fonction</span>
+<a name="l00085"></a>00085   SDL_Surface *s_mot_cache = NULL, *s_mot_decouvert = NULL, *resultat = NULL, *joueur = NULL;
+<a name="l00086"></a>00086   SDL_Rect position_mot_decouvert={200,500,0,0}, positionresultat = {50,400,0,0}, positionjoueur = {0,350,0,0};
+<a name="l00087"></a>00087   SDL_Event event;
+<a name="l00088"></a>00088   TTF_Font *police = NULL, *police2 = NULL;
+<a name="l00089"></a>00089   SDL_Color couleurNoire = {0, 0, 0, 0};
+<a name="l00090"></a>00090   <span class="keywordtype">int</span> j=0, i, continuer=1, coups_reussis=0, coups_rates=1, joueuractuel = 1, joueur1, joueur2;
+<a name="l00091"></a>00091   <span class="keywordtype">char</span> c, ch[30], mot_cache[30], mot_decouvert[30];
+<a name="l00092"></a>00092   Mix_Chunk *son1, *son2; 
+<a name="l00093"></a>00093   son1 = Mix_LoadWAV(<span class="stringliteral">&quot;../Music/Mini-jeux/coup_reussi_pendu.ogg&quot;</span>);
+<a name="l00094"></a>00094   son2 = Mix_LoadWAV(<span class="stringliteral">&quot;../Music/Mini-jeux/coup_rate_pendu.ogg&quot;</span>);
+<a name="l00095"></a>00095 
+<a name="l00096"></a>00096   srand(time(NULL));
+<a name="l00097"></a>00097 
+<a name="l00098"></a>00098   <span class="comment">//Chargement de la police</span>
+<a name="l00099"></a>00099   police = TTF_OpenFont(<span class="stringliteral">&quot;../Police/comicbd.ttf&quot;</span>, 30);
+<a name="l00100"></a>00100   police2 = TTF_OpenFont(<span class="stringliteral">&quot;../Police/comicbd.ttf&quot;</span>, 40);
+<a name="l00101"></a>00101   SDL_FillRect(ecran, NULL, SDL_MapRGB(ecran-&gt;format, 255, 255, 255));
+<a name="l00102"></a>00102   joueur1 = joueur2 = 0;
+<a name="l00103"></a>00103 
+<a name="l00104"></a>00104   <span class="comment">//Point de départ d&#39;un tour (On retourne à cette ligne pour alterner les tours entre les joueurs)</span>
+<a name="l00105"></a>00105  debut:
+<a name="l00106"></a>00106   <span class="comment">/*Initialisation des variables utilisées durant une partie*/</span>
+<a name="l00107"></a>00107   c = <span class="charliteral">&#39;0&#39;</span>;
+<a name="l00108"></a>00108   <span class="comment">//Génération d&#39;un nombre au hasard entre 1 et 100, ce nombre sera l&#39;indice du mot caché qui sera chargé du fichier mots.txt avec la fonction chargement_Mot</span>
+<a name="l00109"></a>00109   i = rand()%100+1;
+<a name="l00110"></a>00110   <a class="code" href="pendu_8h.html#a3ef541c3dab43fc1f9c0cd67926d0529" title="Fonction qui permet de charger un mot au hasard à partir d&#39;un fichier texte qui contient n mots...">chargement_Mot</a>(mot_cache,i);
+<a name="l00111"></a>00111   <span class="comment">//Initialisation de la chaine qui va contenir le mot saisi par un joueur</span>
+<a name="l00112"></a>00112   <a class="code" href="pendu_8h.html#adee70ac4d74393c4cd78243f3f548be3" title="Fonction qui permet de calculer la longueur n du mot caché (le mot chargé à partir du fichier) et rem...">initialiser</a>(mot_cache,mot_decouvert);
+<a name="l00113"></a>00113   s_mot_decouvert = TTF_RenderText_Blended(police, mot_decouvert, couleurNoire);
+<a name="l00114"></a>00114   j++;
+<a name="l00115"></a>00115   continuer = 1;
+<a name="l00116"></a>00116   <span class="comment">//Alternance du tour</span>
+<a name="l00117"></a>00117   <span class="keywordflow">if</span>(joueuractuel == 1) sprintf(ch,<span class="stringliteral">&quot;Joueur : %s&quot;</span>,j1);
+<a name="l00118"></a>00118   <span class="keywordflow">else</span> sprintf(ch,<span class="stringliteral">&quot;Joueur : %s&quot;</span>,j2);
+<a name="l00119"></a>00119   joueur = TTF_RenderText_Blended(police2, ch, couleurNoire);
+<a name="l00120"></a>00120   <span class="comment">//Boucle while qui gérera l&#39;affichage des différentes étapes du jeu</span>
+<a name="l00121"></a>00121   <span class="keywordflow">while</span>(continuer) {
+<a name="l00122"></a>00122     SDL_WaitEvent(&amp;event);
+<a name="l00123"></a>00123     <span class="keywordflow">switch</span>(event.type) {
+<a name="l00124"></a>00124       <span class="comment">//En cas de fermeture de la fenêtre</span>
+<a name="l00125"></a>00125       <span class="keywordflow">case</span> SDL_QUIT: continuer = 0; <span class="keywordflow">return</span> 0; <span class="keywordflow">break</span>;
+<a name="l00126"></a>00126         <span class="comment">//En cas d&#39;appuie sur un bouton, stocker le caractère dans la variable c</span>
+<a name="l00127"></a>00127       <span class="keywordflow">case</span> SDL_KEYDOWN : 
+<a name="l00128"></a>00128         <span class="keywordflow">switch</span>(event.key.keysym.sym) {
+<a name="l00129"></a>00129           <span class="keywordflow">default</span> : c = <span class="keyword">event</span>.key.keysym.sym; <span class="keywordflow">break</span>;
+<a name="l00130"></a>00130         }
+<a name="l00131"></a>00131 
+<a name="l00132"></a>00132         <span class="comment">//Si c&#39;est une lettre en majuscule, la convertir en minuscule</span>
+<a name="l00133"></a>00133         <span class="keywordflow">if</span>(c &gt;= <span class="charliteral">&#39;A&#39;</span> &amp;&amp; c &lt;= <span class="charliteral">&#39;Z&#39;</span>) c -= 32;
+<a name="l00134"></a>00134         <span class="comment">//Si c&#39;est une lettre, faire les tests nécessaires pour voir si le mot caché contient la lettre saisie</span>
+<a name="l00135"></a>00135         <span class="keywordflow">if</span>(c &gt;= <span class="charliteral">&#39;a&#39;</span> &amp;&amp; c &lt;= <span class="charliteral">&#39;z&#39;</span>) {
+<a name="l00136"></a>00136           <span class="comment">//Si la lettre saisie existe dans le mot caché, l&#39;afficher dans sa/ses position(s) dans le mot découvert (le mot qui contient n tirets | n c&#39;est la longueur du mot caché)</span>
+<a name="l00137"></a>00137           <span class="keywordflow">if</span> (<a class="code" href="pendu_8h.html#a9455f4961db462c6665b7402d064fbc3" title="Fonction qui calcule le nombre d&#39;occurences d&#39;un caractère dans une chaine.">existe</a>(mot_cache,c) &gt; <a class="code" href="pendu_8h.html#a9455f4961db462c6665b7402d064fbc3" title="Fonction qui calcule le nombre d&#39;occurences d&#39;un caractère dans une chaine.">existe</a>(mot_decouvert,c)) {
+<a name="l00138"></a>00138             coups_reussis++;
+<a name="l00139"></a>00139             Mix_PlayChannel(1,son1,0);
+<a name="l00140"></a>00140             <span class="keywordflow">for</span> (i = 0; mot_cache[i] != <span class="charliteral">&#39;\0&#39;</span>; i++) {
+<a name="l00141"></a>00141               <span class="keywordflow">if</span> (mot_cache[i] == c)
+<a name="l00142"></a>00142                 mot_decouvert[i] = c;
+<a name="l00143"></a>00143             }
+<a name="l00144"></a>00144             s_mot_decouvert = TTF_RenderText_Blended(police, mot_decouvert, couleurNoire);  
+<a name="l00145"></a>00145           }
+<a name="l00146"></a>00146     <span class="comment">/*Si la lettre n&#39;existe pas dans mot_cache, on incrémente les coups ratés de 1, puis on appelle la fonction bonhomme </span>
+<a name="l00147"></a>00147 <span class="comment">      avec le nombre coups_rates qui s&#39;occupera d&#39;afficher l&#39;image correspondante du pendu*/</span> 
+<a name="l00148"></a>00148           <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="pendu_8h.html#a9455f4961db462c6665b7402d064fbc3" title="Fonction qui calcule le nombre d&#39;occurences d&#39;un caractère dans une chaine.">existe</a>(mot_cache,c) == <a class="code" href="pendu_8h.html#a9455f4961db462c6665b7402d064fbc3" title="Fonction qui calcule le nombre d&#39;occurences d&#39;un caractère dans une chaine.">existe</a>(mot_decouvert,c)){
+<a name="l00149"></a>00149             Mix_PlayChannel(1,son2,0);
+<a name="l00150"></a>00150             coups_rates++;
+<a name="l00151"></a>00151           } 
+<a name="l00152"></a>00152         }
+<a name="l00153"></a>00153         <span class="keywordflow">break</span>;
+<a name="l00154"></a>00154         <span class="keywordflow">default</span> : <span class="keywordflow">break</span>;
+<a name="l00155"></a>00155     }
+<a name="l00156"></a>00156 
+<a name="l00157"></a>00157     SDL_FillRect(ecran, NULL, SDL_MapRGB(ecran-&gt;format, 255, 255, 255));
+<a name="l00158"></a>00158     <a class="code" href="pendu_8h.html#a3c0d37a2835268db4e0a419f2bfab5d8" title="Fonction qui prend l&#39;écran et le nombre de coups ratés en paramètre et blitte l&#39;image du pendu corres...">bonhomme</a>(ecran,coups_rates);
+<a name="l00159"></a>00159     SDL_BlitSurface(s_mot_decouvert,NULL, ecran, &amp;position_mot_decouvert);
+<a name="l00160"></a>00160     <span class="comment">//Si le joueur atteint le nombre max de coups ratés, on affiche le mot caché et on garde le nombre de coups ratés afin de le comparer avec celui de l&#39;autre joueur.</span>
+<a name="l00161"></a>00161     <span class="keywordflow">if</span>(coups_rates == 10) {
+<a name="l00162"></a>00162       <span class="keywordflow">if</span>(joueuractuel == 1) {joueuractuel = 2; joueur1 = coups_rates;}
+<a name="l00163"></a>00163       <span class="keywordflow">else</span> {joueuractuel = 1; joueur2 = coups_rates;}
+<a name="l00164"></a>00164       continuer = 0;
+<a name="l00165"></a>00165       coups_rates = 1;
+<a name="l00166"></a>00166       sprintf(ch,<span class="stringliteral">&quot;Le mot etait &#39;%s&#39;&quot;</span>,mot_cache);
+<a name="l00167"></a>00167       resultat = TTF_RenderText_Blended(police2, ch, couleurNoire);
+<a name="l00168"></a>00168       SDL_BlitSurface(resultat,NULL, ecran, &amp;positionresultat);
+<a name="l00169"></a>00169     }
+<a name="l00170"></a>00170     <span class="comment">//Si le joueur trouve le mot caché, on affiche le texte correspondant et on garde le nombre de coups ratés afin de le comparer avec celui de l&#39;autre joueur.</span>
+<a name="l00171"></a>00171     <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!strcmp(mot_cache,mot_decouvert)) {
+<a name="l00172"></a>00172       <span class="keywordflow">if</span>(joueuractuel == 1) {joueuractuel = 2; joueur1 = coups_rates;}
+<a name="l00173"></a>00173       <span class="keywordflow">else</span> {joueuractuel = 1; joueur2 = coups_rates;}
+<a name="l00174"></a>00174       sprintf(ch,<span class="stringliteral">&quot;Bravoo !&quot;</span>);
+<a name="l00175"></a>00175       resultat = TTF_RenderText_Blended(police2, ch, couleurNoire);
+<a name="l00176"></a>00176       SDL_BlitSurface(resultat,NULL, ecran, &amp;positionresultat);
+<a name="l00177"></a>00177       continuer = 0;
+<a name="l00178"></a>00178       coups_rates = 1;
+<a name="l00179"></a>00179     }
+<a name="l00180"></a>00180     SDL_BlitSurface(joueur,NULL, ecran, &amp;positionjoueur);
+<a name="l00181"></a>00181     SDL_Flip(ecran);
+<a name="l00182"></a>00182   }
+<a name="l00183"></a>00183   sleep(2);
+<a name="l00184"></a>00184 
+<a name="l00185"></a>00185   <span class="comment">//Si les 2 joueurs ont le même score ou si c&#39;est le tour du 2ème joueur, relancer le jeu avec un mot différent.</span>
+<a name="l00186"></a>00186   <span class="keywordflow">if</span>(joueur1 == joueur2 || j&amp;1) <span class="keywordflow">goto</span> debut;
+<a name="l00187"></a>00187 
+<a name="l00188"></a>00188   SDL_FreeSurface(s_mot_decouvert);
+<a name="l00189"></a>00189   SDL_FreeSurface(s_mot_cache);
+<a name="l00190"></a>00190   SDL_FreeSurface(resultat);
+<a name="l00191"></a>00191   Mix_FreeChunk(son1);<span class="comment">//Libération du son</span>
+<a name="l00192"></a>00192   Mix_FreeChunk(son2);<span class="comment">//Libération du son</span>
+<a name="l00193"></a>00193 
+<a name="l00194"></a>00194   <span class="comment">//Renvoie de l&#39;indice du gagnant</span>
+<a name="l00195"></a>00195   <span class="keywordflow">if</span>(joueur1 &gt; joueur2) <span class="keywordflow">return</span> 2;
+<a name="l00196"></a>00196   <span class="keywordflow">else</span> <span class="keywordflow">return</span> 1;
+<a name="l00197"></a>00197 }
+<a name="l00198"></a>00198 
+<a name="l00199"></a>00199 
+<a name="l00200"></a>00200 <span class="comment">/*Cette fonction sert de page d&#39;accueil du jeu du Pendu, elle fait appel à la fonction jouer_Pendu quand l&#39;utilisateur</span>
+<a name="l00201"></a>00201 <span class="comment">  appuie sur &quot;Entrer&quot;, et à la fin elle récupère l&#39;indice du gagnant et le renvoie à son tour*/</span>
+<a name="l00202"></a><a class="code" href="pendu_8c.html#a7e71f9a13f0c491ad47ddfea8d40f702">00202</a> <span class="keywordtype">int</span> <a class="code" href="pendu_8h.html#a7e71f9a13f0c491ad47ddfea8d40f702" title="Fonction qui sert d&#39;un accueil du jeu, histoire de ne pas lancer une partie &quot;vulgairement&quot;, le joueur doit appuyer sur &quot;Entrée&quot; pour jouer.">Accueil_Pendu</a>(SDL_Surface *ecran, <span class="keywordtype">char</span> *j1, <span class="keywordtype">char</span> *j2) {
+<a name="l00203"></a>00203   <span class="comment">//Déclaration des variables locales nécessaires pour la fonction.</span>
+<a name="l00204"></a>00204   SDL_Surface *texte1 = NULL, *texte2 = NULL, *pendu = NULL;
+<a name="l00205"></a>00205   SDL_Rect positiontexte1, positiontexte2, positionpendu;
+<a name="l00206"></a>00206   SDL_Event event;
+<a name="l00207"></a>00207   TTF_Font *police1 = NULL, *police2 = NULL;
+<a name="l00208"></a>00208   SDL_Color couleurNoire = {0, 0, 0, 0}, couleurBlanche = {255, 255, 255, 0};
+<a name="l00209"></a>00209   <span class="keywordtype">int</span> continuer = 1, gagnant;
+<a name="l00210"></a>00210   Mix_Music *musique; <span class="comment">//Création d&#39;un pointeur de type Mix_Music</span>
+<a name="l00211"></a>00211   Mix_VolumeMusic(MIX_MAX_VOLUME);
+<a name="l00212"></a>00212   musique = Mix_LoadMUS(<span class="stringliteral">&quot;../Music/Mini-jeux/pendu.ogg&quot;</span>); <span class="comment">//Chargement de la musique</span>
+<a name="l00213"></a>00213   Mix_PlayMusic(musique, -1); <span class="comment">//Jouer infiniment la musique</span>
+<a name="l00214"></a>00214 
+<a name="l00215"></a>00215   <span class="comment">//Chargement de l&#39;image du pendu</span>
+<a name="l00216"></a>00216   pendu = IMG_Load(<span class="stringliteral">&quot;../images/Mini-jeux/Pendu10.png&quot;</span>);
+<a name="l00217"></a>00217 
+<a name="l00218"></a>00218   <span class="comment">//Chargement de la police</span>
+<a name="l00219"></a>00219   police1 = TTF_OpenFont(<span class="stringliteral">&quot;../Police/chata.ttf&quot;</span>, 65);
+<a name="l00220"></a>00220   police2 = TTF_OpenFont(<span class="stringliteral">&quot;../Police/chata.ttf&quot;</span>, 25);
+<a name="l00221"></a>00221 
+<a name="l00222"></a>00222   <span class="comment">//Initialisation du texte</span>
+<a name="l00223"></a>00223   texte1 = TTF_RenderText_Shaded(police1, <span class="stringliteral">&quot;Le Pendu&quot;</span>, couleurNoire, couleurBlanche);
+<a name="l00224"></a>00224   texte2 = TTF_RenderText_Shaded(police2, <span class="stringliteral">&quot;Appuyer sur entrer pour commencer&quot;</span>, couleurNoire, couleurBlanche);
+<a name="l00225"></a>00225 
+<a name="l00226"></a>00226   SDL_SetColorKey(texte1, SDL_SRCCOLORKEY, SDL_MapRGB(texte1-&gt;format, 255, 255, 255));
+<a name="l00227"></a>00227   SDL_SetColorKey(texte2, SDL_SRCCOLORKEY, SDL_MapRGB(texte2-&gt;format, 255, 255, 255));
+<a name="l00228"></a>00228 
+<a name="l00229"></a>00229   <span class="comment">//Remplissage de l&#39;écran principal avec la couleur blanche</span>
+<a name="l00230"></a>00230   SDL_FillRect(ecran, NULL, SDL_MapRGB(ecran-&gt;format, 0, 200, 100));
+<a name="l00231"></a>00231 
+<a name="l00232"></a>00232   <span class="comment">//Initialisation des positions des différentes surfaces et textes</span>
+<a name="l00233"></a>00233   positiontexte1.x = (ecran-&gt;w - texte1-&gt;w) / 2;
+<a name="l00234"></a>00234   positiontexte1.y = 0;
+<a name="l00235"></a>00235   positiontexte2.x = (ecran-&gt;w - texte2-&gt;w) / 2;
+<a name="l00236"></a>00236   positiontexte2.y = 250 + (ecran-&gt;h - texte2-&gt;h) / 2;
+<a name="l00237"></a>00237   positionpendu.x = (ecran-&gt;w / 2) - (pendu-&gt;w / 2);
+<a name="l00238"></a>00238   positionpendu.y = (ecran-&gt;h / 2) - (pendu-&gt;h / 2);
+<a name="l00239"></a>00239 
+<a name="l00240"></a>00240   <span class="comment">//Remplissage de l&#39;écran principal avec la couleur blanche</span>
+<a name="l00241"></a>00241   SDL_FillRect(ecran, NULL, SDL_MapRGB(ecran-&gt;format, 0, 200, 100));
+<a name="l00242"></a>00242 
+<a name="l00243"></a>00243   <span class="comment">//Blit du texte de la page d&#39;accueil</span>
+<a name="l00244"></a>00244   SDL_BlitSurface(texte1, NULL, ecran, &amp;positiontexte1);
+<a name="l00245"></a>00245   SDL_BlitSurface(texte2, NULL, ecran, &amp;positiontexte2);
+<a name="l00246"></a>00246 
+<a name="l00247"></a>00247   <span class="comment">//Blit de l&#39;image du pendu</span>
+<a name="l00248"></a>00248   SDL_BlitSurface(pendu, NULL, ecran, &amp;positionpendu);
+<a name="l00249"></a>00249 
+<a name="l00250"></a>00250   <span class="comment">//Mise à jour de l&#39;écran</span>
+<a name="l00251"></a>00251   SDL_Flip(ecran);
+<a name="l00252"></a>00252 
+<a name="l00253"></a>00253   <span class="comment">/*Une boucle infine afin de maintenir l&#39;affichage et quitter le programme quand l&#39;utilisateur ferme la fenêtre*/</span>
+<a name="l00254"></a>00254   <span class="keywordflow">while</span> (continuer) {
+<a name="l00255"></a>00255     SDL_PollEvent(&amp;event);
+<a name="l00256"></a>00256     <span class="keywordflow">switch</span>(event.type) {
+<a name="l00257"></a>00257     <span class="keywordflow">case</span> SDL_QUIT:
+<a name="l00258"></a>00258       continuer = 0;
+<a name="l00259"></a>00259       <span class="keywordflow">break</span>;
+<a name="l00260"></a>00260     <span class="comment">//En cas d&#39;apuui sur un bouton</span>
+<a name="l00261"></a>00261     <span class="keywordflow">case</span> SDL_KEYDOWN :
+<a name="l00262"></a>00262       <span class="comment">//S&#39;il s&#39;agit du bouton &quot;Entrer&quot;, appeler la fonction joueur_Pendu</span>
+<a name="l00263"></a>00263       <span class="keywordflow">if</span>(event.key.keysym.sym == SDLK_RETURN) gagnant = <a class="code" href="pendu_8h.html#a00d4a85b3c77b56e8736bb3ede0dfde3" title="Fonction principale du jeu, elle sert à alterner les tours entre 2 joueurs (Un mot chacun)...">jouer_Pendu</a>(ecran,j1,j2);
+<a name="l00264"></a>00264       continuer = 0;
+<a name="l00265"></a>00265       <span class="keywordflow">break</span>;
+<a name="l00266"></a>00266     <span class="keywordflow">default</span>: <span class="keywordflow">break</span>;
+<a name="l00267"></a>00267     }
+<a name="l00268"></a>00268   }
+<a name="l00269"></a>00269 
+<a name="l00270"></a>00270   <span class="comment">//Libération de la mémoire occupée par les surfaces et les polices et arrêt de la SDL</span>
+<a name="l00271"></a>00271   TTF_CloseFont(police1);
+<a name="l00272"></a>00272   TTF_CloseFont(police2);
+<a name="l00273"></a>00273   SDL_FreeSurface(pendu);
+<a name="l00274"></a>00274   SDL_FreeSurface(texte1);
+<a name="l00275"></a>00275   SDL_FreeSurface(texte2);
+<a name="l00276"></a>00276   Mix_FreeMusic(musique); <span class="comment">//Libération de la musique</span>
+<a name="l00277"></a>00277 
+<a name="l00278"></a>00278   <span class="keywordflow">return</span> gagnant;
+<a name="l00279"></a>00279 }
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="pendu_8c.html">pendu.c</a>      </li>
+
+    <li class="footer">Généré le Dimanche Avril 14 2013 17:53:05 pour Projet - Jeu de l'Oie Revisité | Documentation par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

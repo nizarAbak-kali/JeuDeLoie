@@ -1,0 +1,13 @@
+void creation(SDL_Surface*,int*);
+void aff_Cadre_Editer(SDL_Surface*,SDL_Surface*);
+void aff_Fantome(SDL_Surface*,SDL_Surface*,SDL_Rect);
+int selec_Aff_Case_Dispo(SDL_Surface*,SDL_Surface*,int,SDL_Rect,SDL_Rect[64],SDL_Rect[64]);
+void aff_Parcous(SDL_Surface*,SDL_Surface*,SDL_Rect[64],SDL_Rect[64]);
+int possiblite_Case_Ij(SDL_Rect,SDL_Rect[64]);
+void sauvegarde_Edition(SDL_Rect[64],SDL_Rect[64],int);
+void charge_Sauvegarde_Edittion(SDL_Rect[64],SDL_Rect[64],int);
+void menu_Editer(SDL_Surface*);
+void visualisation_Suppression(SDL_Surface*,int*);
+int suiv_Parcours(void);
+int nb_Parcours(int);
+int transforme_Pos_Image_En_Val(SDL_Rect);

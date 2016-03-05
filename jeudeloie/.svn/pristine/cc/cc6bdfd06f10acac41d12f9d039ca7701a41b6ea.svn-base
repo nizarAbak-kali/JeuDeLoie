@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$bibliotheque_8h.html" title="Bibliothèque contenant les déclarations des structure et des variables globales ainsi que les bibliot..." alt="" coords="536,160,699,189"/>
+<area shape="rect" id="node31" href="$jouer_8c.html" title="Fichier principal du jeu." alt="" coords="621,83,683,112"/>
+<area shape="rect" id="node34" href="$puissance__4_8h.html" title="Header du Jeu de Puissance 4 en SDL." alt="" coords="707,83,875,112"/>
+<area shape="rect" id="node23" href="$editer_8h.html" title="Header du fichier editer.c." alt="" coords="989,237,1053,267"/>
+<area shape="rect" id="node25" href="$info_8h.html" title="Header du fichier info.c." alt="" coords="1077,237,1131,267"/>
+<area shape="rect" id="node27" href="$jouer_8h.html" title="Header du fichier jouer.c." alt="" coords="1155,237,1216,267"/>
+<area shape="rect" id="node29" href="$menu_8h.html" title="Header du fichier menu.c." alt="" coords="1240,237,1304,267"/>
+</map>

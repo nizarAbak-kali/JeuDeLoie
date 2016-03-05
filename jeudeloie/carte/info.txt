@@ -1,0 +1,3 @@
+2
+Ce fichier ne doit être en aucun cas modifié, il contient le nb de carte enregistrer.
+Si vous voulez supprimer une carte ou plusieurs veuillez remplacer le nombre ci-dessus par le nouveau nombre de carte.

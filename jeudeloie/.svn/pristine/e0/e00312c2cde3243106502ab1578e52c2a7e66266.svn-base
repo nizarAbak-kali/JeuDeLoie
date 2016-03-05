@@ -1,0 +1,566 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Projet - Jeu de l&#39;Oie Revisité: Référence du fichier headers/puissance_4.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="de_3d.jpg"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Projet - Jeu de l&#39;Oie Revisité
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Documentation non définitive - Réalisation de Programmes S2 2012/2013</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('puissance__4_8h.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier headers/puissance_4.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Header du Jeu de Puissance 4 en SDL.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="puissance__4_8h__dep__incl.png" border="0" usemap="#headers_2puissance__4_8hdep" alt=""/></div>
+<map name="headers_2puissance__4_8hdep" id="headers_2puissance__4_8hdep">
+<area shape="rect" id="node3" href="bibliotheque__mini__jeux_8h.html" title="Header contenant les headers des différents mini&#45;jeux ainsi que les bibliothèques qu&#39;ils utilisent..." alt="" coords="5,83,219,112"/><area shape="rect" id="node5" href="main_8c.html" title="Le main du projet." alt="" coords="243,83,325,112"/></map>
+</div>
+</div>
+<p><a href="puissance__4_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance__4_8h.html#a3ee479371002a0a258e5c4111cc6e54f">VIDE</a>&#160;&#160;&#160;0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance__4_8h.html#a8a711bd77f878f23e61dfd98fc505a1c">NOIR</a>&#160;&#160;&#160;1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance__4_8h.html#ac5b6e19bf06822021f35602c59658de3">ORANGE</a>&#160;&#160;&#160;2</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance__4_8h.html#ad8edf09d2d914fdd5eae545ee2bd6ce9">NB_LIGNES</a>&#160;&#160;&#160;6</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance__4_8h.html#abfa179ca04bf5c427a56beb8b26c0272">NB_COLONNES</a>&#160;&#160;&#160;7</td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46122e2ab5deef87a097ea7e6d4e8739"></a><!-- doxytag: member="puissance_4.h::init_Mat_Colonne" ref="a46122e2ab5deef87a097ea7e6d4e8739" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance__4_8h.html#a46122e2ab5deef87a097ea7e6d4e8739">init_Mat_Colonne</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction d'initialisation de la matrice Mat[NB_LIGNES][NB_COLONNES] et du tableau Colonne[NB_COLONNES], elle affectera la valeur VIDE à toutes les cases. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance__4_8h.html#a8689c73ed34517e6a13695b03a43da98">Jouable</a> (int x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui détermine si un coup est jouable ou pas, elle effectuera la vérification dans le tableau Colonne[NB_COLONNES].  <a href="#a8689c73ed34517e6a13695b03a43da98"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance__4_8h.html#ae75590d38f924ec5c7528ce5a44f9173">Remplie</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui vérifie si la matrice du jeu est remplie ou pas, elle effectuera la vérification dans le tableau Colonne[NB_COLONNES].  <a href="#ae75590d38f924ec5c7528ce5a44f9173"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance__4_8h.html#af0855e710272e82890db903f4f8e235f">Puis_4</a> (int a, int b)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui vérifie l'existence de 4 jetons de même couleur et alignés à partir de la case qui a <em>a</em> et <em>b</em> comme coordonnées, cette fonction ne parcourt pas la matrice.  <a href="#af0855e710272e82890db903f4f8e235f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance__4_8h.html#a873c52d089be44bca9bda2f81704217c">verif_Gagnant_p4</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui parcourt la matrice et fait appel à la fonction Puis_4 pour chaque case afin de vérifier l'existence d'un gagnant.  <a href="#a873c52d089be44bca9bda2f81704217c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance__4_8h.html#ac0841a370703f620f50eaf1908d14c31">verif_Colonne</a> (SDL_Rect *pos)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui prend la position du pointeur sur l'écran et le transforme en indice de colonne.  <a href="#ac0841a370703f620f50eaf1908d14c31"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance__4_8h.html#aea81a1577f43bb9b4b9ef2031ed5b9a2">jouer_Coup</a> (int col, int coup)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui affecte un coup à la matrice du jeu.  <a href="#aea81a1577f43bb9b4b9ef2031ed5b9a2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance__4_8h.html#a2520146e81017d4acdc34ea0dc8a21f2">update_Screen</a> (SDL_Surface *ecran)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui met à jour l'affichage en parcourant la matrice Mat[NB_LIGNES][NB_COLONNES] et en faisant les blittages des images nécessaires.  <a href="#a2520146e81017d4acdc34ea0dc8a21f2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance__4_8h.html#a2b37964b38fc2ab267cbcc38f6f713bf">Jouer_Puissance_4</a> (SDL_Surface *ecran, char j1[], char j2[])</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction principale du jeu, elle sert à alterner les tours entre 2 joueurs et affecter les coups joués à la matrice après vérification de leur validité.  <a href="#a2b37964b38fc2ab267cbcc38f6f713bf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance__4_8h.html#a5e7ac1d16c8983d6ef1c007fee62dd99">Accueil_Puissance_4</a> (SDL_Surface *ecran, char *j1, char *j2)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui sert d'un accueil du jeu, histoire de ne pas lancer une partie "vulgairement", le joueur doit appuyer sur "Entrée" pour jouer.  <a href="#a5e7ac1d16c8983d6ef1c007fee62dd99"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance__4_8h.html#a7e033c0d8f85bd8d35e74c5a109eb9e3">Mat</a> [<a class="el" href="puissance__4_8h.html#ad8edf09d2d914fdd5eae545ee2bd6ce9">NB_LIGNES</a>][<a class="el" href="puissance__4_8h.html#abfa179ca04bf5c427a56beb8b26c0272">NB_COLONNES</a>]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="puissance__4_8h.html#ae0647af81b2e78795a0dd0979b239ed4">Colonne</a> [<a class="el" href="puissance__4_8h.html#abfa179ca04bf5c427a56beb8b26c0272">NB_COLONNES</a>] = {0,0,0,0,0,0}</td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p>Header du Jeu de Puissance 4 en SDL. </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Nouira Chafik 11291558 </dd></dl>
+<dl class="version"><dt><b>Version:</b></dt><dd>0.1 </dd></dl>
+<dl class="date"><dt><b>Date:</b></dt><dd>11 mars 2013</dd></dl>
+<p>Un mini-jeu pour le projet "Jeu de l'Oie Revisité" - Réalisation de programmes - Semestre 2 2012/2013 </p>
+</div><hr/><h2>Documentation des macros</h2>
+<a class="anchor" id="abfa179ca04bf5c427a56beb8b26c0272"></a><!-- doxytag: member="puissance_4.h::NB_COLONNES" ref="abfa179ca04bf5c427a56beb8b26c0272" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="puissance__4_8h.html#abfa179ca04bf5c427a56beb8b26c0272">NB_COLONNES</a>&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Nombre de colonnes de la matrice du jeu. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad8edf09d2d914fdd5eae545ee2bd6ce9"></a><!-- doxytag: member="puissance_4.h::NB_LIGNES" ref="ad8edf09d2d914fdd5eae545ee2bd6ce9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="puissance__4_8h.html#ad8edf09d2d914fdd5eae545ee2bd6ce9">NB_LIGNES</a>&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Nombre de ligne de la matrice du jeu. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8a711bd77f878f23e61dfd98fc505a1c"></a><!-- doxytag: member="puissance_4.h::NOIR" ref="a8a711bd77f878f23e61dfd98fc505a1c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="puissance__4_8h.html#a8a711bd77f878f23e61dfd98fc505a1c">NOIR</a>&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Valeur d'une case qui contient un jeton noir : 1. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac5b6e19bf06822021f35602c59658de3"></a><!-- doxytag: member="puissance_4.h::ORANGE" ref="ac5b6e19bf06822021f35602c59658de3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="puissance__4_8h.html#ac5b6e19bf06822021f35602c59658de3">ORANGE</a>&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Valeur d'une case qui contient un jeton orange : 2. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3ee479371002a0a258e5c4111cc6e54f"></a><!-- doxytag: member="puissance_4.h::VIDE" ref="a3ee479371002a0a258e5c4111cc6e54f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="puissance__4_8h.html#a3ee479371002a0a258e5c4111cc6e54f">VIDE</a>&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Valeur d'une case vide : 0. </p>
+
+</div>
+</div>
+<hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="a5e7ac1d16c8983d6ef1c007fee62dd99"></a><!-- doxytag: member="puissance_4.h::Accueil_Puissance_4" ref="a5e7ac1d16c8983d6ef1c007fee62dd99" args="(SDL_Surface *ecran, char *j1, char *j2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="puissance__4_8h.html#a5e7ac1d16c8983d6ef1c007fee62dd99">Accueil_Puissance_4</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>j1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>j2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui sert d'un accueil du jeu, histoire de ne pas lancer une partie "vulgairement", le joueur doit appuyer sur "Entrée" pour jouer. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>l'écran principal sur lequel on va blitter les différentes images correpondantes à l'évolution d'une partie. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*j1</td><td>nom du premier joueur. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*j2</td><td>nom du deuxième joueur. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Elle fait appel à la fonction Jouer_Puissance_4 une fois l'utilisateur appuie sur "Entrée", elle récupère le n° du gagnant à la fin et le retourne. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8689c73ed34517e6a13695b03a43da98"></a><!-- doxytag: member="puissance_4.h::Jouable" ref="a8689c73ed34517e6a13695b03a43da98" args="(int x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="puissance__4_8h.html#a8689c73ed34517e6a13695b03a43da98">Jouable</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui détermine si un coup est jouable ou pas, elle effectuera la vérification dans le tableau Colonne[NB_COLONNES]. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>c'est la valeur du coup qu'on veut jouer (NOIR ou ORANGE). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Si le coup est jouable elle retourne 1, sinon elle retourne 0. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aea81a1577f43bb9b4b9ef2031ed5b9a2"></a><!-- doxytag: member="puissance_4.h::jouer_Coup" ref="aea81a1577f43bb9b4b9ef2031ed5b9a2" args="(int col, int coup)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="puissance__4_8h.html#aea81a1577f43bb9b4b9ef2031ed5b9a2">jouer_Coup</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>col</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>coup</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui affecte un coup à la matrice du jeu. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">col</td><td>Indice de la colonne dans laquelle on va affecter le coup joué. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">coup</td><td>Valeur du coup joué (NOIR ou ORANGE). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Cette fonction ne retourne rien, car elle est appelée seulement quand le coup est jouable. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2b37964b38fc2ab267cbcc38f6f713bf"></a><!-- doxytag: member="puissance_4.h::Jouer_Puissance_4" ref="a2b37964b38fc2ab267cbcc38f6f713bf" args="(SDL_Surface *ecran, char j1[], char j2[])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="puissance__4_8h.html#a2b37964b38fc2ab267cbcc38f6f713bf">Jouer_Puissance_4</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>j1</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>j2</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction principale du jeu, elle sert à alterner les tours entre 2 joueurs et affecter les coups joués à la matrice après vérification de leur validité. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>l'écran principal sur lequel on va blitter les différentes images correpondantes à l'évolution d'une partie. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*j1</td><td>nom du premier joueur. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*j2</td><td>nom du deuxième joueur. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Elle fait appel à la fonction verif_Gagnant_p4 et retourne sa valeur, NOIR si le joueur 1 gagne, ORANGE si c'est le 2ème et 0 pour un match nul, dans le dernier cas, une nouvelle partie est lancée, en gros faut qu'il y ait un gagnant pour pouvoir sortir "propremenet" de la fonction. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af0855e710272e82890db903f4f8e235f"></a><!-- doxytag: member="puissance_4.h::Puis_4" ref="af0855e710272e82890db903f4f8e235f" args="(int a, int b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="puissance__4_8h.html#af0855e710272e82890db903f4f8e235f">Puis_4</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui vérifie l'existence de 4 jetons de même couleur et alignés à partir de la case qui a <em>a</em> et <em>b</em> comme coordonnées, cette fonction ne parcourt pas la matrice. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td>numéro de la ligne. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>numéro de la colonne. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Elle retourne NOIR s'il y a 4 jetons noirs alignés, ORANGE s'il y a 4 jetons oranges alignés et 0 sinon. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae75590d38f924ec5c7528ce5a44f9173"></a><!-- doxytag: member="puissance_4.h::Remplie" ref="ae75590d38f924ec5c7528ce5a44f9173" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="puissance__4_8h.html#ae75590d38f924ec5c7528ce5a44f9173">Remplie</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui vérifie si la matrice du jeu est remplie ou pas, elle effectuera la vérification dans le tableau Colonne[NB_COLONNES]. </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Elle retourne 1 si la matrice est complétement remplie, 0 sinon. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2520146e81017d4acdc34ea0dc8a21f2"></a><!-- doxytag: member="puissance_4.h::update_Screen" ref="a2520146e81017d4acdc34ea0dc8a21f2" args="(SDL_Surface *ecran)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="puissance__4_8h.html#a2520146e81017d4acdc34ea0dc8a21f2">update_Screen</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>ecran</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui met à jour l'affichage en parcourant la matrice Mat[NB_LIGNES][NB_COLONNES] et en faisant les blittages des images nécessaires. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ecran</td><td>C'est l'écran principal du jeu sur lequel on va blitter les différentes images tout au long d'une partie. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac0841a370703f620f50eaf1908d14c31"></a><!-- doxytag: member="puissance_4.h::verif_Colonne" ref="ac0841a370703f620f50eaf1908d14c31" args="(SDL_Rect *pos)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="puissance__4_8h.html#ac0841a370703f620f50eaf1908d14c31">verif_Colonne</a> </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Rect *&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui prend la position du pointeur sur l'écran et le transforme en indice de colonne. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>Coordonnées du pointeurs de la souris sur l'écran au moment du clic. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Si on a cliqué à l'intérieur de la matrice du jeu cette fonction retourne l'indice de la matrice correspondante, elle retourne -1 sinon. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a873c52d089be44bca9bda2f81704217c"></a><!-- doxytag: member="puissance_4.h::verif_Gagnant_p4" ref="a873c52d089be44bca9bda2f81704217c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="puissance__4_8h.html#a873c52d089be44bca9bda2f81704217c">verif_Gagnant_p4</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction qui parcourt la matrice et fait appel à la fonction Puis_4 pour chaque case afin de vérifier l'existence d'un gagnant. </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Elle retourne la valeur de la fonction Puis_4 si celle-ci est différente de 0 (NOIR ou ORANGE), elle retourne 0 sinon. </dd></dl>
+
+</div>
+</div>
+<hr/><h2>Documentation des variables</h2>
+<a class="anchor" id="ae0647af81b2e78795a0dd0979b239ed4"></a><!-- doxytag: member="puissance_4.h::Colonne" ref="ae0647af81b2e78795a0dd0979b239ed4" args="[NB_COLONNES]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="puissance__4_8h.html#ae0647af81b2e78795a0dd0979b239ed4">Colonne</a>[<a class="el" href="puissance__4_8h.html#abfa179ca04bf5c427a56beb8b26c0272">NB_COLONNES</a>] = {0,0,0,0,0,0}</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Tableau qui contient le nombre de jetons pour chaque colonne, très utile pour vérifier la validité des coups joués. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7e033c0d8f85bd8d35e74c5a109eb9e3"></a><!-- doxytag: member="puissance_4.h::Mat" ref="a7e033c0d8f85bd8d35e74c5a109eb9e3" args="[NB_LIGNES][NB_COLONNES]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="puissance__4_8h.html#a7e033c0d8f85bd8d35e74c5a109eb9e3">Mat</a>[<a class="el" href="puissance__4_8h.html#ad8edf09d2d914fdd5eae545ee2bd6ce9">NB_LIGNES</a>][<a class="el" href="puissance__4_8h.html#abfa179ca04bf5c427a56beb8b26c0272">NB_COLONNES</a>]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Matrice dans laquelle on va affecter les coups joués et à partir de laquelle on va mettre à jour l'affichage à chaque tour, c'est dans cette matrice qu'on effectuera la vérification des résultats également. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="puissance__4_8h.html">puissance_4.h</a>      </li>
+
+    <li class="footer">Généré le Lundi Avril 1 2013 18:36:53 pour Projet - Jeu de l'Oie Revisité par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

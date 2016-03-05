@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$editer_8h.html#a699a0a0a39420110df2bdb31b061c2e8" title="Fonction qui permet de trouver le premier nom disponible pour une carte à partir de zéro..." alt="" coords="149,5,253,35"/>
+<area shape="rect" id="node5" href="$editer_8h.html#a03e89673608cec8f46e56922f1962ba0" title="Fonction qui affiche le quadrillage de l&#39;édition d&#39;une carte." alt="" coords="141,59,261,88"/>
+<area shape="rect" id="node7" href="$editer_8h.html#a898f5d68680648048410843d2fe9d12b" title="Fonction qui sert à afficher un parcours." alt="" coords="156,112,247,141"/>
+<area shape="rect" id="node9" href="$editer_8h.html#a3c6ab0104f0e6d3a2c07f33c82272a5b" title="Fonction qui sauvegarde une carte créée dans un fichier." alt="" coords="133,165,269,195"/>
+<area shape="rect" id="node11" href="$editer_8h.html#a3603f97a2911e72c5c03635a1018a8fb" title="Fonction qui vérifie si la case dans laquelle on veut placer un évènement est libre." alt="" coords="137,219,265,248"/>
+<area shape="rect" id="node13" href="$editer_8h.html#a35bb5bd587fe9536b2d805d2717c49c1" title="Fonction qui sert a faire le choix de la case qu&#39;on veut ajouter à telle ou telle endroit..." alt="" coords="124,272,279,301"/>
+<area shape="rect" id="node15" href="$editer_8h.html#abfde2704e500ad4676087253fa255371" title="Fonction qui affiche la case qui se deplace dans le quadrillage. (On l&#39;a appelée fantome)" alt="" coords="155,325,248,355"/>
+</map>

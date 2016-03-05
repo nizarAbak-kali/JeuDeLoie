@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Projet - Jeu de l&#39;Oie Revisité | Documentation:  Fichier source de headers/jouer.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="de_3d.jpg"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Projet - Jeu de l&#39;Oie Revisité | Documentation
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Réalisation de Programmes - Semestre 2 2012/2013</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('jouer_8h.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">headers/jouer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="jouer_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00014"></a><a class="code" href="struct_joueur.html">00014</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>{
+<a name="l00015"></a><a class="code" href="struct_joueur.html#a1910d262855b71da353ed0d07a6c7823">00015</a>   <span class="keywordtype">int</span> <a class="code" href="struct_joueur.html#a1910d262855b71da353ed0d07a6c7823">pos</a>; 
+<a name="l00016"></a><a class="code" href="struct_joueur.html#a1d093dd89e6f85de641c2d9a365fc1d2">00016</a>   <span class="keywordtype">char</span> nom[8]; 
+<a name="l00017"></a><a class="code" href="struct_joueur.html#af203c4809e144dda3d9a2507acc1a4fc">00017</a>   <span class="keywordtype">int</span> <a class="code" href="struct_joueur.html#af203c4809e144dda3d9a2507acc1a4fc">prison</a>; 
+<a name="l00018"></a><a class="code" href="struct_joueur.html#aef160b7437d94056f1dc59646cd5b87d">00018</a>   <span class="keywordtype">int</span> <a class="code" href="struct_joueur.html#aef160b7437d94056f1dc59646cd5b87d">score</a>; 
+<a name="l00019"></a>00019 }<a class="code" href="struct_joueur.html" title="Une structure contenant 4 champs qui correspondent aux données d&#39;un joueur (Position, Nom, Valeur de Prison, Score)">Joueur</a>;
+<a name="l00028"></a>00028 <span class="keywordtype">void</span> <a class="code" href="jouer_8h.html#ae995f53d13bc78a0363ca094cc32850e" title="Fonction qui permet d&#39;écrire une chaine de caractère (Nom d&#39;un fichier) tout en affichant ce que l&#39;ut...">nom_Fichier</a>(SDL_Surface *ecran, <span class="keywordtype">char</span> nom[]);
+<a name="l00041"></a>00041 <span class="keywordtype">int</span> <a class="code" href="jouer_8h.html#a663a3c5f2d846d00c6a9ab944be9db7e" title="Fonction qui permet de sauvegarder une partie dans un fichier txt. (Elle sauvegarde 5 parties au maxi...">sauvegarder_Partie</a>(SDL_Surface *ecran, <span class="keywordtype">char</span> nom_fichier[], <a class="code" href="struct_joueur.html" title="Une structure contenant 4 champs qui correspondent aux données d&#39;un joueur (Position, Nom, Valeur de Prison, Score)">Joueur</a> joueurs[], <span class="keywordtype">int</span> num_carte, <span class="keywordtype">int</span> nb_joueurs);
+<a name="l00053"></a>00053 <span class="keywordtype">void</span> <a class="code" href="jouer_8h.html#acf744daeca3f1560be8ef5c558d567c7" title="Fonction qui sert de Menu de suspension/arrêt d&#39;une partie.">menu_Exit</a>(SDL_Surface *ecran, <a class="code" href="struct_joueur.html" title="Une structure contenant 4 champs qui correspondent aux données d&#39;un joueur (Position, Nom, Valeur de Prison, Score)">Joueur</a> joueurs[], <span class="keywordtype">int</span> num_carte, <span class="keywordtype">int</span> nb_joueurs);
+<a name="l00066"></a>00066 <span class="keywordtype">int</span> <a class="code" href="jouer_8h.html#a496f18380d84146a65b104d416ca758c" title="Fonction qui sert de Menu de Chargement d&#39;une partie sauvegardée.">menu_Chargement</a>(SDL_Surface *ecran, <span class="keywordtype">int</span> *num_cartechoisie, <a class="code" href="struct_joueur.html" title="Une structure contenant 4 champs qui correspondent aux données d&#39;un joueur (Position, Nom, Valeur de Prison, Score)">Joueur</a> joueur[], <span class="keywordtype">int</span> *nbre_joueur);
+<a name="l00077"></a>00077 <span class="keywordtype">void</span> <a class="code" href="jouer_8h.html#a4ef71a0cce77c87e5876618b6cbf20b3" title="Fonction qui permet de choisir le nombre de joueurs pour une partie.">choix_Nb_Joueur</a> (SDL_Surface *ecran,TTF_Font *font1,TTF_Font *font2,<span class="keywordtype">int</span> <span class="keywordtype">bool</span>);
+<a name="l00089"></a>00089 <span class="keywordtype">void</span> <a class="code" href="jouer_8h.html#a90d1bbda4cd41418197df3e1155c1a58" title="Fonction qui permet de saisir un nom/pseudo pour chaque joueur.">saisie_Nom</a>(SDL_Surface *ecran,<span class="keywordtype">int</span> num_joueur,<span class="keywordtype">char</span> *nom,TTF_Font *font1);
+<a name="l00100"></a>00100 <span class="keywordtype">void</span> <a class="code" href="jouer_8h.html#a202b972beeaac45f943fba75c85224c6" title="Fonction qui affiche un pion donnée sur la carte du jeu.">aff_j</a>(SDL_Rect pos,SDL_Surface *ecran,SDL_Surface*pion,<span class="keywordtype">int</span> i);
+<a name="l00110"></a>00110 <span class="keywordtype">int</span> <a class="code" href="jouer_8h.html#afbd3037fd74559e67d22a90710e3f878" title="Fonction qui permet de visualiser les cartes disponibles et d&#39;en choisir une pour commencer une parti...">visualisation</a>(SDL_Surface* ecran,SDL_Surface* carre,<span class="keywordtype">int</span> *nb);
+<a name="l00120"></a>00120 <span class="keywordtype">void</span> <a class="code" href="jouer_8h.html#adcc66afe1a52fb857b50aca4a3a5ff9b" title="Fonction de numérotation des cases une fois la partie est lancé.">affNombreCase</a>(SDL_Surface* ecran,SDL_Rect case_dans_ecran[64]);
+<a name="l00131"></a>00131 <span class="keywordtype">int</span> <a class="code" href="jouer_8h.html#abd95e1c857b78a7233de9013f35ee26c" title="Fonction de lancement du dé.">lancement_De</a>(SDL_Surface *ecran, <span class="keywordtype">char</span> j[]);
+<a name="l00142"></a>00142 <span class="keywordtype">int</span> <a class="code" href="jouer_8h.html#a35f469bf3c9c7bfe208ea4b6da29c78e" title="Fonction de gestion des Bonus.">gestion_Bonus</a> (SDL_Surface *ecran,TTF_Font *font1,<span class="keywordtype">char</span> *nom_joueur);
+<a name="l00153"></a>00153 <span class="keywordtype">int</span> <a class="code" href="jouer_8h.html#aecb19d1003b9d32325550893e05d3f05" title="Fonction de gestion des Malus.">gestion_Malus</a>(SDL_Surface *ecran,TTF_Font *font1,<span class="keywordtype">char</span> *nom_joueur);
+<a name="l00165"></a>00165 <span class="keywordtype">int</span> <a class="code" href="jouer_8h.html#a4ff3c34abcd50ae218aceaba8ade58f7" title="Fonction de gestion de la Prison.">gestion_Prison</a>(SDL_Surface *ecran,TTF_Font *font1,<span class="keywordtype">char</span> *nom_joueur,<span class="keywordtype">int</span> nb_joueur);
+<a name="l00177"></a>00177 <span class="keywordtype">void</span> <a class="code" href="jouer_8h.html#a1acd4f2bc5dc52014c764c1f2d102f89" title="Fonction de gestion des Mini-jeux (5 mini-jeux avec chacun son propre fichier .c | Les ...">gestion_Mini_Jeux</a>(SDL_Surface *ecran,TTF_Font *font1,<a class="code" href="struct_joueur.html" title="Une structure contenant 4 champs qui correspondent aux données d&#39;un joueur (Position, Nom, Valeur de Prison, Score)">Joueur</a>* tabjoueur,<span class="keywordtype">int</span> nb_joueur);
+<a name="l00190"></a>00190 <span class="keywordtype">void</span> <a class="code" href="jouer_8h.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu.">jouer</a> (SDL_Surface *ecran,TTF_Font *font1,TTF_Font *font2, <span class="keywordtype">int</span> charger);
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="jouer_8h.html">jouer.h</a>      </li>
+
+    <li class="footer">Généré le Dimanche Avril 14 2013 17:53:05 pour Projet - Jeu de l'Oie Revisité | Documentation par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

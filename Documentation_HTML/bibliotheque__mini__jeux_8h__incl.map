@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node21" href="$nb__mysterieux_8h.html" title="Header du Jeu du Nombre Mystérieux en SDL." alt="" coords="989,83,1107,112"/>
+<area shape="rect" id="node23" href="$pendu_8h.html" title="Header du Jeu du Pendu en SDL." alt="" coords="1131,83,1197,112"/>
+<area shape="rect" id="node25" href="$puissance__4_8h.html" title="Header du Jeu de Puissance 4 en SDL." alt="" coords="1221,83,1328,112"/>
+<area shape="rect" id="node27" href="$tictactoe_8h.html" title="Header du Jeu de TicTacToé en SDL." alt="" coords="1352,83,1435,112"/>
+<area shape="rect" id="node29" href="$pong_8h.html" title="Header du Jeu de Pong en SDL." alt="" coords="1459,83,1520,112"/>
+</map>

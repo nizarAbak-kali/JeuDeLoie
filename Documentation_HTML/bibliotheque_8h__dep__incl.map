@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$editer_8c.html" title="Fichier principal de la partie édition." alt="" coords="5,83,91,112"/>
+<area shape="rect" id="node5" href="$main_8c.html" title="Le main du projet." alt="" coords="161,160,244,189"/>
+<area shape="rect" id="node7" href="$info_8c.html" title="Fichier de la partie infos." alt="" coords="165,83,240,112"/>
+<area shape="rect" id="node10" href="$jouer_8c.html" title="Fichier principal du jeu." alt="" coords="264,83,347,112"/>
+<area shape="rect" id="node14" href="$menu_8c.html" title="Fichier principal des menus." alt="" coords="371,83,456,112"/>
+</map>

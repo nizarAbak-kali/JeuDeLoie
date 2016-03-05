@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Projet - Jeu de l&#39;Oie Revisité | Documentation:  Fichier source de headers/pong.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="de_3d.jpg"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Projet - Jeu de l&#39;Oie Revisité | Documentation
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Réalisation de Programmes - Semestre 2 2012/2013</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('pong_8h.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">headers/pong.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="pong_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00010"></a>00010 <span class="comment">//taille de la fenetre</span>
+<a name="l00011"></a><a class="code" href="pong_8h.html#a2ded3859e81311392ca2e1e646b7e74f">00011</a> <span class="preprocessor">#define TAILLE_FENETRE_X 600 </span>
+<a name="l00012"></a><a class="code" href="pong_8h.html#a65645a765ae2eb347da21bafb0caf38f">00012</a> <span class="preprocessor">#define TAILLE_FENETRE_Y 600 </span>
+<a name="l00014"></a>00014 <span class="preprocessor">// la largeur et la longueur des deux raquettes sont les m�mes</span>
+<a name="l00015"></a><a class="code" href="pong_8h.html#a08982bd639396b9de910222ee6a722a7">00015</a> <span class="preprocessor"></span><span class="preprocessor">#define TAILLE_RAQUETTE_LONGUEUR 120 </span>
+<a name="l00016"></a><a class="code" href="pong_8h.html#a95ab5c8a57ea8a964180b99fc4c16053">00016</a> <span class="preprocessor">#define TAILLE_RAQUETTE_LARGEUR 30 </span>
+<a name="l00018"></a>00018 <span class="preprocessor">// un seule macro car la balle est carre</span>
+<a name="l00019"></a><a class="code" href="pong_8h.html#a45f6f183137784217a772a918fffaca5">00019</a> <span class="preprocessor"></span><span class="preprocessor">#define TAILLE_BALLE 30 </span>
+<a name="l00021"></a>00021 <span class="preprocessor">// la largeur de la ligne</span>
+<a name="l00022"></a><a class="code" href="pong_8h.html#aa3e7c3e448780050948e7394dac2cc18">00022</a> <span class="preprocessor"></span><span class="preprocessor">#define LARGEUR_LIGNE_DU_MILIEU 10 </span>
+<a name="l00024"></a>00024 <span class="preprocessor">// Definition du nombres de joueurs</span>
+<a name="l00025"></a><a class="code" href="pong_8h.html#afdb4f6f91f985d95ef85c525e9c6f3e8">00025</a> <span class="preprocessor"></span><span class="preprocessor">#define NB_JOUEURS 4 </span>
+<a name="l00027"></a>00027 <span class="preprocessor">// Definition du score max a atteindre</span>
+<a name="l00028"></a><a class="code" href="pong_8h.html#a01deca592d490bb28261283633b500c3">00028</a> <span class="preprocessor"></span><span class="preprocessor">#define SCORE_MAX 3 </span>
+<a name="l00038"></a>00038 <span class="preprocessor">int jouer_pong(SDL_Surface* screen,int _indicej1 , int _indicej2);</span>
+<a name="l00039"></a>00039 <span class="preprocessor"></span>
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="pong_8h.html">pong.h</a>      </li>
+
+    <li class="footer">Généré le Dimanche Avril 14 2013 17:53:05 pour Projet - Jeu de l'Oie Revisité | Documentation par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

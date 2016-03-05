@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$editer_8c.html#a112a927958ce30039b532c51aabbe3ee" title="Fonction qui permet de créer une carte de jeu." alt="" coords="200,5,267,35"/>
+<area shape="rect" id="node9" href="$editer_8c.html#a4d69f9ad62bda9e02b83f9bd5a980d3f" title="Fonction qui sert à afficher les cartes disponibles avec la possibilité de supprimer une/des carte(s)..." alt="" coords="147,59,320,88"/>
+<area shape="rect" id="node12" href="$jouer_8c.html#afbd3037fd74559e67d22a90710e3f878" title="Fonction qui permet de visualiser les cartes disponibles et d&#39;en choisir une pour commencer une parti..." alt="" coords="187,112,280,141"/>
+<area shape="rect" id="node14" href="$jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="391,125,441,155"/>
+<area shape="rect" id="node5" href="$editer_8c.html#ac71fc9a0da695f49ae8c84eece1552e1" title="Fonction qui sert de Menu principal de la partie édition." alt="" coords="369,35,463,64"/>
+<area shape="rect" id="node7" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="667,85,717,115"/>
+<area shape="rect" id="node17" href="$menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="512,137,619,167"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$jouer_8c.html#a1acd4f2bc5dc52014c764c1f2d102f89" title="Fonction de gestion des Mini&#45;jeux (5 mini&#45;jeux avec chacun son propre fichier .c | Les ..." alt="" coords="189,5,320,35"/>
+<area shape="rect" id="node5" href="$jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="368,5,419,35"/>
+<area shape="rect" id="node7" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="621,5,672,35"/>
+<area shape="rect" id="node9" href="$menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="467,31,573,60"/>
+</map>

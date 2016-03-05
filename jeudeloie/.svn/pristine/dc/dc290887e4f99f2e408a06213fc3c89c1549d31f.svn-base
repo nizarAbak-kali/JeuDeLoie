@@ -1,0 +1,15 @@
+Le jeu de l'oie revisite est un jeu de parcours!
+Joue de deux a quatre joueurs , le but du jeu est de 
+parcourir un trajet de soixante quatre cases parseme
+d'evenement  et d'arriver le premier a la case finale.
+Au debut du jeu , tous les participants se placent sur la case D
+("Depart") et le premier joueur démarre la partie.
+En tombant sur l'une des cases evenements (bonus ou malus)
+un evenement s'affiche en bas de l'ecran.
+Les mini-jeux sont des jeux de confrontation entre deux adversaires.
+Un mini-jeux remporte confert au gagnant trois points , ce qui lui 
+permet d'avancer de trois cases ; quant au perdant il recule de trois
+cases.
+Le jeu s'arrete lorsque le premier joueur franchit la ligne d'arrivée.
+
+APPUYER SUR 'DELETE' POUR REVENIR A L'ETAPE PRECEDENTE !

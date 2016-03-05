@@ -1,0 +1,402 @@
+#include "../headers/bibliotheque.h"
+#include "menu.c"
+#include "editer.c"
+#include "jouer.c"
+#include "info.c"
+
+
+int main ()
+{
+  /**********  Initialisation des bibliothèques SDL  **********/
+  
+  SDL_Init(SDL_INIT_VIDEO);
+  TTF_Init();
+  Mix_OpenAudio(44100,MIX_DEFAULT_FORMAT,MIX_DEFAULT_CHANNELS,1024);
+  
+
+  /**********  Allocation des canaux pour les sons  **********/
+  Mix_AllocateChannels(10);
+  
+
+  /**********  Déclaration des variables  **********/
+  int continuer=1,menu=1,onoff=1;
+  SDL_Event event;
+  SDL_Surface *ecran=NULL;
+  TTF_Font *font1=TTF_OpenFont("../Police/tanglewo.ttf",30);
+  TTF_Font *font2=TTF_OpenFont("../Police/tanglewo.ttf",50);
+  TTF_Font *font3=TTF_OpenFont("../Police/tanglewo.ttf",15);
+  Mix_Music *musique=NULL;
+  Mix_Chunk *son=NULL,*son2=NULL;
+  
+  /**********  Ouverture d'une fenêtre SDL  **********/
+  
+  ecran=SDL_SetVideoMode(LARGEUR_FENETRE,HAUTEUR_FENETRE,32,SDL_HWSURFACE);
+  SDL_WM_SetCaption("JEU DE L'OIE REVISITÉ",NULL);
+  SDL_WM_SetIcon(IMG_Load("../images/accueil.png"), NULL);
+  
+  /********** Chargement des sons et musiques  **********/
+  
+  musique=Mix_LoadMUS("../Music/acceuil.ogg");
+  son=Mix_LoadWAV("../Music/switch1.wav");
+  son2=Mix_LoadWAV("../Music/switch2.wav");
+
+  /**********  Réglage volume et lancement musique  **********/
+  
+  Mix_VolumeChunk(son,MIX_MAX_VOLUME);
+  Mix_VolumeChunk(son2,MIX_MAX_VOLUME);
+  Mix_PlayMusic(musique,-1);
+  
+
+  /**********  Boucle principale du jeu  **********/
+ debut:
+  while(continuer)
+    {
+      while(SDL_PollEvent(&event))
+	{
+	  /**********  Gestion des différents menu du jeu  **********/
+	  
+	  switch(menu)
+	    {
+	      /*********************************************  Chargement de la fenêtre d'accueil du jeu  *********************************************/
+	    
+	    case 1:
+	      charge_Menu1(ecran,font1,font2);
+	      switch(event.type)
+		{
+		case SDL_QUIT:
+		  continuer=0;
+		  break;
+
+		case SDL_KEYDOWN:
+		  switch(event.key.keysym.sym)
+		    {
+		    case SDLK_ESCAPE:
+		      continuer=0;
+		      break;
+		      
+		    case SDLK_RETURN:
+		      Mix_PlayChannel(1,son,0);
+		      menu=2;
+		      break;
+		      
+		    default:
+		      break;
+		    }
+		  break;
+
+		default:
+		  break;
+		}
+	      break;//le break du case 1
+
+	      /**************************************************  Chargement menu principal  **************************************************/
+	    
+	    case 2:
+	      charge_Menu2(ecran,font1,font2);
+	      switch(event.type)
+		{
+		case SDL_KEYDOWN:
+		  switch(event.key.keysym.sym)
+		    {
+		    case SDLK_RETURN:
+		      Mix_PlayChannel(1,son,0);
+		      if(Bool == 0)//Veut jouer
+			menu=3;
+			
+
+		      if (Bool == 1){
+			menu=4;//Entre dans les options 
+			Bool=0;//Pour que dans l'autre fenêtre ce soit la première option qui soit en gras
+		      }
+
+		      if(Bool == 2){
+			menu=5;//Cherche les règles
+			Bool=0;
+		      }
+
+		      if(Bool == 3){
+			/** L'utilisateur veut créer une carte **/
+			menu_Editer(ecran);
+			Bool=0;
+		      }
+		      
+		      if(Bool == 4)
+			continuer=0;//Veut sortir
+		      break;
+		      
+		    case SDLK_UP:
+		      Mix_PlayChannel(1,son,0);
+		      if(Bool > 0)
+			Bool--;
+		      else if(Bool == 0)
+			Bool = 4;
+		      break;
+		      
+		    case SDLK_DOWN:
+		      Mix_PlayChannel(1,son,0);
+		      if(Bool < 4)
+			Bool++;
+		      else if(Bool == 4)
+			Bool = 0;
+		      break;
+		      
+		    default:
+		      break;
+		    }
+		  break;
+		  
+		default:
+		  break;
+		}
+	      break;//break du case 2
+	      
+	      /****************************************  Chargement menu jouer,Nouvelle partie et Chargement partie  ****************************************/
+	      
+	    case 3:
+	      charge_Menu3(ecran,font1,font2);
+	      switch(event.type)
+		{
+		case SDL_KEYDOWN:
+		  switch(event.key.keysym.sym)
+		    {
+		    case SDLK_RETURN:
+		      Mix_PlayChannel(1,son,0);
+		      if(Bool == 0){
+			jouer(ecran,font1,font2);
+			goto debut;	
+		      }
+		      //Il veut faire une nouvelle partie
+		      continuer=0;//en attendant le code
+		      if(Bool == 1)
+			//Il veut charger une partie,la fonction de Chafik intervient
+			continuer=0;//en attendant le code
+		      break;
+		      
+		    case SDLK_UP:
+		      Mix_PlayChannel(1,son,0);
+		      Bool = Bool == 1?0:1;
+		      break;
+
+		    case SDLK_DOWN:
+		      Mix_PlayChannel(1,son,0);
+		      Bool = Bool == 0?1:0;
+		      break;
+
+		    case SDLK_BACKSPACE:
+		      Mix_PlayChannel(2,son2,0);
+		      /* Veut retourner au menu principal */
+		      menu=2;
+		      break;
+
+		    default:
+		      break;
+		    }
+		  break;
+
+		default:
+		  break;
+		}
+	      break;//break du case 3
+
+	      /***************************************************  Chargement menu option  ********************************************************************/
+	   
+	    case 4: 
+	      charge_Menu4(ecran,font2);
+	      switch(event.type)
+		{
+		case SDL_KEYDOWN:
+		  switch(event.key.keysym.sym)
+		    {
+		    case SDLK_RETURN:
+		      Mix_PlayChannel(1,son,0);
+		      menu=6;
+		      break;
+		      
+		    case SDLK_BACKSPACE:
+		      Mix_PlayChannel(2,son2,0);
+		      /* Veut retourner au menu principal */
+		      menu=2;
+		      break;
+		      
+		    default:
+		      break;
+		    }
+		  break;
+		  
+		default:
+		  break;
+		}
+	      break;//break du case 4
+
+	      /***********************************************************  Menu des règles du jeu  **************************************************************/
+	    
+	    case 5:
+	      charge_Menu5(ecran,font1,font2);
+	      switch(event.type)
+		{
+		case SDL_KEYDOWN:
+		  switch(event.key.keysym.sym)
+		    {
+		    case SDLK_RETURN:
+		      Mix_PlayChannel(1,son,0);
+		      if(Bool == 0)
+			affiche_Commande(ecran,font1,font3);
+		      if(Bool == 1)
+			affiche_Regle(ecran,font1,font3);
+		      break;
+		      
+		    case SDLK_UP:
+		      Mix_PlayChannel(1,son,0);
+		      Bool = Bool == 1?0:1;
+		      break;
+
+		    case SDLK_DOWN:
+		      Mix_PlayChannel(1,son,0);
+		      Bool = Bool == 1?0:1;
+		      break;
+		      
+		    case SDLK_BACKSPACE:
+		      Mix_PlayChannel(2,son2,0);
+		      /* Veut retourner au menu principal */
+		      menu=2;
+		      break;
+
+		    default:
+		      break;
+		    }
+		  break;
+
+		default:
+		  break;
+		}
+	      break;//break du case 5
+	      
+	      /*************************************************** Gestionnaire du son ************************************************************/
+	    
+	    case 6:
+	      charge_Menu6(ecran,font1,font2,&onoff);
+	      switch(event.type)
+		{
+		case SDL_KEYDOWN:
+		  switch(event.key.keysym.sym)
+		    {
+		    case SDLK_RETURN:
+		      Mix_PlayChannel(1,son,0);
+		      if(Bool == 0)
+			{
+			  if (onoff == 1)
+			    {
+			      Mix_PauseMusic();
+			      onoff=0;
+			    }
+			  else
+			    {
+			      Mix_ResumeMusic();
+			      onoff=1;
+			    }
+			}
+		      
+		      if(Bool == 1)
+			{
+			  menu=7;
+			  Bool=0;//pour que ce soit la première ption qui soit en gros
+			}
+		      break;
+
+		    case SDLK_UP:
+		      Mix_PlayChannel(1,son,0);
+		      Bool = Bool == 1?0:1;
+		      break;
+
+		    case SDLK_DOWN:
+		      Mix_PlayChannel(1,son,0);
+		      Bool = Bool == 1?0:1;
+		      break;
+		      
+		    case SDLK_BACKSPACE:
+		      Mix_PlayChannel(2,son2,0);
+		      /* Veut retourner au menu principal */
+		      menu=2;
+		      break;
+
+		    default:
+		      break;
+		    }
+		  break;
+
+		default:
+		  break;
+		}
+	      break;//break du case 6
+
+	    case 7: 
+	      charge_Menu7(ecran,font1,font2);
+	      switch(event.type)
+		{
+		case SDL_KEYDOWN:
+		  switch(event.key.keysym.sym)
+		    {
+		    case SDLK_RETURN:
+		      Mix_PlayChannel(1,son,0);
+		      
+		      if(Bool == 0)
+			Mix_VolumeMusic(32);
+		      
+		      if(Bool == 1)
+			Mix_VolumeMusic(64);
+		      
+		      if(Bool == 2)
+			Mix_VolumeMusic(128);
+		      
+		      break;
+		      
+		    case SDLK_BACKSPACE:
+		      Mix_PlayChannel(2,son2,0);
+		      menu=6;//remet l'utilisateur au menu précedent
+		      break;
+
+		    case SDLK_UP:
+		      Mix_PlayChannel(1,son,0);
+		      if(Bool > 0)
+			Bool--;
+		      else if(Bool == 0)
+			Bool = 2;
+		      break;
+		      
+		    case SDLK_DOWN:
+		      Mix_PlayChannel(1,son,0);
+		      if(Bool < 2)
+			Bool++;
+		      else if(Bool == 2)
+			Bool = 0;
+		      break;
+		      
+		    default:
+		      break;
+		    }
+		  break;
+		  
+		default:
+		  break;
+		}
+	      break;//break du case 7
+	      
+	    default:
+	      break;
+	    }
+	}
+    }//Fin de la boucle principale while(continuer)
+  
+  
+  /*********  Libération des espaces alloués  **********/
+  
+  Mix_FreeChunk(son);
+  Mix_FreeMusic(musique);
+  Mix_CloseAudio();
+  TTF_CloseFont(font1);
+  TTF_CloseFont(font2);
+  TTF_Quit();
+  SDL_Quit();
+  
+  return EXIT_SUCCESS;
+}

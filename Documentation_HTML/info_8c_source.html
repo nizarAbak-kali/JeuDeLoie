@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Projet - Jeu de l&#39;Oie Revisité | Documentation:  Fichier source de src/info.c</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="de_3d.jpg"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Projet - Jeu de l&#39;Oie Revisité | Documentation
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Réalisation de Programmes - Semestre 2 2012/2013</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('info_8c.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">src/info.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="info_8c.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;../headers/bibliotheque.h&quot;</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 <span class="comment">/********************  Affichage des règles du jeu  ********************/</span>
+<a name="l00012"></a>00012 
+<a name="l00013"></a><a class="code" href="info_8c.html#abee35debaa4c0d02e1bf8205b438c39e">00013</a> <span class="keywordtype">void</span> <a class="code" href="info_8h.html#abee35debaa4c0d02e1bf8205b438c39e" title="Fonction qui sert à afficher les règles du jeu.">affiche_Regle</a>(SDL_Surface *ecran,TTF_Font *police,TTF_Font *font1)
+<a name="l00014"></a>00014 {
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016   <span class="comment">/**********  Déclaration des variables SDL  *********/</span>
+<a name="l00017"></a>00017   
+<a name="l00018"></a>00018   SDL_Surface *texte=NULL,*texte2=NULL,*fond=NULL;
+<a name="l00019"></a>00019   SDL_Rect position,postexte2;
+<a name="l00020"></a>00020   SDL_Event event;
+<a name="l00021"></a>00021   SDL_Color couleur;
+<a name="l00022"></a>00022   FILE* regle=NULL;
+<a name="l00023"></a>00023   <span class="keywordtype">char</span> ligne[1024]=<span class="stringliteral">&quot;&quot;</span>;
+<a name="l00024"></a>00024   <span class="keywordtype">int</span> continuer=1;
+<a name="l00025"></a>00025   
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027   couleur.r=0;
+<a name="l00028"></a>00028   couleur.g=0;
+<a name="l00029"></a>00029   couleur.b=255;
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031   fond=IMG_Load(<span class="stringliteral">&quot;../images/regle.png&quot;</span>);
+<a name="l00032"></a>00032   regle=fopen(<span class="stringliteral">&quot;../carte/regle.txt&quot;</span>,<span class="stringliteral">&quot;r&quot;</span>);
+<a name="l00033"></a>00033   
+<a name="l00034"></a>00034   <span class="comment">/**********  Ecriture dans la surface texte2  **********/</span>
+<a name="l00035"></a>00035   TTF_SetFontStyle(police,TTF_STYLE_UNDERLINE);
+<a name="l00036"></a>00036   texte2=TTF_RenderText_Blended(police,<span class="stringliteral">&quot;REGLES DU JEU&quot;</span>,couleur);
+<a name="l00037"></a>00037   TTF_SetFontStyle(police,TTF_STYLE_NORMAL);
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039   <span class="comment">/**********  Remplissage de l&#39;écran  **********/</span>
+<a name="l00040"></a>00040   SDL_FillRect(ecran,NULL,SDL_MapRGB(ecran-&gt;format,100,100,100));
+<a name="l00041"></a>00041   SDL_BlitSurface(fond,NULL,ecran,NULL);
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043   <span class="comment">/**********  Initialisation des positions  **********/</span>
+<a name="l00044"></a>00044   
+<a name="l00045"></a>00045   position.x=100;
+<a name="l00046"></a>00046   position.y=75;
+<a name="l00047"></a>00047   postexte2.x=(ecran-&gt;w /2)-(texte2-&gt;w /2);
+<a name="l00048"></a>00048   postexte2.y=25;
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050   <span class="comment">/**********  Boucle pour mettre le programme en pause  **********/</span>
+<a name="l00051"></a>00051   
+<a name="l00052"></a>00052   <span class="keywordflow">while</span>(continuer)
+<a name="l00053"></a>00053     {
+<a name="l00054"></a>00054       SDL_WaitEvent(&amp;event);
+<a name="l00055"></a>00055       <span class="keywordflow">switch</span>(event.type)
+<a name="l00056"></a>00056         {
+<a name="l00057"></a>00057         <span class="keywordflow">case</span> SDL_KEYDOWN:
+<a name="l00058"></a>00058           <span class="keywordflow">if</span>(event.key.keysym.sym == SDLK_BACKSPACE)
+<a name="l00059"></a>00059             continuer=0;
+<a name="l00060"></a>00060           <span class="keywordflow">break</span>;
+<a name="l00061"></a>00061         }
+<a name="l00062"></a>00062       
+<a name="l00063"></a>00063       <span class="comment">/********** Blittage de la règle du jeu **********/</span>
+<a name="l00064"></a>00064       
+<a name="l00065"></a>00065       SDL_BlitSurface(texte2,NULL,ecran,&amp;postexte2);
+<a name="l00066"></a>00066       
+<a name="l00067"></a>00067       <span class="comment">/**********  Boucle de lecture du fichier regle  **********/</span>
+<a name="l00068"></a>00068       
+<a name="l00069"></a>00069       <span class="keywordflow">while</span>(fgets(ligne,<span class="keyword">sizeof</span>(ligne),regle) != NULL)
+<a name="l00070"></a>00070         {
+<a name="l00071"></a>00071           texte=TTF_RenderText_Blended(font1,ligne,couleur);
+<a name="l00072"></a>00072           SDL_BlitSurface(texte,NULL,ecran,&amp;position);
+<a name="l00073"></a>00073           position.y+=25;<span class="comment">//espace entre chaque ligne</span>
+<a name="l00074"></a>00074         }
+<a name="l00075"></a>00075       
+<a name="l00076"></a>00076       <span class="comment">/*********  Nettoyage de l&#39;ecran  **********/</span>
+<a name="l00077"></a>00077       SDL_Flip(ecran);
+<a name="l00078"></a>00078     }
+<a name="l00079"></a>00079   
+<a name="l00080"></a>00080   <span class="comment">/**********  Libération des espaces alloués  *********/</span>
+<a name="l00081"></a>00081   
+<a name="l00082"></a>00082   fclose(regle);
+<a name="l00083"></a>00083   SDL_FreeSurface(fond);
+<a name="l00084"></a>00084   SDL_FreeSurface(texte2);
+<a name="l00085"></a>00085   SDL_FreeSurface(texte);
+<a name="l00086"></a>00086 }
+<a name="l00087"></a>00087 
+<a name="l00088"></a>00088 
+<a name="l00089"></a>00089 <span class="comment">/**********  Affichage des commandes du jeu  **********/</span>
+<a name="l00090"></a>00090 
+<a name="l00091"></a><a class="code" href="info_8c.html#a2767eb6de735a944a6e74238197f9001">00091</a> <span class="keywordtype">void</span> <a class="code" href="info_8h.html#a2767eb6de735a944a6e74238197f9001" title="Fonction qui sert à afficher les commandes du jeu.">affiche_Commande</a>(SDL_Surface *ecran,TTF_Font *police1,TTF_Font *police2)
+<a name="l00092"></a>00092 {
+<a name="l00093"></a>00093   SDL_Surface *texte1=NULL,*texte2=NULL,*fond=NULL;
+<a name="l00094"></a>00094   SDL_Event event;
+<a name="l00095"></a>00095   SDL_Rect position1,position2;
+<a name="l00096"></a>00096   SDL_Color couleur;
+<a name="l00097"></a>00097   FILE* commande=NULL;
+<a name="l00098"></a>00098   <span class="keywordtype">char</span> ligne[1024];
+<a name="l00099"></a>00099   <span class="keywordtype">int</span> continuer=1;
+<a name="l00100"></a>00100 
+<a name="l00101"></a>00101   <span class="comment">/**********  Initialisation des variables  **********/</span>
+<a name="l00102"></a>00102   
+<a name="l00103"></a>00103   couleur.r=0;
+<a name="l00104"></a>00104   couleur.g=0;
+<a name="l00105"></a>00105   couleur.b=0;
+<a name="l00106"></a>00106   
+<a name="l00107"></a>00107   fond=IMG_Load(<span class="stringliteral">&quot;../images/regle.png&quot;</span>);
+<a name="l00108"></a>00108   commande=fopen(<span class="stringliteral">&quot;../carte/commande.txt&quot;</span>,<span class="stringliteral">&quot;r&quot;</span>);
+<a name="l00109"></a>00109   TTF_SetFontStyle(police1,TTF_STYLE_UNDERLINE);
+<a name="l00110"></a>00110   texte1=TTF_RenderText_Blended(police1,<span class="stringliteral">&quot;COMMANDES DU JEU&quot;</span>,couleur);
+<a name="l00111"></a>00111   TTF_SetFontStyle(police1,TTF_STYLE_NORMAL);
+<a name="l00112"></a>00112 
+<a name="l00113"></a>00113   position1.x=(ecran-&gt;w / 2)-(texte1-&gt;w / 2);
+<a name="l00114"></a>00114   position1.y=25;
+<a name="l00115"></a>00115   position2.x=100;
+<a name="l00116"></a>00116   position2.y=75;
+<a name="l00117"></a>00117 
+<a name="l00118"></a>00118   <span class="comment">/**********  Remplissage de l&#39;ecran  **********/</span>
+<a name="l00119"></a>00119   SDL_FillRect(ecran,NULL,SDL_MapRGB(ecran-&gt;format,100,100,100));
+<a name="l00120"></a>00120   SDL_BlitSurface(fond,NULL,ecran,NULL);
+<a name="l00121"></a>00121 
+<a name="l00122"></a>00122   <span class="keywordflow">while</span>(continuer)
+<a name="l00123"></a>00123     {
+<a name="l00124"></a>00124       SDL_WaitEvent(&amp;event);
+<a name="l00125"></a>00125       <span class="keywordflow">switch</span>(event.type)
+<a name="l00126"></a>00126         {
+<a name="l00127"></a>00127         <span class="keywordflow">case</span> SDL_KEYDOWN:
+<a name="l00128"></a>00128           <span class="keywordflow">if</span>(event.key.keysym.sym == SDLK_BACKSPACE)
+<a name="l00129"></a>00129             continuer=0;
+<a name="l00130"></a>00130           <span class="keywordflow">break</span>;
+<a name="l00131"></a>00131         }
+<a name="l00132"></a>00132   
+<a name="l00133"></a>00133       <span class="comment">/**********  Blit des surfaces  **********/</span>
+<a name="l00134"></a>00134       SDL_BlitSurface(texte1,NULL,ecran,&amp;position1);
+<a name="l00135"></a>00135       
+<a name="l00136"></a>00136       <span class="comment">/**********  Boucle de lecture du fichier commande  **********/</span>
+<a name="l00137"></a>00137       
+<a name="l00138"></a>00138       <span class="keywordflow">while</span>(fgets(ligne,1024,commande) != NULL)
+<a name="l00139"></a>00139         {
+<a name="l00140"></a>00140           texte2=TTF_RenderText_Blended(police2,ligne,couleur);
+<a name="l00141"></a>00141           SDL_BlitSurface(texte2,NULL,ecran,&amp;position2);
+<a name="l00142"></a>00142           position2.y+=25;<span class="comment">//espace entre chaque ligne</span>
+<a name="l00143"></a>00143         }
+<a name="l00144"></a>00144       
+<a name="l00145"></a>00145       <span class="comment">/*********  Nettoyage de l&#39;ecran  **********/</span>
+<a name="l00146"></a>00146       SDL_Flip(ecran);
+<a name="l00147"></a>00147     }
+<a name="l00148"></a>00148   <span class="comment">/**********  Libération des espaces alloués  *********/</span>
+<a name="l00149"></a>00149   
+<a name="l00150"></a>00150   fclose(commande);
+<a name="l00151"></a>00151   SDL_FreeSurface(fond);
+<a name="l00152"></a>00152   SDL_FreeSurface(texte1);
+<a name="l00153"></a>00153   SDL_FreeSurface(texte2);
+<a name="l00154"></a>00154 }
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="info_8c.html">info.c</a>      </li>
+
+    <li class="footer">Généré le Dimanche Avril 14 2013 17:53:05 pour Projet - Jeu de l'Oie Revisité | Documentation par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

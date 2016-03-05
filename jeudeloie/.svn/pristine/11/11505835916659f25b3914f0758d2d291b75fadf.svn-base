@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Projet - Jeu de l&#39;Oie Revisité: Référence du fichier headers/menu.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  <td id="projectlogo"><img alt="Logo" src="de_3d.jpg"/></td>
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Projet - Jeu de l&#39;Oie Revisité
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Documentation non définitive - Réalisation de Programmes S2 2012/2013</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('menu_8h.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier headers/menu.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Header du fichier menu.c.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="menu_8h__dep__incl.png" border="0" usemap="#headers_2menu_8hdep" alt=""/></div>
+<map name="headers_2menu_8hdep" id="headers_2menu_8hdep">
+<area shape="rect" id="node3" href="bibliotheque_8h.html" title="Bibliothèque contenant les déclarations des structure et des variables globales ainsi que les bibliot..." alt="" coords="9,83,161,112"/><area shape="rect" id="node5" href="jouer_8c.html" title="Fichier principal du jeu." alt="" coords="5,160,88,189"/><area shape="rect" id="node7" href="main_8c.html" title="Le main du projet." alt="" coords="44,237,127,267"/></map>
+</div>
+</div>
+<p><a href="menu_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac021c219f6220185e1269c8ae20a6b81"></a><!-- doxytag: member="menu.h::charge_Menu1" ref="ac021c219f6220185e1269c8ae20a6b81" args="(SDL_Surface *ecran, TTF_Font *font1, TTF_Font *font2)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>charge_Menu1</b> (SDL_Surface *ecran, TTF_Font *font1, TTF_Font *font2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac500e768773531c2866377f158e17dba"></a><!-- doxytag: member="menu.h::charge_Menu2" ref="ac500e768773531c2866377f158e17dba" args="(SDL_Surface *ecran, TTF_Font *font1, TTF_Font *font2)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>charge_Menu2</b> (SDL_Surface *ecran, TTF_Font *font1, TTF_Font *font2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a714ac0021c8462fd7ef99ae18a952a7a"></a><!-- doxytag: member="menu.h::charge_Menu3" ref="a714ac0021c8462fd7ef99ae18a952a7a" args="(SDL_Surface *ecran, TTF_Font *font1, TTF_Font *font2)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>charge_Menu3</b> (SDL_Surface *ecran, TTF_Font *font1, TTF_Font *font2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3285cf4038f8baccb5f769fd9a0ffc87"></a><!-- doxytag: member="menu.h::charge_Menu4" ref="a3285cf4038f8baccb5f769fd9a0ffc87" args="(SDL_Surface *ecran, TTF_Font *font2)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>charge_Menu4</b> (SDL_Surface *ecran, TTF_Font *font2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aebf6544ee8963bc7aefbe1c8ac31886e"></a><!-- doxytag: member="menu.h::charge_Menu5" ref="aebf6544ee8963bc7aefbe1c8ac31886e" args="(SDL_Surface *ecran, TTF_Font *font1, TTF_Font *font2)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>charge_Menu5</b> (SDL_Surface *ecran, TTF_Font *font1, TTF_Font *font2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac297b76e4b14e6ca43267a8dfee9721a"></a><!-- doxytag: member="menu.h::charge_Menu6" ref="ac297b76e4b14e6ca43267a8dfee9721a" args="(SDL_Surface *ecran, TTF_Font *font1, TTF_Font *font2, int *ptr)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>charge_Menu6</b> (SDL_Surface *ecran, TTF_Font *font1, TTF_Font *font2, int *ptr)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9845de998d944b83bb814cdce474ec97"></a><!-- doxytag: member="menu.h::charge_Menu7" ref="a9845de998d944b83bb814cdce474ec97" args="(SDL_Surface *ecran, TTF_Font *font1, TTF_Font *font2)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>charge_Menu7</b> (SDL_Surface *ecran, TTF_Font *font1, TTF_Font *font2)</td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p>Header du fichier menu.c. </p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Matsima Claude </dd></dl>
+<dl class="version"><dt><b>Version:</b></dt><dd>0.1 </dd></dl>
+<dl class="date"><dt><b>Date:</b></dt><dd>11 mars 2013</dd></dl>
+<p>Header du fichier menu.c pour le projet "Jeu de l'Oie Revisité" - Réalisation de programmes - Semestre 2 2012/2013 </p>
+</div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="menu_8h.html">menu.h</a>      </li>
+
+    <li class="footer">Généré le Lundi Avril 1 2013 18:36:53 pour Projet - Jeu de l'Oie Revisité par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

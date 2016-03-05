@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$bibliotheque__mini__jeux_8h.html" title="Header contenant les headers des différents mini&#45;jeux ainsi que les bibliothèques qu&#39;ils utilisent..." alt="" coords="224,83,437,112"/>
+<area shape="rect" id="node5" href="$puissance__4_8c.html" title="Code source du Mini&#45;jeu Puissance 4 en SDL." alt="" coords="5,160,133,189"/>
+<area shape="rect" id="node11" href="$tictactoe_8c.html" title="Code source du Mini&#45;jeu Tic Tac Toe en SDL." alt="" coords="157,160,261,189"/>
+<area shape="rect" id="node14" href="$pendu_8c.html" title="Code source du Mini&#45;jeu Pendu en SDL." alt="" coords="285,160,376,189"/>
+<area shape="rect" id="node17" href="$nb__mysterieux_8c.html" title="Code source du Mini&#45;jeu Nombre Mystérieux en SDL." alt="" coords="400,160,539,189"/>
+<area shape="rect" id="node20" href="$pong_8c.html" title="Code source du Mini&#45;jeu pong en SDL." alt="" coords="563,160,645,189"/>
+<area shape="rect" id="node7" href="$jouer_8c.html" title="Fichier principal du jeu." alt="" coords="289,237,372,267"/>
+<area shape="rect" id="node9" href="$main_8c.html" title="Le main du projet." alt="" coords="289,315,372,344"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$puissance__4_8c.html#a873c52d089be44bca9bda2f81704217c" title="Fonction qui parcourt la matrice et fait appel à la fonction Puis_4 pour chaque case afin de vérifier..." alt="" coords="119,5,241,35"/>
+<area shape="rect" id="node5" href="$puissance__4_8c.html#a2b37964b38fc2ab267cbcc38f6f713bf" title="Fonction principale du jeu, elle sert à alterner les tours entre 2 joueurs et affecter les coups joué..." alt="" coords="291,5,427,35"/>
+<area shape="rect" id="node7" href="$puissance__4_8c.html#a5e7ac1d16c8983d6ef1c007fee62dd99" title="Fonction qui sert d&#39;un accueil du jeu, histoire de ne pas lancer une partie &quot;vulgairement&quot;, le joueur doit appuyer sur &quot;Entrée&quot; pour jouer." alt="" coords="475,5,621,35"/>
+<area shape="rect" id="node9" href="$jouer_8c.html#a1acd4f2bc5dc52014c764c1f2d102f89" title="Fonction de gestion des Mini&#45;jeux (5 mini&#45;jeux avec chacun son propre fichier .c | Les ..." alt="" coords="669,5,800,35"/>
+<area shape="rect" id="node11" href="$jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="848,5,899,35"/>
+<area shape="rect" id="node13" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="1101,5,1152,35"/>
+<area shape="rect" id="node15" href="$menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="947,31,1053,60"/>
+</map>

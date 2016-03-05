@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$pendu_8h.html#a3ef541c3dab43fc1f9c0cd67926d0529" title="Fonction qui permet de charger un mot au hasard à partir d&#39;un fichier texte qui contient n mots..." alt="" coords="151,5,268,35"/>
+<area shape="rect" id="node5" href="$pendu_8h.html#adee70ac4d74393c4cd78243f3f548be3" title="Fonction qui permet de calculer la longueur n du mot caché (le mot chargé à partir du fichier) et rem..." alt="" coords="173,59,245,88"/>
+<area shape="rect" id="node7" href="$pendu_8h.html#a9455f4961db462c6665b7402d064fbc3" title="Fonction qui calcule le nombre d&#39;occurences d&#39;un caractère dans une chaine." alt="" coords="181,112,237,141"/>
+<area shape="rect" id="node9" href="$pendu_8h.html#a3c0d37a2835268db4e0a419f2bfab5d8" title="Fonction qui prend l&#39;écran et le nombre de coups ratés en paramètre et blitte l&#39;image du pendu corres..." alt="" coords="167,165,252,195"/>
+</map>

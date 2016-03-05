@@ -1,0 +1,7 @@
+/*
+Editter.c
+
+Revoir le texte ecrit 
+ensuite continuer editteur 
+faire une fonction qui affiche tout les cases dispo et ensuite qui selectionne a endroit voulu dans le quadrillages
+*/

@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$tictactoe_8c.html#a9804e1a960a9690b119f0ccc5a8f970a" title="Fonction qui sert d&#39;un accueil du jeu, histoire de ne pas lancer une partie &quot;vulgairement&quot;, le joueur doit appuyer sur &quot;Entrée&quot; pour jouer." alt="" coords="169,5,303,35"/>
+<area shape="rect" id="node5" href="$jouer_8c.html#a1acd4f2bc5dc52014c764c1f2d102f89" title="Fonction de gestion des Mini&#45;jeux (5 mini&#45;jeux avec chacun son propre fichier .c | Les ..." alt="" coords="352,5,483,35"/>
+<area shape="rect" id="node7" href="$jouer_8c.html#af835325dda3d966127634965cd4e2155" title="Fonction principale du jeu." alt="" coords="531,5,581,35"/>
+<area shape="rect" id="node9" href="$main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Le main du projet." alt="" coords="784,5,835,35"/>
+<area shape="rect" id="node11" href="$menu_8c.html#ac500e768773531c2866377f158e17dba" title="Fonction qui affiche le Menu Principal du jeu." alt="" coords="629,31,736,60"/>
+</map>

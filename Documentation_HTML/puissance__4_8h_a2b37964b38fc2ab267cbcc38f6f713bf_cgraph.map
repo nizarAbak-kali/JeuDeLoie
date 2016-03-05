@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$puissance__4_8h.html#a46122e2ab5deef87a097ea7e6d4e8739" title="Fonction d&#39;initialisation de la matrice Mat[NB_LIGNES][NB_COLONNES] et du tableau Colonne[NB_COLONNES..." alt="" coords="191,5,313,35"/>
+<area shape="rect" id="node5" href="$puissance__4_8h.html#ac0841a370703f620f50eaf1908d14c31" title="Fonction qui prend la position du pointeur sur l&#39;écran et le transforme en indice de colonne..." alt="" coords="201,59,303,88"/>
+<area shape="rect" id="node7" href="$puissance__4_8h.html#a8689c73ed34517e6a13695b03a43da98" title="Fonction qui détermine si un coup est jouable ou pas, elle effectuera la vérification dans le tableau..." alt="" coords="219,112,285,141"/>
+<area shape="rect" id="node9" href="$puissance__4_8h.html#aea81a1577f43bb9b4b9ef2031ed5b9a2" title="Fonction qui affecte un coup à la matrice du jeu." alt="" coords="208,165,296,195"/>
+<area shape="rect" id="node11" href="$puissance__4_8h.html#a2520146e81017d4acdc34ea0dc8a21f2" title="Fonction qui met à jour l&#39;affichage en parcourant la matrice Mat[NB_LIGNES][NB_COLONNES] et en faisan..." alt="" coords="197,219,307,248"/>
+<area shape="rect" id="node13" href="$puissance__4_8h.html#a873c52d089be44bca9bda2f81704217c" title="Fonction qui parcourt la matrice et fait appel à la fonction Puis_4 pour chaque case afin de vérifier..." alt="" coords="191,272,313,301"/>
+<area shape="rect" id="node17" href="$puissance__4_8h.html#ae75590d38f924ec5c7528ce5a44f9173" title="Fonction qui vérifie si la matrice du jeu est remplie ou pas, elle effectuera la vérification dans le..." alt="" coords="217,325,287,355"/>
+<area shape="rect" id="node15" href="$puissance__4_8h.html#af0855e710272e82890db903f4f8e235f" title="Fonction qui vérifie l&#39;existence de 4 jetons de même couleur et alignés à partir de la case qui a a e..." alt="" coords="364,272,425,301"/>
+</map>

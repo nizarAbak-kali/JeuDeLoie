@@ -1,0 +1,22 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$bibliotheque_8h.html" title="Bibliothèque contenant les déclarations des structure et des variables globales ainsi que les bibliot..." alt="" coords="623,237,785,267"/>
+<area shape="rect" id="node31" href="$menu_8c.html" title="Fichier principal des menus." alt="" coords="621,83,685,112"/>
+<area shape="rect" id="node34" href="$editer_8c.html" title="Fichier principal de la partie édition." alt="" coords="709,83,773,112"/>
+<area shape="rect" id="node37" href="$jouer_8c.html" title="Fichier principal du jeu." alt="" coords="951,83,1012,112"/>
+<area shape="rect" id="node75" href="$info_8c.html" title="Fichier de la partie infos." alt="" coords="797,83,851,112"/>
+<area shape="rect" id="node23" href="$editer_8h.html" title="Header du fichier editer.c." alt="" coords="179,315,243,344"/>
+<area shape="rect" id="node25" href="$info_8h.html" title="Header du fichier info.c." alt="" coords="267,315,320,344"/>
+<area shape="rect" id="node27" href="$jouer_8h.html" title="Header du fichier jouer.c." alt="" coords="5,315,67,344"/>
+<area shape="rect" id="node29" href="$menu_8h.html" title="Header du fichier menu.c." alt="" coords="91,315,155,344"/>
+<area shape="rect" id="node40" href="$puissance__4_8c.html" title="Code source du Mini&#45;jeu Puissance 4 en SDL." alt="" coords="928,160,1035,189"/>
+<area shape="rect" id="node63" href="$tictactoe_8c.html" title="Code source du Mini&#45;jeu Tic Tac Toe en SDL." alt="" coords="1059,160,1141,189"/>
+<area shape="rect" id="node66" href="$pendu_8c.html" title="Code source du Mini&#45;jeu Pendu en SDL." alt="" coords="1165,160,1232,189"/>
+<area shape="rect" id="node69" href="$nb__mysterieux_8c.html" title="Code source du Mini&#45;jeu Nombre Mystérieux en SDL." alt="" coords="1256,160,1373,189"/>
+<area shape="rect" id="node72" href="$pong_8c.html" title="Code source du Mini&#45;jeu pong en SDL." alt="" coords="843,160,904,189"/>
+<area shape="rect" id="node42" href="$bibliotheque__mini__jeux_8h.html" title="Header contenant les headers des différents mini&#45;jeux ainsi que les bibliothèques qu&#39;ils utilisent..." alt="" coords="987,237,1213,267"/>
+<area shape="rect" id="node53" href="$nb__mysterieux_8h.html" title="Header du Jeu du Nombre Mystérieux en SDL." alt="" coords="1413,315,1531,344"/>
+<area shape="rect" id="node55" href="$pendu_8h.html" title="Header du Jeu du Pendu en SDL." alt="" coords="1555,315,1621,344"/>
+<area shape="rect" id="node57" href="$puissance__4_8h.html" title="Header du Jeu de Puissance 4 en SDL." alt="" coords="1645,315,1752,344"/>
+<area shape="rect" id="node59" href="$tictactoe_8h.html" title="Header du Jeu de TicTacToé en SDL." alt="" coords="1776,315,1859,344"/>
+<area shape="rect" id="node61" href="$pong_8h.html" title="Header du Jeu de Pong en SDL." alt="" coords="1328,315,1389,344"/>
+</map>
